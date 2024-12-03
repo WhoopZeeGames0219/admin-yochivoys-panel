@@ -1,0 +1,187 @@
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card-dashboard {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: calc(100% / 4);
+  /* Por defecto 4 cards por fila */
+}
+
+.chart-container {
+  max-width: 100%;
+  /* Limita el ancho máximo al contenedor padre */
+  max-height: 500px;
+  /* Puedes ajustar esta altura máxima según sea necesario */
+  overflow: auto;
+  /* Permite agregar scroll si el contenido supera las dimensiones */
+  position: relative;
+  /* Asegura que los elementos hijos permanezcan dentro del contenedor */
+}
+
+
+.clickable {
+  cursor: pointer;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.text-container {
+  text-align: left;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  margin: 5px 0 0 0;
+  color: #777;
+}
+
+.contenedor-userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.contenedor-userinfo span {
+  font-size: 1.2rem;
+}
+
+.contenedor-desc {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.contenedor-desc span {
+  color: rgb(109, 109, 109);
+}
+
+.contenedor-venue {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  /* Para permitir posicionamiento relativo */
+}
+
+.contenedor-venue span {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.contenedor-rating {
+  display: flex;
+  padding-top: 10px;
+}
+
+.image-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-container2 {
+  width: 120px;
+  /* Tamaño más grande de la imagen */
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  position: absolute;
+  /* Posición absoluta para que no afecte el flujo del diseño */
+  right: -50px;
+  /* Ajusta la posición a la derecha */
+  top: 50%;
+  /* Centra verticalmente respecto al contenedor */
+  transform: translateY(-85%);
+  /* Ajuste para centrar correctamente */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#dash-graficas {
+  max-width: 100%;
+  overflow: scroll;
+  padding-top: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1200px) {
+  .card-dashboard {
+    max-width: calc(100% / 3);
+    /* 3 cards por fila */
+  }
+
+}
+
+@media (max-width: 992px) {
+  .card-dashboard {
+    max-width: calc(100% / 2);
+    /* 2 cards por fila */
+  }
+
+}
+
+@media (max-width: 768px) {
+  .card-dashboard {
+    max-width: 100%;
+    /* 1 card por fila */
+  }
+
+}
+
+.custom-carousel {
+  margin-bottom: 40px;
+  width: 100%;
+}

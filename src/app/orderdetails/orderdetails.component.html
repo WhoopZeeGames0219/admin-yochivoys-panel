@@ -1,0 +1,144 @@
+<ngx-spinner type="ball-pulse-sync" color="#e74c3c">
+  <p style="font-size: 20px; color: #e74c3c">{{'Please wait...' | translate}}</p>
+</ngx-spinner>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h5>{{'Order Details' | translate}}</h5>
+        <div class="orders">
+          <div class="card_div">
+
+            <div class="resto_detail">
+              <div class="back_image" [style.backgroundImage]="'url('+restCover+')'"></div>
+              <div style="margin-left: 20px;">
+                <p class="res_name">{{restName}}</p>
+                <p class="" style="color: black;">
+                  {{address}}
+                </p>
+              </div>
+
+              <div style="text-align: center;margin: 10px;">
+                <div class="ti-angle-double-right"></div>
+              </div>
+
+              <div class="back_image" [style.backgroundImage]="'url('+userpic+')'"></div>
+              <div style="margin-left: 20px;">
+                <p class="res_name">{{username}}</p>
+                <p class="">
+                  {{userAddress}}
+                </p>
+              </div>
+            </div>
+
+            <div class="line_div"></div>
+
+            <div class="order_detail">
+                <ng-container *ngIf="streetHistory != null && streetHistory.length != 0">
+                  <button class="btn trackLink" style="margin-bottom: 20px;" (click)="showTrack()">{{'Watch Tracking' | translate}}</button>
+                  <div *ngIf="showTracking" class="modal-backdrop" (click)="closeTrack()">
+                      <div class="modal-content" (click)="$event.stopPropagation()">
+                        <div class="modal-header">
+                          <h3 class="" id="exampleModalLongTitle">Seguimiento de Pedido</h3>
+                          <button type="button" class="close" (click)="closeTrack()" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="resto_detail" style="margin-top: 20px; margin-bottom: 20px;">
+                          <div class="user_image" [style.backgroundImage]="'url('+restCover+')'"></div>
+                          <div style="margin-left: 20px;">
+                            <p style="font-size: 16px; font-weight: bold;">{{restName}}</p>
+                          </div>
+            
+                          <div style="text-align: center;margin: 10px;">
+                            <div class="ti-angle-double-right"></div>
+                          </div>
+            
+                          <div class="user_image" [style.backgroundImage]="'url('+userpic+')'"></div>
+                          <div style="margin-left: 20px;">
+                            <p style="font-size: 16px; font-weight: bold;">{{username}}</p>
+                          </div>
+                        </div>
+
+                        <div class="line_div"></div>
+
+                        <!-- Contenedor scrollable -->
+                        <!-- <div class=""> -->
+                          <ul class="list-group list-group-flush scrollable-content">
+                            <li class="list-group-item" *ngFor="let step of streetHistory; let stepNumb = index">
+                               - {{step}}
+                            </li>
+                          </ul>
+                        <!-- </div> -->
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                  </div>
+                </ng-container>
+              <p class="head_gray">{{'ITEMS' | translate}}</p>
+              <div class="small_lbl">
+                <!-- <span *ngFor="let order of orders;let ol = index">{{order.quantiy}}
+                                    X {{order.name}} </span> -->                
+                <span *ngFor="let order of orders;let ol = index">
+                  <div *ngIf="!order.selectedItem || !order.selectedItem.length" class="border_bottom">
+                    {{order.name}} X {{order.quantiy}} <span *ngIf="ol !=order.length">,</span>
+                  </div>
+
+                  <div *ngFor="let subItems of order.selectedItem;let j = index" class="subNames">
+                    <p class="food_title">{{order.name}} X {{order.selectedItem[j].total}}</p>
+                    <div *ngFor="let addods of subItems.item" class="flex_titles">
+                      <p class="sub_name">
+                        - {{addods.name}}
+                      </p>
+                      <p class="sub_name">
+                        {{getCurrency()}} {{addods.value}}
+                      </p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+              <p class="head_gray">{{'ORDERED ON'| translate}}</p>
+              <p class="small_lbl">{{getDate(time)}} </p>
+              <p class="head_gray" *ngIf="coupon">{{'Discount'| translate}}</p>
+              <p class="small_lbl" *ngIf="coupon">{{getCurrency()}} {{dicount}}
+              </p>
+              <p class="head_gray">{{'TOTAL AMOUNT'| translate}}</p>
+              <p class="small_lbl"> {{getCurrency()}} {{grandTotal}}</p>
+            </div>
+
+            <div class="line_div"></div>
+
+            <div class="status_detail" *ngIf="status =='completed' || status == 'delivered'" style="color: green">
+              <div class="deliver_div">
+                {{'Delivered' | translate}}
+              </div>
+            </div>
+            <div class="status_detail" *ngIf="status =='rejected' || status == 'canceled'" style="color: darkred">
+              <div class="deliver_div">
+                {{'Your Order is' | translate}} {{status | translate}}
+              </div>
+            </div>
+            <div class="status_detail" *ngIf="status =='created' || status =='ongoing' || status === 'accepted'"
+              style="color: rgb(194, 194, 13)">
+              <div class="deliver_div">
+                {{'Your Order is' | translate}} {{status | translate}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div *ngIf="refund && status != 'rejected' && status != 'canceled'" style="margin-right: 5px;">
+            <button class="btn btn-danger btn-round" (click)="refundIt()">{{'Reject & Refund' | translate}}
+            </button>
+          </div>
+          <div *ngIf="status =='created' || status =='ongoing' || status === 'accepted'">
+            <button class="btn btn-danger btn-round" (click)="reject()">{{'Reject' | translate}}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng2-toasty></ng2-toasty>

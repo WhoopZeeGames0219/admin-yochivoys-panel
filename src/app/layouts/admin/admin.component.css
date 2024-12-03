@@ -1,0 +1,177 @@
+aside.pcoded-slider.ng-sidebar {
+    top: 56px;
+}
+
+.slimscroll-wrapper,
+.scroll-window {
+    width: 100% !important;
+}
+
+.userlist-box {
+    &.show {
+        display: -webkit-box;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+#yochivoy-logo {
+    position: relative;
+    height: 50px;
+    object-fit: cover;
+}
+
+.active-button {
+    background-color: #00B07426 !important;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #00B074 !important;
+}
+
+.tablero {
+    color: #00B074 !important;
+    font-weight: bold !important;
+    fill: #00B074 !important;
+    color: #00B074 !important;
+}
+
+button {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.input-large {
+    width: 300px;
+    height: 50px;
+    /* O ajusta el padding si prefieres un tamaño más basado en el contenido interno */
+    padding: 12px 20px;
+}
+
+.rectangle-147_1-448 {
+    display: flex;
+}
+
+.linea-vertical {
+    height: 45px;
+    background-color: rgb(133, 132, 132);
+    margin-left: 10px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40%;
+}
+
+@media (width <=776px) {
+    #navbar-responsive {
+        display: flex;
+    }
+}
+
+#example-search-input {
+    height: 50px;
+    width: 86%;
+    padding: 12px 20px;
+}
+
+#navbar-responsive2 {
+    display: none;
+}
+
+#btnMenuResponsive {
+    display: none;
+}
+
+@media (width < 1560px) {
+    #navbar-responsive {
+        display: none;
+    }
+
+    #navbar-responsive2 {
+        display: flex;
+    }
+
+    #responsive-topmenu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #responsive-buttonmenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        align-content: center;
+    }
+
+}
+
+@media (width <=992px) {
+    #navbar-responsive2 {
+        display: none;
+    }
+
+    #btnMenuResponsive {
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        align-items: center;
+        background: #FF5B5B26;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .modal-content {
+        margin: 10%;
+    }
+
+    .modal-content>h2 {
+        font-size: 1.2rem;
+    }
+
+    .perfil-responsive {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .secciones-responsive {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .modal-body {
+        max-height: calc(60vh - 100px);
+        /* Ajuste de altura con margen */
+        overflow-y: auto;
+        padding-right: 10px;
+        /* Espacio para la barra de desplazamiento */
+    }
+}

@@ -1,0 +1,8533 @@
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["dashboard-dashboard-module-ngfactory"], {
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-horizontal.component.ngfactory.js":
+  /*!***************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-horizontal.component.ngfactory.js ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: RenderType_BarHorizontalComponent, View_BarHorizontalComponent_0, View_BarHorizontalComponent_Host_0, BarHorizontalComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartBarHorizontalComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_BarHorizontalComponent", function () {
+      return RenderType_BarHorizontalComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarHorizontalComponent_0", function () {
+      return View_BarHorizontalComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarHorizontalComponent_Host_0", function () {
+      return View_BarHorizontalComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BarHorizontalComponentNgFactory", function () {
+      return BarHorizontalComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ../common/base-chart.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/base-chart.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/axes/x-axis.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_axes_x_axis_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/axes/x-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.js");
+    /* harmony import */
+
+
+    var _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../common/axes/y-axis.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_axes_y_axis_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../common/axes/y-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../common/charts/chart.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../common/tooltip/injection.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/injection.service.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../common/charts/chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _series_horizontal_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./series-horizontal.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-horizontal.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _series_horizontal_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./series-horizontal.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-horizontal.component.js");
+    /* harmony import */
+
+
+    var _bar_horizontal_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ./bar-horizontal.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-horizontal.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_BarHorizontalComponent = [_common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_BarHorizontalComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_BarHorizontalComponent,
+      data: {}
+    });
+
+    function View_BarHorizontalComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-x-axis", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.updateXAxisHeight($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_XAxisComponent_0"], _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_XAxisComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_axes_x_axis_component__WEBPACK_IMPORTED_MODULE_3__["XAxisComponent"], [], {
+        xScale: [0, "xScale"],
+        dims: [1, "dims"],
+        trimTicks: [2, "trimTicks"],
+        rotateTicks: [3, "rotateTicks"],
+        maxTickLength: [4, "maxTickLength"],
+        tickFormatting: [5, "tickFormatting"],
+        showGridLines: [6, "showGridLines"],
+        showLabel: [7, "showLabel"],
+        labelText: [8, "labelText"],
+        ticks: [9, "ticks"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.xScale;
+        var currVal_1 = _co.dims;
+        var currVal_2 = _co.trimXAxisTicks;
+        var currVal_3 = _co.rotateXAxisTicks;
+        var currVal_4 = _co.maxXAxisTickLength;
+        var currVal_5 = _co.xAxisTickFormatting;
+        var currVal_6 = _co.showGridLines;
+        var currVal_7 = _co.showXAxisLabel;
+        var currVal_8 = _co.xAxisLabel;
+        var currVal_9 = _co.xAxisTicks;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9);
+      }, null);
+    }
+
+    function View_BarHorizontalComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-y-axis", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.updateYAxisWidth($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_YAxisComponent_0"], _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_YAxisComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_axes_y_axis_component__WEBPACK_IMPORTED_MODULE_5__["YAxisComponent"], [], {
+        yScale: [0, "yScale"],
+        dims: [1, "dims"],
+        trimTicks: [2, "trimTicks"],
+        maxTickLength: [3, "maxTickLength"],
+        tickFormatting: [4, "tickFormatting"],
+        ticks: [5, "ticks"],
+        showLabel: [6, "showLabel"],
+        labelText: [7, "labelText"],
+        yAxisOffset: [8, "yAxisOffset"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.yScale;
+        var currVal_1 = _co.dims;
+        var currVal_2 = _co.trimYAxisTicks;
+        var currVal_3 = _co.maxYAxisTickLength;
+        var currVal_4 = _co.yAxisTickFormatting;
+        var currVal_5 = _co.yAxisTicks;
+        var currVal_6 = _co.showYAxisLabel;
+        var currVal_7 = _co.yAxisLabel;
+        var currVal_8 = _co.dataLabelMaxWidth.negative;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
+      }, null);
+    }
+
+    function View_BarHorizontalComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 16777216, null, null, 10, "ngx-charts-chart", [], null, [[null, "legendLabelClick"], [null, "legendLabelActivate"], [null, "legendLabelDeactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("legendLabelClick" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("legendLabelActivate" === en) {
+          var pd_1 = _co.onActivate($event, true) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("legendLabelDeactivate" === en) {
+          var pd_2 = _co.onDeactivate($event, true) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["View_ChartComponent_0"], _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["RenderType_ChartComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"], [_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_8__["InjectionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 573440, null, 0, _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_9__["ChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"]], {
+        view: [0, "view"],
+        showLegend: [1, "showLegend"],
+        legendOptions: [2, "legendOptions"],
+        activeEntries: [3, "activeEntries"],
+        animations: [4, "animations"]
+      }, {
+        legendLabelClick: "legendLabelClick",
+        legendLabelActivate: "legendLabelActivate",
+        legendLabelDeactivate: "legendLabelDeactivate"
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](3, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, 0, 6, ":svg:g", [["class", "bar-chart chart"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_BarHorizontalComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](6, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_BarHorizontalComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](8, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 1, ":svg:g", [["ngx-charts-series-horizontal", ""]], null, [[null, "select"], [null, "activate"], [null, "deactivate"], [null, "dataLabelWidthChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("select" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_1 = _co.onActivate($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_2 = _co.onDeactivate($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("dataLabelWidthChanged" === en) {
+          var pd_3 = _co.onDataLabelMaxWidthChanged($event) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, _series_horizontal_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["View_SeriesHorizontal_0"], _series_horizontal_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["RenderType_SeriesHorizontal"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](10, 573440, null, 0, _series_horizontal_component__WEBPACK_IMPORTED_MODULE_12__["SeriesHorizontal"], [], {
+        dims: [0, "dims"],
+        series: [1, "series"],
+        xScale: [2, "xScale"],
+        yScale: [3, "yScale"],
+        colors: [4, "colors"],
+        tooltipDisabled: [5, "tooltipDisabled"],
+        gradient: [6, "gradient"],
+        activeEntries: [7, "activeEntries"],
+        tooltipTemplate: [8, "tooltipTemplate"],
+        roundEdges: [9, "roundEdges"],
+        animations: [10, "animations"],
+        showDataLabel: [11, "showDataLabel"],
+        dataLabelFormatting: [12, "dataLabelFormatting"],
+        noBarWhenZero: [13, "noBarWhenZero"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate",
+        dataLabelWidthChanged: "dataLabelWidthChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _ck(_v, 3, 0, _co.width, _co.height);
+
+        var currVal_1 = _co.legend;
+        var currVal_2 = _co.legendOptions;
+        var currVal_3 = _co.activeEntries;
+        var currVal_4 = _co.animations;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+
+        var currVal_6 = _co.xAxis;
+
+        _ck(_v, 6, 0, currVal_6);
+
+        var currVal_7 = _co.yAxis;
+
+        _ck(_v, 8, 0, currVal_7);
+
+        var currVal_8 = _co.dims;
+        var currVal_9 = _co.results;
+        var currVal_10 = _co.xScale;
+        var currVal_11 = _co.yScale;
+        var currVal_12 = _co.colors;
+        var currVal_13 = _co.tooltipDisabled;
+        var currVal_14 = _co.gradient;
+        var currVal_15 = _co.activeEntries;
+        var currVal_16 = _co.tooltipTemplate;
+        var currVal_17 = _co.roundEdges;
+        var currVal_18 = _co.animations;
+        var currVal_19 = _co.showDataLabel;
+        var currVal_20 = _co.dataLabelFormatting;
+        var currVal_21 = _co.noBarWhenZero;
+
+        _ck(_v, 10, 1, [currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21]);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_5 = _co.transform;
+
+        _ck(_v, 4, 0, currVal_5);
+      });
+    }
+
+    function View_BarHorizontalComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "ngx-charts-bar-horizontal", [], null, null, null, View_BarHorizontalComponent_0, RenderType_BarHorizontalComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 4898816, null, 1, _bar_horizontal_component__WEBPACK_IMPORTED_MODULE_13__["BarHorizontalComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 1, {
+        tooltipTemplate: 0
+      })], null, null);
+    }
+
+    var BarHorizontalComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("ngx-charts-bar-horizontal", _bar_horizontal_component__WEBPACK_IMPORTED_MODULE_13__["BarHorizontalComponent"], View_BarHorizontalComponent_Host_0, {
+      results: "results",
+      view: "view",
+      scheme: "scheme",
+      schemeType: "schemeType",
+      customColors: "customColors",
+      animations: "animations",
+      legend: "legend",
+      legendTitle: "legendTitle",
+      legendPosition: "legendPosition",
+      xAxis: "xAxis",
+      yAxis: "yAxis",
+      showXAxisLabel: "showXAxisLabel",
+      showYAxisLabel: "showYAxisLabel",
+      xAxisLabel: "xAxisLabel",
+      yAxisLabel: "yAxisLabel",
+      tooltipDisabled: "tooltipDisabled",
+      gradient: "gradient",
+      showGridLines: "showGridLines",
+      activeEntries: "activeEntries",
+      trimXAxisTicks: "trimXAxisTicks",
+      trimYAxisTicks: "trimYAxisTicks",
+      rotateXAxisTicks: "rotateXAxisTicks",
+      maxXAxisTickLength: "maxXAxisTickLength",
+      maxYAxisTickLength: "maxYAxisTickLength",
+      xAxisTickFormatting: "xAxisTickFormatting",
+      yAxisTickFormatting: "yAxisTickFormatting",
+      xAxisTicks: "xAxisTicks",
+      yAxisTicks: "yAxisTicks",
+      barPadding: "barPadding",
+      roundDomains: "roundDomains",
+      roundEdges: "roundEdges",
+      xScaleMax: "xScaleMax",
+      xScaleMin: "xScaleMin",
+      showDataLabel: "showDataLabel",
+      dataLabelFormatting: "dataLabelFormatting",
+      noBarWhenZero: "noBarWhenZero"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.css.shim.ngstyle.js":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.css.shim.ngstyle.js ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartBarLabelComponentCssShimNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".textDataLabel[_ngcontent-%COMP%] {\n  font-size: 11px; }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2Jhci1jaGFydC9iYXItbGFiZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQWUsRUFBRSIsImZpbGUiOiJub2RlX21vZHVsZXMvQHN3aW1sYW5lL25neC1jaGFydHMvcmVsZWFzZS9iYXItY2hhcnQvYmFyLWxhYmVsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGV4dERhdGFMYWJlbCB7XG4gIGZvbnQtc2l6ZTogMTFweDsgfVxuIl19 */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.ngfactory.js":
+  /*!**********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.ngfactory.js ***!
+    \**********************************************************************************************/
+
+  /*! exports provided: RenderType_BarLabelComponent, View_BarLabelComponent_0, View_BarLabelComponent_Host_0, BarLabelComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartBarLabelComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_BarLabelComponent", function () {
+      return RenderType_BarLabelComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarLabelComponent_0", function () {
+      return View_BarLabelComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarLabelComponent_Host_0", function () {
+      return View_BarLabelComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BarLabelComponentNgFactory", function () {
+      return BarLabelComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _bar_label_component_css_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./bar-label.component.css.shim.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.css.shim.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _bar_label_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./bar-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_BarLabelComponent = [_bar_label_component_css_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_BarLabelComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 0,
+      styles: styles_BarLabelComponent,
+      data: {}
+    });
+
+    function View_BarLabelComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:text", [["alignment-baseline", "middle"], ["class", "textDataLabel"]], [[1, "text-anchor", 0], [1, "transform", 0], [1, "x", 0], [1, "y", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](1, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.textAnchor;
+        var currVal_1 = _co.transform;
+        var currVal_2 = _co.x;
+        var currVal_3 = _co.y;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3);
+
+        var currVal_4 = _co.formatedValue;
+
+        _ck(_v, 1, 0, currVal_4);
+      });
+    }
+
+    function View_BarLabelComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-bar-label", ""]], null, null, null, View_BarLabelComponent_0, RenderType_BarLabelComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 4767744, null, 0, _bar_label_component__WEBPACK_IMPORTED_MODULE_2__["BarLabelComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], null, null)], null, null);
+    }
+
+    var BarLabelComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("g[ngx-charts-bar-label]", _bar_label_component__WEBPACK_IMPORTED_MODULE_2__["BarLabelComponent"], View_BarLabelComponent_Host_0, {
+      value: "value",
+      valueFormatting: "valueFormatting",
+      barX: "barX",
+      barY: "barY",
+      barWidth: "barWidth",
+      barHeight: "barHeight",
+      orientation: "orientation"
+    }, {
+      dimensionsChanged: "dimensionsChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-vertical.component.ngfactory.js":
+  /*!*************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-vertical.component.ngfactory.js ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: RenderType_BarVerticalComponent, View_BarVerticalComponent_0, View_BarVerticalComponent_Host_0, BarVerticalComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartBarVerticalComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_BarVerticalComponent", function () {
+      return RenderType_BarVerticalComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarVerticalComponent_0", function () {
+      return View_BarVerticalComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarVerticalComponent_Host_0", function () {
+      return View_BarVerticalComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BarVerticalComponentNgFactory", function () {
+      return BarVerticalComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ../common/base-chart.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/base-chart.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/axes/x-axis.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_axes_x_axis_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/axes/x-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.js");
+    /* harmony import */
+
+
+    var _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../common/axes/y-axis.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_axes_y_axis_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../common/axes/y-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../common/charts/chart.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../common/tooltip/injection.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/injection.service.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../common/charts/chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _series_vertical_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./series-vertical.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-vertical.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _series_vertical_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./series-vertical.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-vertical.component.js");
+    /* harmony import */
+
+
+    var _bar_vertical_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ./bar-vertical.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-vertical.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_BarVerticalComponent = [_common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_BarVerticalComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_BarVerticalComponent,
+      data: {}
+    });
+
+    function View_BarVerticalComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-x-axis", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.updateXAxisHeight($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_XAxisComponent_0"], _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_XAxisComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_axes_x_axis_component__WEBPACK_IMPORTED_MODULE_3__["XAxisComponent"], [], {
+        xScale: [0, "xScale"],
+        dims: [1, "dims"],
+        trimTicks: [2, "trimTicks"],
+        rotateTicks: [3, "rotateTicks"],
+        maxTickLength: [4, "maxTickLength"],
+        tickFormatting: [5, "tickFormatting"],
+        showLabel: [6, "showLabel"],
+        labelText: [7, "labelText"],
+        ticks: [8, "ticks"],
+        xAxisOffset: [9, "xAxisOffset"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.xScale;
+        var currVal_1 = _co.dims;
+        var currVal_2 = _co.trimXAxisTicks;
+        var currVal_3 = _co.rotateXAxisTicks;
+        var currVal_4 = _co.maxXAxisTickLength;
+        var currVal_5 = _co.xAxisTickFormatting;
+        var currVal_6 = _co.showXAxisLabel;
+        var currVal_7 = _co.xAxisLabel;
+        var currVal_8 = _co.xAxisTicks;
+        var currVal_9 = _co.dataLabelMaxHeight.negative;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9);
+      }, null);
+    }
+
+    function View_BarVerticalComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-y-axis", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.updateYAxisWidth($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_YAxisComponent_0"], _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_YAxisComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_axes_y_axis_component__WEBPACK_IMPORTED_MODULE_5__["YAxisComponent"], [], {
+        yScale: [0, "yScale"],
+        dims: [1, "dims"],
+        trimTicks: [2, "trimTicks"],
+        maxTickLength: [3, "maxTickLength"],
+        tickFormatting: [4, "tickFormatting"],
+        ticks: [5, "ticks"],
+        showGridLines: [6, "showGridLines"],
+        showLabel: [7, "showLabel"],
+        labelText: [8, "labelText"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.yScale;
+        var currVal_1 = _co.dims;
+        var currVal_2 = _co.trimYAxisTicks;
+        var currVal_3 = _co.maxYAxisTickLength;
+        var currVal_4 = _co.yAxisTickFormatting;
+        var currVal_5 = _co.yAxisTicks;
+        var currVal_6 = _co.showGridLines;
+        var currVal_7 = _co.showYAxisLabel;
+        var currVal_8 = _co.yAxisLabel;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
+      }, null);
+    }
+
+    function View_BarVerticalComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 16777216, null, null, 10, "ngx-charts-chart", [], null, [[null, "legendLabelClick"], [null, "legendLabelActivate"], [null, "legendLabelDeactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("legendLabelClick" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("legendLabelActivate" === en) {
+          var pd_1 = _co.onActivate($event, true) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("legendLabelDeactivate" === en) {
+          var pd_2 = _co.onDeactivate($event, true) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["View_ChartComponent_0"], _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["RenderType_ChartComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"], [_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_8__["InjectionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 573440, null, 0, _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_9__["ChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"]], {
+        view: [0, "view"],
+        showLegend: [1, "showLegend"],
+        legendOptions: [2, "legendOptions"],
+        activeEntries: [3, "activeEntries"],
+        animations: [4, "animations"]
+      }, {
+        legendLabelClick: "legendLabelClick",
+        legendLabelActivate: "legendLabelActivate",
+        legendLabelDeactivate: "legendLabelDeactivate"
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](3, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, 0, 6, ":svg:g", [["class", "bar-chart chart"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_BarVerticalComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](6, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_BarVerticalComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](8, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 1, ":svg:g", [["ngx-charts-series-vertical", ""]], null, [[null, "activate"], [null, "deactivate"], [null, "select"], [null, "dataLabelHeightChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("activate" === en) {
+          var pd_0 = _co.onActivate($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_1 = _co.onDeactivate($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("select" === en) {
+          var pd_2 = _co.onClick($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("dataLabelHeightChanged" === en) {
+          var pd_3 = _co.onDataLabelMaxHeightChanged($event) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, _series_vertical_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["View_SeriesVerticalComponent_0"], _series_vertical_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["RenderType_SeriesVerticalComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](10, 573440, null, 0, _series_vertical_component__WEBPACK_IMPORTED_MODULE_12__["SeriesVerticalComponent"], [], {
+        dims: [0, "dims"],
+        series: [1, "series"],
+        xScale: [2, "xScale"],
+        yScale: [3, "yScale"],
+        colors: [4, "colors"],
+        gradient: [5, "gradient"],
+        activeEntries: [6, "activeEntries"],
+        tooltipDisabled: [7, "tooltipDisabled"],
+        tooltipTemplate: [8, "tooltipTemplate"],
+        roundEdges: [9, "roundEdges"],
+        animations: [10, "animations"],
+        showDataLabel: [11, "showDataLabel"],
+        dataLabelFormatting: [12, "dataLabelFormatting"],
+        noBarWhenZero: [13, "noBarWhenZero"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate",
+        dataLabelHeightChanged: "dataLabelHeightChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _ck(_v, 3, 0, _co.width, _co.height);
+
+        var currVal_1 = _co.legend;
+        var currVal_2 = _co.legendOptions;
+        var currVal_3 = _co.activeEntries;
+        var currVal_4 = _co.animations;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+
+        var currVal_6 = _co.xAxis;
+
+        _ck(_v, 6, 0, currVal_6);
+
+        var currVal_7 = _co.yAxis;
+
+        _ck(_v, 8, 0, currVal_7);
+
+        var currVal_8 = _co.dims;
+        var currVal_9 = _co.results;
+        var currVal_10 = _co.xScale;
+        var currVal_11 = _co.yScale;
+        var currVal_12 = _co.colors;
+        var currVal_13 = _co.gradient;
+        var currVal_14 = _co.activeEntries;
+        var currVal_15 = _co.tooltipDisabled;
+        var currVal_16 = _co.tooltipTemplate;
+        var currVal_17 = _co.roundEdges;
+        var currVal_18 = _co.animations;
+        var currVal_19 = _co.showDataLabel;
+        var currVal_20 = _co.dataLabelFormatting;
+        var currVal_21 = _co.noBarWhenZero;
+
+        _ck(_v, 10, 1, [currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21]);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_5 = _co.transform;
+
+        _ck(_v, 4, 0, currVal_5);
+      });
+    }
+
+    function View_BarVerticalComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "ngx-charts-bar-vertical", [], null, null, null, View_BarVerticalComponent_0, RenderType_BarVerticalComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 4898816, null, 1, _bar_vertical_component__WEBPACK_IMPORTED_MODULE_13__["BarVerticalComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 1, {
+        tooltipTemplate: 0
+      })], null, null);
+    }
+
+    var BarVerticalComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("ngx-charts-bar-vertical", _bar_vertical_component__WEBPACK_IMPORTED_MODULE_13__["BarVerticalComponent"], View_BarVerticalComponent_Host_0, {
+      results: "results",
+      view: "view",
+      scheme: "scheme",
+      schemeType: "schemeType",
+      customColors: "customColors",
+      animations: "animations",
+      legend: "legend",
+      legendTitle: "legendTitle",
+      legendPosition: "legendPosition",
+      xAxis: "xAxis",
+      yAxis: "yAxis",
+      showXAxisLabel: "showXAxisLabel",
+      showYAxisLabel: "showYAxisLabel",
+      xAxisLabel: "xAxisLabel",
+      yAxisLabel: "yAxisLabel",
+      tooltipDisabled: "tooltipDisabled",
+      gradient: "gradient",
+      showGridLines: "showGridLines",
+      activeEntries: "activeEntries",
+      trimXAxisTicks: "trimXAxisTicks",
+      trimYAxisTicks: "trimYAxisTicks",
+      rotateXAxisTicks: "rotateXAxisTicks",
+      maxXAxisTickLength: "maxXAxisTickLength",
+      maxYAxisTickLength: "maxYAxisTickLength",
+      xAxisTickFormatting: "xAxisTickFormatting",
+      yAxisTickFormatting: "yAxisTickFormatting",
+      xAxisTicks: "xAxisTicks",
+      yAxisTicks: "yAxisTicks",
+      barPadding: "barPadding",
+      roundDomains: "roundDomains",
+      roundEdges: "roundEdges",
+      yScaleMax: "yScaleMax",
+      yScaleMin: "yScaleMin",
+      showDataLabel: "showDataLabel",
+      dataLabelFormatting: "dataLabelFormatting",
+      noBarWhenZero: "noBarWhenZero"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.ngfactory.js":
+  /*!****************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.ngfactory.js ***!
+    \****************************************************************************************/
+
+  /*! exports provided: RenderType_BarComponent, View_BarComponent_0, View_BarComponent_Host_0, BarComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartBarComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_BarComponent", function () {
+      return RenderType_BarComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarComponent_0", function () {
+      return View_BarComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_BarComponent_Host_0", function () {
+      return View_BarComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BarComponentNgFactory", function () {
+      return BarComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../common/svg-linear-gradient.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/svg-linear-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _bar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./bar.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_BarComponent = [];
+
+    var RenderType_BarComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_BarComponent,
+      data: {}
+    });
+
+    function View_BarComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:defs", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-svg-linear-gradient", ""]], null, null, null, _common_svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_SvgLinearGradientComponent_0"], _common_svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_SvgLinearGradientComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 573440, null, 0, _common_svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgLinearGradientComponent"], [], {
+        orientation: [0, "orientation"],
+        name: [1, "name"],
+        stops: [2, "stops"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.orientation;
+        var currVal_1 = _co.gradientId;
+        var currVal_2 = _co.gradientStops;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2);
+      }, null);
+    }
+
+    function View_BarComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_BarComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 0, ":svg:path", [["class", "bar"], ["role", "img"], ["stroke", "none"], ["tabIndex", "-1"]], [[2, "active", null], [2, "hidden", null], [1, "d", 0], [1, "aria-label", 0], [1, "fill", 0]], [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.select.emit(_co.data) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.hasGradient;
+
+        _ck(_v, 1, 0, currVal_0);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.isActive;
+        var currVal_2 = _co.hideBar;
+        var currVal_3 = _co.path;
+        var currVal_4 = _co.ariaLabel;
+        var currVal_5 = _co.hasGradient ? _co.gradientFill : _co.fill;
+
+        _ck(_v, 2, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5);
+      });
+    }
+
+    function View_BarComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-bar", ""]], null, [[null, "mouseenter"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("mouseenter" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseEnter() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseLeave() !== false;
+          ad = pd_1 && ad;
+        }
+
+        return ad;
+      }, View_BarComponent_0, RenderType_BarComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _bar_component__WEBPACK_IMPORTED_MODULE_4__["BarComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null);
+    }
+
+    var BarComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-bar]", _bar_component__WEBPACK_IMPORTED_MODULE_4__["BarComponent"], View_BarComponent_Host_0, {
+      fill: "fill",
+      data: "data",
+      width: "width",
+      height: "height",
+      x: "x",
+      y: "y",
+      orientation: "orientation",
+      roundEdges: "roundEdges",
+      gradient: "gradient",
+      offset: "offset",
+      isActive: "isActive",
+      stops: "stops",
+      animations: "animations",
+      ariaLabel: "ariaLabel",
+      noBarWhenZero: "noBarWhenZero"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-horizontal.component.ngfactory.js":
+  /*!******************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/series-horizontal.component.ngfactory.js ***!
+    \******************************************************************************************************/
+
+  /*! exports provided: RenderType_SeriesHorizontal, View_SeriesHorizontal_0, View_SeriesHorizontal_Host_0, SeriesHorizontalNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartSeriesHorizontalComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_SeriesHorizontal", function () {
+      return RenderType_SeriesHorizontal;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SeriesHorizontal_0", function () {
+      return View_SeriesHorizontal_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SeriesHorizontal_Host_0", function () {
+      return View_SeriesHorizontal_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SeriesHorizontalNgFactory", function () {
+      return SeriesHorizontalNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _bar_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./bar.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.directive.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _bar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./bar.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.js");
+    /* harmony import */
+
+
+    var _bar_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./bar-label.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _bar_label_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./bar-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _series_horizontal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./series-horizontal.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-horizontal.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_SeriesHorizontal = [];
+
+    var RenderType_SeriesHorizontal = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_SeriesHorizontal,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: ":leave",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 1
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 0
+                },
+                offset: null
+              },
+              timings: 500
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_SeriesHorizontal_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 16777216, null, null, 2, ":svg:g", [["ngx-charts-bar", ""], ["ngx-tooltip", ""]], [[24, "@animationState", 0]], [[null, "select"], [null, "activate"], [null, "deactivate"], [null, "focusin"], [null, "blur"], [null, "mouseenter"], [null, "mouseleave"], [null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("focusin" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onFocus() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onBlur() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseEnter() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseLeave($event.target) !== false;
+          ad = pd_3 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseClick() !== false;
+          ad = pd_4 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 2).onMouseEnter() !== false;
+          ad = pd_5 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 2).onMouseLeave() !== false;
+          ad = pd_6 && ad;
+        }
+
+        if ("select" === en) {
+          var pd_7 = _co.click($event) !== false;
+          ad = pd_7 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_8 = _co.activate.emit($event) !== false;
+          ad = pd_8 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_9 = _co.deactivate.emit($event) !== false;
+          ad = pd_9 && ad;
+        }
+
+        return ad;
+      }, _bar_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_BarComponent_0"], _bar_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_BarComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 147456, null, 0, _common_tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__["TooltipDirective"], [_common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_3__["TooltipService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], {
+        tooltipTitle: [0, "tooltipTitle"],
+        tooltipDisabled: [1, "tooltipDisabled"],
+        tooltipPlacement: [2, "tooltipPlacement"],
+        tooltipType: [3, "tooltipType"],
+        tooltipTemplate: [4, "tooltipTemplate"],
+        tooltipContext: [5, "tooltipContext"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 573440, null, 0, _bar_component__WEBPACK_IMPORTED_MODULE_4__["BarComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        fill: [0, "fill"],
+        data: [1, "data"],
+        width: [2, "width"],
+        height: [3, "height"],
+        x: [4, "x"],
+        y: [5, "y"],
+        orientation: [6, "orientation"],
+        roundEdges: [7, "roundEdges"],
+        gradient: [8, "gradient"],
+        isActive: [9, "isActive"],
+        stops: [10, "stops"],
+        animations: [11, "animations"],
+        ariaLabel: [12, "ariaLabel"],
+        noBarWhenZero: [13, "noBarWhenZero"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, null, null, 0))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.tooltipTemplate ? undefined : _v.context.$implicit.tooltipText;
+        var currVal_2 = _co.tooltipDisabled;
+        var currVal_3 = _co.tooltipPlacement;
+        var currVal_4 = _co.tooltipType;
+        var currVal_5 = _co.tooltipTemplate;
+        var currVal_6 = _v.context.$implicit.data;
+
+        _ck(_v, 1, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+
+        var currVal_7 = _v.context.$implicit.color;
+        var currVal_8 = _v.context.$implicit.data;
+        var currVal_9 = _v.context.$implicit.width;
+        var currVal_10 = _v.context.$implicit.height;
+        var currVal_11 = _v.context.$implicit.x;
+        var currVal_12 = _v.context.$implicit.y;
+        var currVal_13 = "horizontal";
+        var currVal_14 = _v.context.$implicit.roundEdges;
+        var currVal_15 = _co.gradient;
+
+        var currVal_16 = _co.isActive(_v.context.$implicit.data);
+
+        var currVal_17 = _v.context.$implicit.gradientStops;
+        var currVal_18 = _co.animations;
+        var currVal_19 = _v.context.$implicit.ariaLabel;
+        var currVal_20 = _co.noBarWhenZero;
+
+        _ck(_v, 2, 1, [currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20]);
+      }, function (_ck, _v) {
+        var currVal_0 = "active";
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_SeriesHorizontal_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-bar-label", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.dataLabelWidthChanged.emit({
+            size: $event,
+            index: _v.context.index
+          }) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _bar_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["View_BarLabelComponent_0"], _bar_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["RenderType_BarLabelComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 4767744, null, 0, _bar_label_component__WEBPACK_IMPORTED_MODULE_6__["BarLabelComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        value: [0, "value"],
+        valueFormatting: [1, "valueFormatting"],
+        barX: [2, "barX"],
+        barY: [3, "barY"],
+        barWidth: [4, "barWidth"],
+        barHeight: [5, "barHeight"],
+        orientation: [6, "orientation"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.context.$implicit.total;
+        var currVal_1 = _co.dataLabelFormatting;
+        var currVal_2 = _v.context.$implicit.x;
+        var currVal_3 = _v.context.$implicit.y;
+        var currVal_4 = _v.context.$implicit.width;
+        var currVal_5 = _v.context.$implicit.height;
+        var currVal_6 = "horizontal";
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+      }, null);
+    }
+
+    function View_SeriesHorizontal_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SeriesHorizontal_3)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.barsForDataLabels;
+        var currVal_1 = _co.trackDataLabelBy;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1);
+      }, null);
+    }
+
+    function View_SeriesHorizontal_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SeriesHorizontal_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SeriesHorizontal_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.bars;
+        var currVal_1 = _co.trackBy;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+
+        var currVal_2 = _co.showDataLabel;
+
+        _ck(_v, 3, 0, currVal_2);
+      }, null);
+    }
+
+    function View_SeriesHorizontal_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-series-horizontal", ""]], null, null, null, View_SeriesHorizontal_0, RenderType_SeriesHorizontal)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _series_horizontal_component__WEBPACK_IMPORTED_MODULE_8__["SeriesHorizontal"], [], null, null)], null, null);
+    }
+
+    var SeriesHorizontalNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-series-horizontal]", _series_horizontal_component__WEBPACK_IMPORTED_MODULE_8__["SeriesHorizontal"], View_SeriesHorizontal_Host_0, {
+      dims: "dims",
+      type: "type",
+      series: "series",
+      xScale: "xScale",
+      yScale: "yScale",
+      colors: "colors",
+      tooltipDisabled: "tooltipDisabled",
+      gradient: "gradient",
+      activeEntries: "activeEntries",
+      seriesName: "seriesName",
+      tooltipTemplate: "tooltipTemplate",
+      roundEdges: "roundEdges",
+      animations: "animations",
+      showDataLabel: "showDataLabel",
+      dataLabelFormatting: "dataLabelFormatting",
+      noBarWhenZero: "noBarWhenZero"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate",
+      dataLabelWidthChanged: "dataLabelWidthChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-vertical.component.ngfactory.js":
+  /*!****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/bar-chart/series-vertical.component.ngfactory.js ***!
+    \****************************************************************************************************/
+
+  /*! exports provided: RenderType_SeriesVerticalComponent, View_SeriesVerticalComponent_0, View_SeriesVerticalComponent_Host_0, SeriesVerticalComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseBarChartSeriesVerticalComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_SeriesVerticalComponent", function () {
+      return RenderType_SeriesVerticalComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SeriesVerticalComponent_0", function () {
+      return View_SeriesVerticalComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SeriesVerticalComponent_Host_0", function () {
+      return View_SeriesVerticalComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SeriesVerticalComponentNgFactory", function () {
+      return SeriesVerticalComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _bar_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./bar.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.directive.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _bar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./bar.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar.component.js");
+    /* harmony import */
+
+
+    var _bar_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./bar-label.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _bar_label_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./bar-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-label.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _series_vertical_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./series-vertical.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/series-vertical.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_SeriesVerticalComponent = [];
+
+    var RenderType_SeriesVerticalComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_SeriesVerticalComponent,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: ":leave",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 1
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 0
+                },
+                offset: null
+              },
+              timings: 500
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_SeriesVerticalComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 16777216, null, null, 2, ":svg:g", [["ngx-charts-bar", ""], ["ngx-tooltip", ""]], [[24, "@animationState", 0], [24, "@.disabled", 0]], [[null, "select"], [null, "activate"], [null, "deactivate"], [null, "focusin"], [null, "blur"], [null, "mouseenter"], [null, "mouseleave"], [null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("focusin" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onFocus() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onBlur() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseEnter() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseLeave($event.target) !== false;
+          ad = pd_3 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseClick() !== false;
+          ad = pd_4 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 2).onMouseEnter() !== false;
+          ad = pd_5 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 2).onMouseLeave() !== false;
+          ad = pd_6 && ad;
+        }
+
+        if ("select" === en) {
+          var pd_7 = _co.onClick($event) !== false;
+          ad = pd_7 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_8 = _co.activate.emit($event) !== false;
+          ad = pd_8 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_9 = _co.deactivate.emit($event) !== false;
+          ad = pd_9 && ad;
+        }
+
+        return ad;
+      }, _bar_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_BarComponent_0"], _bar_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_BarComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 147456, null, 0, _common_tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__["TooltipDirective"], [_common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_3__["TooltipService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], {
+        tooltipTitle: [0, "tooltipTitle"],
+        tooltipDisabled: [1, "tooltipDisabled"],
+        tooltipPlacement: [2, "tooltipPlacement"],
+        tooltipType: [3, "tooltipType"],
+        tooltipTemplate: [4, "tooltipTemplate"],
+        tooltipContext: [5, "tooltipContext"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 573440, null, 0, _bar_component__WEBPACK_IMPORTED_MODULE_4__["BarComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        fill: [0, "fill"],
+        data: [1, "data"],
+        width: [2, "width"],
+        height: [3, "height"],
+        x: [4, "x"],
+        y: [5, "y"],
+        orientation: [6, "orientation"],
+        roundEdges: [7, "roundEdges"],
+        gradient: [8, "gradient"],
+        isActive: [9, "isActive"],
+        stops: [10, "stops"],
+        animations: [11, "animations"],
+        ariaLabel: [12, "ariaLabel"],
+        noBarWhenZero: [13, "noBarWhenZero"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, null, null, 0))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_2 = _co.tooltipTemplate ? undefined : _v.context.$implicit.tooltipText;
+        var currVal_3 = _co.tooltipDisabled;
+        var currVal_4 = _co.tooltipPlacement;
+        var currVal_5 = _co.tooltipType;
+        var currVal_6 = _co.tooltipTemplate;
+        var currVal_7 = _v.context.$implicit.data;
+
+        _ck(_v, 1, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
+
+        var currVal_8 = _v.context.$implicit.color;
+        var currVal_9 = _v.context.$implicit.data;
+        var currVal_10 = _v.context.$implicit.width;
+        var currVal_11 = _v.context.$implicit.height;
+        var currVal_12 = _v.context.$implicit.x;
+        var currVal_13 = _v.context.$implicit.y;
+        var currVal_14 = "vertical";
+        var currVal_15 = _v.context.$implicit.roundEdges;
+        var currVal_16 = _co.gradient;
+
+        var currVal_17 = _co.isActive(_v.context.$implicit.data);
+
+        var currVal_18 = _v.context.$implicit.gradientStops;
+        var currVal_19 = _co.animations;
+        var currVal_20 = _v.context.$implicit.ariaLabel;
+        var currVal_21 = _co.noBarWhenZero;
+
+        _ck(_v, 2, 1, [currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21]);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "active";
+        var currVal_1 = !_co.animations;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1);
+      });
+    }
+
+    function View_SeriesVerticalComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-bar-label", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.dataLabelHeightChanged.emit({
+            size: $event,
+            index: _v.context.index
+          }) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _bar_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["View_BarLabelComponent_0"], _bar_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["RenderType_BarLabelComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 4767744, null, 0, _bar_label_component__WEBPACK_IMPORTED_MODULE_6__["BarLabelComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        value: [0, "value"],
+        valueFormatting: [1, "valueFormatting"],
+        barX: [2, "barX"],
+        barY: [3, "barY"],
+        barWidth: [4, "barWidth"],
+        barHeight: [5, "barHeight"],
+        orientation: [6, "orientation"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.context.$implicit.total;
+        var currVal_1 = _co.dataLabelFormatting;
+        var currVal_2 = _v.context.$implicit.x;
+        var currVal_3 = _v.context.$implicit.y;
+        var currVal_4 = _v.context.$implicit.width;
+        var currVal_5 = _v.context.$implicit.height;
+        var currVal_6 = "vertical";
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+      }, null);
+    }
+
+    function View_SeriesVerticalComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SeriesVerticalComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.barsForDataLabels;
+        var currVal_1 = _co.trackDataLabelBy;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1);
+      }, null);
+    }
+
+    function View_SeriesVerticalComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SeriesVerticalComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SeriesVerticalComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.bars;
+        var currVal_1 = _co.trackBy;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+
+        var currVal_2 = _co.showDataLabel;
+
+        _ck(_v, 3, 0, currVal_2);
+      }, null);
+    }
+
+    function View_SeriesVerticalComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-series-vertical", ""]], null, null, null, View_SeriesVerticalComponent_0, RenderType_SeriesVerticalComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _series_vertical_component__WEBPACK_IMPORTED_MODULE_8__["SeriesVerticalComponent"], [], null, null)], null, null);
+    }
+
+    var SeriesVerticalComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-series-vertical]", _series_vertical_component__WEBPACK_IMPORTED_MODULE_8__["SeriesVerticalComponent"], View_SeriesVerticalComponent_Host_0, {
+      dims: "dims",
+      type: "type",
+      series: "series",
+      xScale: "xScale",
+      yScale: "yScale",
+      colors: "colors",
+      gradient: "gradient",
+      activeEntries: "activeEntries",
+      seriesName: "seriesName",
+      tooltipDisabled: "tooltipDisabled",
+      tooltipTemplate: "tooltipTemplate",
+      roundEdges: "roundEdges",
+      animations: "animations",
+      showDataLabel: "showDataLabel",
+      dataLabelFormatting: "dataLabelFormatting",
+      noBarWhenZero: "noBarWhenZero"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate",
+      dataLabelHeightChanged: "dataLabelHeightChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/area.component.ngfactory.js":
+  /*!**************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/area.component.ngfactory.js ***!
+    \**************************************************************************************/
+
+  /*! exports provided: RenderType_AreaComponent, View_AreaComponent_0, View_AreaComponent_Host_0, AreaComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonAreaComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_AreaComponent", function () {
+      return RenderType_AreaComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AreaComponent_0", function () {
+      return View_AreaComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AreaComponent_Host_0", function () {
+      return View_AreaComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AreaComponentNgFactory", function () {
+      return AreaComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./svg-linear-gradient.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./svg-linear-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _area_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./area.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/area.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_AreaComponent = [];
+
+    var RenderType_AreaComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_AreaComponent,
+      data: {}
+    });
+
+    function View_AreaComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:defs", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-svg-linear-gradient", ""], ["orientation", "vertical"]], null, null, null, _svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_SvgLinearGradientComponent_0"], _svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_SvgLinearGradientComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 573440, null, 0, _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgLinearGradientComponent"], [], {
+        orientation: [0, "orientation"],
+        name: [1, "name"],
+        stops: [2, "stops"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "vertical";
+        var currVal_1 = _co.gradientId;
+        var currVal_2 = _co.gradientStops;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2);
+      }, null);
+    }
+
+    function View_AreaComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AreaComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 0, ":svg:path", [["class", "area"]], [[1, "d", 0], [1, "fill", 0], [4, "opacity", null]], null, null, null, null))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.gradient;
+
+        _ck(_v, 1, 0, currVal_0);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.areaPath;
+        var currVal_2 = _co.gradient ? _co.gradientFill : _co.fill;
+        var currVal_3 = _co.opacity;
+
+        _ck(_v, 2, 0, currVal_1, currVal_2, currVal_3);
+      });
+    }
+
+    function View_AreaComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-area", ""]], null, null, null, View_AreaComponent_0, RenderType_AreaComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _area_component__WEBPACK_IMPORTED_MODULE_4__["AreaComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null);
+    }
+
+    var AreaComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-area]", _area_component__WEBPACK_IMPORTED_MODULE_4__["AreaComponent"], View_AreaComponent_Host_0, {
+      data: "data",
+      path: "path",
+      startingPath: "startingPath",
+      fill: "fill",
+      opacity: "opacity",
+      startOpacity: "startOpacity",
+      endOpacity: "endOpacity",
+      activeLabel: "activeLabel",
+      gradient: "gradient",
+      stops: "stops",
+      animations: "animations"
+    }, {
+      select: "select"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.ngfactory.js":
+  /*!*************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.ngfactory.js ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: RenderType_AxisLabelComponent, View_AxisLabelComponent_0, View_AxisLabelComponent_Host_0, AxisLabelComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonAxesAxisLabelComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_AxisLabelComponent", function () {
+      return RenderType_AxisLabelComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AxisLabelComponent_0", function () {
+      return View_AxisLabelComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AxisLabelComponent_Host_0", function () {
+      return View_AxisLabelComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AxisLabelComponentNgFactory", function () {
+      return AxisLabelComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _axis_label_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./axis-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_AxisLabelComponent = [];
+
+    var RenderType_AxisLabelComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_AxisLabelComponent,
+      data: {}
+    });
+
+    function View_AxisLabelComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:text", [], [[1, "stroke-width", 0], [1, "x", 0], [1, "y", 0], [1, "text-anchor", 0], [1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](1, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.strokeWidth;
+        var currVal_1 = _co.x;
+        var currVal_2 = _co.y;
+        var currVal_3 = _co.textAnchor;
+        var currVal_4 = _co.transform;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+
+        var currVal_5 = _co.label;
+
+        _ck(_v, 1, 0, currVal_5);
+      });
+    }
+
+    function View_AxisLabelComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-axis-label", ""]], null, null, null, View_AxisLabelComponent_0, RenderType_AxisLabelComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _axis_label_component__WEBPACK_IMPORTED_MODULE_1__["AxisLabelComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null);
+    }
+
+    var AxisLabelComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-axis-label]", _axis_label_component__WEBPACK_IMPORTED_MODULE_1__["AxisLabelComponent"], View_AxisLabelComponent_Host_0, {
+      orient: "orient",
+      label: "label",
+      offset: "offset",
+      width: "width",
+      height: "height"
+    }, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis-ticks.component.ngfactory.js":
+  /*!***************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis-ticks.component.ngfactory.js ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: RenderType_XAxisTicksComponent, View_XAxisTicksComponent_0, View_XAxisTicksComponent_Host_0, XAxisTicksComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonAxesXAxisTicksComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_XAxisTicksComponent", function () {
+      return RenderType_XAxisTicksComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_XAxisTicksComponent_0", function () {
+      return View_XAxisTicksComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_XAxisTicksComponent_Host_0", function () {
+      return View_XAxisTicksComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "XAxisTicksComponentNgFactory", function () {
+      return XAxisTicksComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _x_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./x-axis-ticks.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis-ticks.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_XAxisTicksComponent = [];
+
+    var RenderType_XAxisTicksComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_XAxisTicksComponent,
+      data: {}
+    });
+
+    function View_XAxisTicksComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 4, ":svg:g", [["class", "tick"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:title", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](3, 0, null, null, 1, ":svg:text", [["stroke-width", "0.01"]], [[1, "text-anchor", 0], [1, "transform", 0], [4, "font-size", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](4, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.tickTransform(_v.context.$implicit);
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_1 = _co.tickFormat(_v.context.$implicit);
+
+        _ck(_v, 2, 0, currVal_1);
+
+        var currVal_2 = _co.textAnchor;
+        var currVal_3 = _co.textTransform;
+        var currVal_4 = "12px";
+
+        _ck(_v, 3, 0, currVal_2, currVal_3, currVal_4);
+
+        var currVal_5 = _co.tickTrim(_co.tickFormat(_v.context.$implicit));
+
+        _ck(_v, 4, 0, currVal_5);
+      });
+    }
+
+    function View_XAxisTicksComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 0, ":svg:line", [["class", "gridline-path gridline-path-vertical"], ["y2", "0"]], [[1, "y1", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.gridLineTransform();
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_1 = 0 - _co.gridLineHeight;
+
+        _ck(_v, 1, 0, currVal_1);
+      });
+    }
+
+    function View_XAxisTicksComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_XAxisTicksComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.showGridLines;
+
+        _ck(_v, 2, 0, currVal_1);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.tickTransform(_v.context.$implicit);
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_XAxisTicksComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, {
+        ticksElement: 0
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, [[1, 0], ["ticksel", 1]], null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_XAxisTicksComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_XAxisTicksComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.ticks;
+
+        _ck(_v, 3, 0, currVal_0);
+
+        var currVal_1 = _co.ticks;
+
+        _ck(_v, 5, 0, currVal_1);
+      }, null);
+    }
+
+    function View_XAxisTicksComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-x-axis-ticks", ""]], null, null, null, View_XAxisTicksComponent_0, RenderType_XAxisTicksComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 4767744, null, 0, _x_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__["XAxisTicksComponent"], [], null, null)], null, null);
+    }
+
+    var XAxisTicksComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-x-axis-ticks]", _x_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__["XAxisTicksComponent"], View_XAxisTicksComponent_Host_0, {
+      scale: "scale",
+      orient: "orient",
+      tickArguments: "tickArguments",
+      tickValues: "tickValues",
+      tickStroke: "tickStroke",
+      trimTicks: "trimTicks",
+      maxTickLength: "maxTickLength",
+      tickFormatting: "tickFormatting",
+      showGridLines: "showGridLines",
+      gridLineHeight: "gridLineHeight",
+      width: "width",
+      rotateTicks: "rotateTicks"
+    }, {
+      dimensionsChanged: "dimensionsChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.ngfactory.js":
+  /*!*********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.ngfactory.js ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: RenderType_XAxisComponent, View_XAxisComponent_0, View_XAxisComponent_Host_0, XAxisComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonAxesXAxisComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_XAxisComponent", function () {
+      return RenderType_XAxisComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_XAxisComponent_0", function () {
+      return View_XAxisComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_XAxisComponent_Host_0", function () {
+      return View_XAxisComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "XAxisComponentNgFactory", function () {
+      return XAxisComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _x_axis_ticks_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./x-axis-ticks.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis-ticks.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _x_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./x-axis-ticks.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis-ticks.component.js");
+    /* harmony import */
+
+
+    var _axis_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./axis-label.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _axis_label_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./axis-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _x_axis_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./x-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_XAxisComponent = [];
+
+    var RenderType_XAxisComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_XAxisComponent,
+      data: {}
+    });
+
+    function View_XAxisComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-x-axis-ticks", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.emitTicksHeight($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _x_axis_ticks_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_XAxisTicksComponent_0"], _x_axis_ticks_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_XAxisTicksComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 4767744, [[1, 4]], 0, _x_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__["XAxisTicksComponent"], [], {
+        scale: [0, "scale"],
+        orient: [1, "orient"],
+        tickArguments: [2, "tickArguments"],
+        tickValues: [3, "tickValues"],
+        tickStroke: [4, "tickStroke"],
+        trimTicks: [5, "trimTicks"],
+        maxTickLength: [6, "maxTickLength"],
+        tickFormatting: [7, "tickFormatting"],
+        showGridLines: [8, "showGridLines"],
+        gridLineHeight: [9, "gridLineHeight"],
+        width: [10, "width"],
+        rotateTicks: [11, "rotateTicks"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.xScale;
+        var currVal_1 = _co.xOrient;
+        var currVal_2 = _co.tickArguments;
+        var currVal_3 = _co.ticks;
+        var currVal_4 = _co.tickStroke;
+        var currVal_5 = _co.trimTicks;
+        var currVal_6 = _co.maxTickLength;
+        var currVal_7 = _co.tickFormatting;
+        var currVal_8 = _co.showGridLines;
+        var currVal_9 = _co.dims.height;
+        var currVal_10 = _co.dims.width;
+        var currVal_11 = _co.rotateTicks;
+
+        _ck(_v, 1, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11]);
+      }, null);
+    }
+
+    function View_XAxisComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-axis-label", ""]], null, null, null, _axis_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["View_AxisLabelComponent_0"], _axis_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["RenderType_AxisLabelComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _axis_label_component__WEBPACK_IMPORTED_MODULE_4__["AxisLabelComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        orient: [0, "orient"],
+        label: [1, "label"],
+        offset: [2, "offset"],
+        width: [3, "width"],
+        height: [4, "height"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "bottom";
+        var currVal_1 = _co.labelText;
+        var currVal_2 = _co.labelOffset;
+        var currVal_3 = _co.dims.width;
+        var currVal_4 = _co.dims.height;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+      }, null);
+    }
+
+    function View_XAxisComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, {
+        ticksComponent: 0
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 4, ":svg:g", [], [[1, "class", 0], [1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_XAxisComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_XAxisComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_2 = _co.xScale;
+
+        _ck(_v, 3, 0, currVal_2);
+
+        var currVal_3 = _co.showLabel;
+
+        _ck(_v, 5, 0, currVal_3);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.xAxisClassName;
+        var currVal_1 = _co.transform;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+      });
+    }
+
+    function View_XAxisComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-x-axis", ""]], null, null, null, View_XAxisComponent_0, RenderType_XAxisComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _x_axis_component__WEBPACK_IMPORTED_MODULE_6__["XAxisComponent"], [], null, null)], null, null);
+    }
+
+    var XAxisComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-x-axis]", _x_axis_component__WEBPACK_IMPORTED_MODULE_6__["XAxisComponent"], View_XAxisComponent_Host_0, {
+      xScale: "xScale",
+      dims: "dims",
+      trimTicks: "trimTicks",
+      rotateTicks: "rotateTicks",
+      maxTickLength: "maxTickLength",
+      tickFormatting: "tickFormatting",
+      showGridLines: "showGridLines",
+      showLabel: "showLabel",
+      labelText: "labelText",
+      ticks: "ticks",
+      xAxisTickInterval: "xAxisTickInterval",
+      xAxisTickCount: "xAxisTickCount",
+      xOrient: "xOrient",
+      xAxisOffset: "xAxisOffset"
+    }, {
+      dimensionsChanged: "dimensionsChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis-ticks.component.ngfactory.js":
+  /*!***************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis-ticks.component.ngfactory.js ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: RenderType_YAxisTicksComponent, View_YAxisTicksComponent_0, View_YAxisTicksComponent_Host_0, YAxisTicksComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonAxesYAxisTicksComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_YAxisTicksComponent", function () {
+      return RenderType_YAxisTicksComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_YAxisTicksComponent_0", function () {
+      return View_YAxisTicksComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_YAxisTicksComponent_Host_0", function () {
+      return View_YAxisTicksComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "YAxisTicksComponentNgFactory", function () {
+      return YAxisTicksComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _y_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./y-axis-ticks.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis-ticks.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_YAxisTicksComponent = [];
+
+    var RenderType_YAxisTicksComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_YAxisTicksComponent,
+      data: {}
+    });
+
+    function View_YAxisTicksComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 4, ":svg:g", [["class", "tick"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:title", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](3, 0, null, null, 1, ":svg:text", [["stroke-width", "0.01"]], [[1, "dy", 0], [1, "x", 0], [1, "y", 0], [1, "text-anchor", 0], [4, "font-size", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](4, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.transform(_v.context.$implicit);
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_1 = _co.tickFormat(_v.context.$implicit);
+
+        _ck(_v, 2, 0, currVal_1);
+
+        var currVal_2 = _co.dy;
+        var currVal_3 = _co.x1;
+        var currVal_4 = _co.y1;
+        var currVal_5 = _co.textAnchor;
+        var currVal_6 = "12px";
+
+        _ck(_v, 3, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+
+        var currVal_7 = _co.tickTrim(_co.tickFormat(_v.context.$implicit));
+
+        _ck(_v, 4, 0, currVal_7);
+      });
+    }
+
+    function View_YAxisTicksComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:path", [["class", "reference-area"]], [[1, "d", 0], [1, "transform", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.referenceAreaPath;
+
+        var currVal_1 = _co.gridLineTransform();
+
+        _ck(_v, 0, 0, currVal_0, currVal_1);
+      });
+    }
+
+    function View_YAxisTicksComponent_5(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:line", [["class", "gridline-path gridline-path-horizontal"], ["x1", "0"]], [[1, "x2", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.gridLineWidth;
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_YAxisTicksComponent_6(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:line", [["class", "gridline-path gridline-path-horizontal"], ["x1", "0"]], [[1, "x2", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = 0 - _co.gridLineWidth;
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_YAxisTicksComponent_4(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 4, ":svg:g", [], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_5)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_6)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](4, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.orient === "left";
+
+        _ck(_v, 2, 0, currVal_1);
+
+        var currVal_2 = _co.orient === "right";
+
+        _ck(_v, 4, 0, currVal_2);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.gridLineTransform();
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_YAxisTicksComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.showGridLines;
+
+        _ck(_v, 2, 0, currVal_1);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.transform(_v.context.$implicit);
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_YAxisTicksComponent_9(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 4, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:title", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](3, 0, null, null, 1, ":svg:text", [["class", "refline-label"]], [[1, "dy", 0], [1, "y", 0], [1, "x", 0], [1, "text-anchor", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](4, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.tickTrim(_co.tickFormat(_v.parent.parent.context.$implicit.value));
+
+        _ck(_v, 2, 0, currVal_0);
+
+        var currVal_1 = _co.dy;
+        var currVal_2 = 0 - 6;
+        var currVal_3 = _co.gridLineWidth;
+        var currVal_4 = _co.textAnchor;
+
+        _ck(_v, 3, 0, currVal_1, currVal_2, currVal_3, currVal_4);
+
+        var currVal_5 = _v.parent.parent.context.$implicit.name;
+
+        _ck(_v, 4, 0, currVal_5);
+      });
+    }
+
+    function View_YAxisTicksComponent_8(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 3, ":svg:g", [], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 0, ":svg:line", [["class", "refline-path gridline-path-horizontal"], ["x1", "0"]], [[1, "x2", 0], [1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_9)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_3 = _co.showRefLabels;
+
+        _ck(_v, 3, 0, currVal_3);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.transform(_v.parent.context.$implicit.value);
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_1 = _co.gridLineWidth;
+
+        var currVal_2 = _co.gridLineTransform();
+
+        _ck(_v, 1, 0, currVal_1, currVal_2);
+      });
+    }
+
+    function View_YAxisTicksComponent_7(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_8)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.showRefLines;
+
+        _ck(_v, 2, 0, currVal_0);
+      }, null);
+    }
+
+    function View_YAxisTicksComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, {
+        ticksElement: 0
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, [[1, 0], ["ticksel", 1]], null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](7, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisTicksComponent_7)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](9, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.ticks;
+
+        _ck(_v, 3, 0, currVal_0);
+
+        var currVal_1 = _co.referenceLineLength > 1 && _co.refMax && _co.refMin && _co.showRefLines;
+
+        _ck(_v, 5, 0, currVal_1);
+
+        var currVal_2 = _co.ticks;
+
+        _ck(_v, 7, 0, currVal_2);
+
+        var currVal_3 = _co.referenceLines;
+
+        _ck(_v, 9, 0, currVal_3);
+      }, null);
+    }
+
+    function View_YAxisTicksComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-y-axis-ticks", ""]], null, null, null, View_YAxisTicksComponent_0, RenderType_YAxisTicksComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 4767744, null, 0, _y_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__["YAxisTicksComponent"], [], null, null)], null, null);
+    }
+
+    var YAxisTicksComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-y-axis-ticks]", _y_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__["YAxisTicksComponent"], View_YAxisTicksComponent_Host_0, {
+      scale: "scale",
+      orient: "orient",
+      tickArguments: "tickArguments",
+      tickValues: "tickValues",
+      tickStroke: "tickStroke",
+      trimTicks: "trimTicks",
+      maxTickLength: "maxTickLength",
+      tickFormatting: "tickFormatting",
+      showGridLines: "showGridLines",
+      gridLineWidth: "gridLineWidth",
+      height: "height",
+      referenceLines: "referenceLines",
+      showRefLabels: "showRefLabels",
+      showRefLines: "showRefLines"
+    }, {
+      dimensionsChanged: "dimensionsChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.ngfactory.js":
+  /*!*********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.ngfactory.js ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: RenderType_YAxisComponent, View_YAxisComponent_0, View_YAxisComponent_Host_0, YAxisComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonAxesYAxisComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_YAxisComponent", function () {
+      return RenderType_YAxisComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_YAxisComponent_0", function () {
+      return View_YAxisComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_YAxisComponent_Host_0", function () {
+      return View_YAxisComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "YAxisComponentNgFactory", function () {
+      return YAxisComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _y_axis_ticks_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./y-axis-ticks.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis-ticks.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _y_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./y-axis-ticks.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis-ticks.component.js");
+    /* harmony import */
+
+
+    var _axis_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./axis-label.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _axis_label_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./axis-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/axis-label.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _y_axis_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./y-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_YAxisComponent = [];
+
+    var RenderType_YAxisComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_YAxisComponent,
+      data: {}
+    });
+
+    function View_YAxisComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-y-axis-ticks", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.emitTicksWidth($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _y_axis_ticks_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_YAxisTicksComponent_0"], _y_axis_ticks_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_YAxisTicksComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 4767744, [[1, 4]], 0, _y_axis_ticks_component__WEBPACK_IMPORTED_MODULE_2__["YAxisTicksComponent"], [], {
+        scale: [0, "scale"],
+        orient: [1, "orient"],
+        tickArguments: [2, "tickArguments"],
+        tickValues: [3, "tickValues"],
+        tickStroke: [4, "tickStroke"],
+        trimTicks: [5, "trimTicks"],
+        maxTickLength: [6, "maxTickLength"],
+        tickFormatting: [7, "tickFormatting"],
+        showGridLines: [8, "showGridLines"],
+        gridLineWidth: [9, "gridLineWidth"],
+        height: [10, "height"],
+        referenceLines: [11, "referenceLines"],
+        showRefLabels: [12, "showRefLabels"],
+        showRefLines: [13, "showRefLines"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.yScale;
+        var currVal_1 = _co.yOrient;
+        var currVal_2 = _co.tickArguments;
+        var currVal_3 = _co.ticks;
+        var currVal_4 = _co.tickStroke;
+        var currVal_5 = _co.trimTicks;
+        var currVal_6 = _co.maxTickLength;
+        var currVal_7 = _co.tickFormatting;
+        var currVal_8 = _co.showGridLines;
+        var currVal_9 = _co.dims.width;
+        var currVal_10 = _co.dims.height;
+        var currVal_11 = _co.referenceLines;
+        var currVal_12 = _co.showRefLabels;
+        var currVal_13 = _co.showRefLines;
+
+        _ck(_v, 1, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13]);
+      }, null);
+    }
+
+    function View_YAxisComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-axis-label", ""]], null, null, null, _axis_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["View_AxisLabelComponent_0"], _axis_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["RenderType_AxisLabelComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _axis_label_component__WEBPACK_IMPORTED_MODULE_4__["AxisLabelComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        orient: [0, "orient"],
+        label: [1, "label"],
+        offset: [2, "offset"],
+        width: [3, "width"],
+        height: [4, "height"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.yOrient;
+        var currVal_1 = _co.labelText;
+        var currVal_2 = _co.labelOffset;
+        var currVal_3 = _co.dims.width;
+        var currVal_4 = _co.dims.height;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+      }, null);
+    }
+
+    function View_YAxisComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, {
+        ticksComponent: 0
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 4, ":svg:g", [], [[1, "class", 0], [1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_YAxisComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_2 = _co.yScale;
+
+        _ck(_v, 3, 0, currVal_2);
+
+        var currVal_3 = _co.showLabel;
+
+        _ck(_v, 5, 0, currVal_3);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.yAxisClassName;
+        var currVal_1 = _co.transform;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+      });
+    }
+
+    function View_YAxisComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-y-axis", ""]], null, null, null, View_YAxisComponent_0, RenderType_YAxisComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _y_axis_component__WEBPACK_IMPORTED_MODULE_6__["YAxisComponent"], [], null, null)], null, null);
+    }
+
+    var YAxisComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-y-axis]", _y_axis_component__WEBPACK_IMPORTED_MODULE_6__["YAxisComponent"], View_YAxisComponent_Host_0, {
+      yScale: "yScale",
+      dims: "dims",
+      trimTicks: "trimTicks",
+      maxTickLength: "maxTickLength",
+      tickFormatting: "tickFormatting",
+      ticks: "ticks",
+      showGridLines: "showGridLines",
+      showLabel: "showLabel",
+      labelText: "labelText",
+      yAxisTickInterval: "yAxisTickInterval",
+      yAxisTickCount: "yAxisTickCount",
+      yOrient: "yOrient",
+      referenceLines: "referenceLines",
+      showRefLines: "showRefLines",
+      showRefLabels: "showRefLabels",
+      yAxisOffset: "yAxisOffset"
+    }, {
+      dimensionsChanged: "dimensionsChanged"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/base-chart.component.css.ngstyle.js":
+  /*!**********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/base-chart.component.css.ngstyle.js ***!
+    \**********************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonBaseChartComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".ngx-charts {\n  float: left;\n  overflow: visible; }\n  .ngx-charts .circle,\n  .ngx-charts .bar,\n  .ngx-charts .arc {\n    cursor: pointer; }\n  .ngx-charts .bar.active, .ngx-charts .bar:hover,\n  .ngx-charts .cell.active,\n  .ngx-charts .cell:hover,\n  .ngx-charts .arc.active,\n  .ngx-charts .arc:hover,\n  .ngx-charts .card.active,\n  .ngx-charts .card:hover {\n    opacity: 0.8;\n    transition: opacity 100ms ease-in-out; }\n  .ngx-charts .bar:focus,\n  .ngx-charts .cell:focus,\n  .ngx-charts .arc:focus,\n  .ngx-charts .card:focus {\n    outline: none; }\n  .ngx-charts .bar.hidden,\n  .ngx-charts .cell.hidden,\n  .ngx-charts .arc.hidden,\n  .ngx-charts .card.hidden {\n    display: none; }\n  .ngx-charts g:focus {\n    outline: none; }\n  .ngx-charts .line-series.inactive,\n  .ngx-charts .line-series-range.inactive,\n  .ngx-charts .polar-series-path.inactive,\n  .ngx-charts .polar-series-area.inactive,\n  .ngx-charts .area-series.inactive {\n    transition: opacity 100ms ease-in-out;\n    opacity: .2; }\n  .ngx-charts .line-highlight {\n    display: none; }\n  .ngx-charts .line-highlight.active {\n      display: block; }\n  .ngx-charts .area {\n    opacity: 0.6; }\n  .ngx-charts .circle:hover {\n    cursor: pointer; }\n  .ngx-charts .label {\n    font-size: 12px;\n    font-weight: normal; }\n  .ngx-charts .tooltip-anchor {\n    fill: black; }\n  .ngx-charts .gridline-path {\n    stroke: #ddd;\n    stroke-width: 1;\n    fill: none; }\n  .ngx-charts .refline-path {\n    stroke: #a8b2c7;\n    stroke-width: 1;\n    stroke-dasharray: 5;\n    stroke-dashoffset: 5; }\n  .ngx-charts .refline-label {\n    font-size: 9px; }\n  .ngx-charts .reference-area {\n    fill-opacity: 0.05;\n    fill: #000; }\n  .ngx-charts .gridline-path-dotted {\n    stroke: #ddd;\n    stroke-width: 1;\n    fill: none;\n    stroke-dasharray: 1, 20;\n    stroke-dashoffset: 3; }\n  .ngx-charts .grid-panel rect {\n    fill: none; }\n  .ngx-charts .grid-panel.odd rect {\n    fill: rgba(0, 0, 0, 0.05); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2NvbW1vbi9iYXNlLWNoYXJ0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsaUJBQWlCLEVBQUU7RUFDbkI7OztJQUdFLGVBQWUsRUFBRTtFQUNuQjs7Ozs7OztJQU9FLFlBQVk7SUFDWixxQ0FBcUMsRUFBRTtFQUN6Qzs7OztJQUlFLGFBQWEsRUFBRTtFQUNqQjs7OztJQUlFLGFBQWEsRUFBRTtFQUNqQjtJQUNFLGFBQWEsRUFBRTtFQUNqQjs7Ozs7SUFLRSxxQ0FBcUM7SUFDckMsV0FBVyxFQUFFO0VBQ2Y7SUFDRSxhQUFhLEVBQUU7RUFDZjtNQUNFLGNBQWMsRUFBRTtFQUNwQjtJQUNFLFlBQVksRUFBRTtFQUNoQjtJQUNFLGVBQWUsRUFBRTtFQUNuQjtJQUNFLGVBQWU7SUFDZixtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLFdBQVcsRUFBRTtFQUNmO0lBQ0UsWUFBWTtJQUNaLGVBQWU7SUFDZixVQUFVLEVBQUU7RUFDZDtJQUNFLGVBQWU7SUFDZixlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG9CQUFvQixFQUFFO0VBQ3hCO0lBQ0UsY0FBYyxFQUFFO0VBQ2xCO0lBQ0Usa0JBQWtCO0lBQ2xCLFVBQVUsRUFBRTtFQUNkO0lBQ0UsWUFBWTtJQUNaLGVBQWU7SUFDZixVQUFVO0lBQ1YsdUJBQXVCO0lBQ3ZCLG9CQUFvQixFQUFFO0VBQ3hCO0lBQ0UsVUFBVSxFQUFFO0VBQ2Q7SUFDRSx5QkFBeUIsRUFBRSIsImZpbGUiOiJub2RlX21vZHVsZXMvQHN3aW1sYW5lL25neC1jaGFydHMvcmVsZWFzZS9jb21tb24vYmFzZS1jaGFydC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5neC1jaGFydHMge1xuICBmbG9hdDogbGVmdDtcbiAgb3ZlcmZsb3c6IHZpc2libGU7IH1cbiAgLm5neC1jaGFydHMgLmNpcmNsZSxcbiAgLm5neC1jaGFydHMgLmJhcixcbiAgLm5neC1jaGFydHMgLmFyYyB7XG4gICAgY3Vyc29yOiBwb2ludGVyOyB9XG4gIC5uZ3gtY2hhcnRzIC5iYXIuYWN0aXZlLCAubmd4LWNoYXJ0cyAuYmFyOmhvdmVyLFxuICAubmd4LWNoYXJ0cyAuY2VsbC5hY3RpdmUsXG4gIC5uZ3gtY2hhcnRzIC5jZWxsOmhvdmVyLFxuICAubmd4LWNoYXJ0cyAuYXJjLmFjdGl2ZSxcbiAgLm5neC1jaGFydHMgLmFyYzpob3ZlcixcbiAgLm5neC1jaGFydHMgLmNhcmQuYWN0aXZlLFxuICAubmd4LWNoYXJ0cyAuY2FyZDpob3ZlciB7XG4gICAgb3BhY2l0eTogMC44O1xuICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZS1pbi1vdXQ7IH1cbiAgLm5neC1jaGFydHMgLmJhcjpmb2N1cyxcbiAgLm5neC1jaGFydHMgLmNlbGw6Zm9jdXMsXG4gIC5uZ3gtY2hhcnRzIC5hcmM6Zm9jdXMsXG4gIC5uZ3gtY2hhcnRzIC5jYXJkOmZvY3VzIHtcbiAgICBvdXRsaW5lOiBub25lOyB9XG4gIC5uZ3gtY2hhcnRzIC5iYXIuaGlkZGVuLFxuICAubmd4LWNoYXJ0cyAuY2VsbC5oaWRkZW4sXG4gIC5uZ3gtY2hhcnRzIC5hcmMuaGlkZGVuLFxuICAubmd4LWNoYXJ0cyAuY2FyZC5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLm5neC1jaGFydHMgZzpmb2N1cyB7XG4gICAgb3V0bGluZTogbm9uZTsgfVxuICAubmd4LWNoYXJ0cyAubGluZS1zZXJpZXMuaW5hY3RpdmUsXG4gIC5uZ3gtY2hhcnRzIC5saW5lLXNlcmllcy1yYW5nZS5pbmFjdGl2ZSxcbiAgLm5neC1jaGFydHMgLnBvbGFyLXNlcmllcy1wYXRoLmluYWN0aXZlLFxuICAubmd4LWNoYXJ0cyAucG9sYXItc2VyaWVzLWFyZWEuaW5hY3RpdmUsXG4gIC5uZ3gtY2hhcnRzIC5hcmVhLXNlcmllcy5pbmFjdGl2ZSB7XG4gICAgdHJhbnNpdGlvbjogb3BhY2l0eSAxMDBtcyBlYXNlLWluLW91dDtcbiAgICBvcGFjaXR5OiAuMjsgfVxuICAubmd4LWNoYXJ0cyAubGluZS1oaWdobGlnaHQge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgICAubmd4LWNoYXJ0cyAubGluZS1oaWdobGlnaHQuYWN0aXZlIHtcbiAgICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5uZ3gtY2hhcnRzIC5hcmVhIHtcbiAgICBvcGFjaXR5OiAwLjY7IH1cbiAgLm5neC1jaGFydHMgLmNpcmNsZTpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyOyB9XG4gIC5uZ3gtY2hhcnRzIC5sYWJlbCB7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7IH1cbiAgLm5neC1jaGFydHMgLnRvb2x0aXAtYW5jaG9yIHtcbiAgICBmaWxsOiBibGFjazsgfVxuICAubmd4LWNoYXJ0cyAuZ3JpZGxpbmUtcGF0aCB7XG4gICAgc3Ryb2tlOiAjZGRkO1xuICAgIHN0cm9rZS13aWR0aDogMTtcbiAgICBmaWxsOiBub25lOyB9XG4gIC5uZ3gtY2hhcnRzIC5yZWZsaW5lLXBhdGgge1xuICAgIHN0cm9rZTogI2E4YjJjNztcbiAgICBzdHJva2Utd2lkdGg6IDE7XG4gICAgc3Ryb2tlLWRhc2hhcnJheTogNTtcbiAgICBzdHJva2UtZGFzaG9mZnNldDogNTsgfVxuICAubmd4LWNoYXJ0cyAucmVmbGluZS1sYWJlbCB7XG4gICAgZm9udC1zaXplOiA5cHg7IH1cbiAgLm5neC1jaGFydHMgLnJlZmVyZW5jZS1hcmVhIHtcbiAgICBmaWxsLW9wYWNpdHk6IDAuMDU7XG4gICAgZmlsbDogIzAwMDsgfVxuICAubmd4LWNoYXJ0cyAuZ3JpZGxpbmUtcGF0aC1kb3R0ZWQge1xuICAgIHN0cm9rZTogI2RkZDtcbiAgICBzdHJva2Utd2lkdGg6IDE7XG4gICAgZmlsbDogbm9uZTtcbiAgICBzdHJva2UtZGFzaGFycmF5OiAxLCAyMDtcbiAgICBzdHJva2UtZGFzaG9mZnNldDogMzsgfVxuICAubmd4LWNoYXJ0cyAuZ3JpZC1wYW5lbCByZWN0IHtcbiAgICBmaWxsOiBub25lOyB9XG4gIC5uZ3gtY2hhcnRzIC5ncmlkLXBhbmVsLm9kZCByZWN0IHtcbiAgICBmaWxsOiByZ2JhKDAsIDAsIDAsIDAuMDUpOyB9XG4iXX0= */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.ngfactory.js":
+  /*!**********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.ngfactory.js ***!
+    \**********************************************************************************************/
+
+  /*! exports provided: RenderType_ChartComponent, View_ChartComponent_0, View_ChartComponent_Host_0, ChartComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonChartsChartComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_ChartComponent", function () {
+      return RenderType_ChartComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_ChartComponent_0", function () {
+      return View_ChartComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_ChartComponent_Host_0", function () {
+      return View_ChartComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ChartComponentNgFactory", function () {
+      return ChartComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _legend_scale_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../legend/scale-legend.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _legend_scale_legend_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../legend/scale-legend.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+    /* harmony import */
+
+
+    var _legend_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../legend/legend.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _legend_legend_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../legend/legend.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _tooltip_injection_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../tooltip/injection.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/injection.service.js");
+    /* harmony import */
+
+
+    var _chart_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_ChartComponent = [];
+
+    var RenderType_ChartComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_ChartComponent,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: ":enter",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 0
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 1
+                },
+                offset: null
+              },
+              timings: "500ms 100ms"
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_ChartComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "ngx-charts-scale-legend", [["class", "chart-legend"]], null, null, null, _legend_scale_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_ScaleLegendComponent_0"], _legend_scale_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_ScaleLegendComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _legend_scale_legend_component__WEBPACK_IMPORTED_MODULE_2__["ScaleLegendComponent"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]], {
+        valueRange: [0, "valueRange"],
+        colors: [1, "colors"],
+        height: [2, "height"],
+        width: [3, "width"],
+        horizontal: [4, "horizontal"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.legendOptions.domain;
+        var currVal_1 = _co.legendOptions.colors;
+        var currVal_2 = _co.view[1];
+        var currVal_3 = _co.legendWidth;
+        var currVal_4 = _co.legendOptions && _co.legendOptions.position === "below";
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+      }, null);
+    }
+
+    function View_ChartComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "ngx-charts-legend", [["class", "chart-legend"]], null, [[null, "labelClick"], [null, "labelActivate"], [null, "labelDeactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("labelClick" === en) {
+          var pd_0 = _co.legendLabelClick.emit($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("labelActivate" === en) {
+          var pd_1 = _co.legendLabelActivate.emit($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("labelDeactivate" === en) {
+          var pd_2 = _co.legendLabelDeactivate.emit($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _legend_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_LegendComponent_0"], _legend_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_LegendComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _legend_legend_component__WEBPACK_IMPORTED_MODULE_5__["LegendComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]], {
+        data: [0, "data"],
+        title: [1, "title"],
+        colors: [2, "colors"],
+        height: [3, "height"],
+        width: [4, "width"],
+        activeEntries: [5, "activeEntries"],
+        horizontal: [6, "horizontal"]
+      }, {
+        labelClick: "labelClick",
+        labelActivate: "labelActivate",
+        labelDeactivate: "labelDeactivate"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.legendOptions.domain;
+        var currVal_1 = _co.legendOptions.title;
+        var currVal_2 = _co.legendOptions.colors;
+        var currVal_3 = _co.view[1];
+        var currVal_4 = _co.legendWidth;
+        var currVal_5 = _co.activeEntries;
+        var currVal_6 = _co.legendOptions && _co.legendOptions.position === "below";
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+      }, null);
+    }
+
+    function View_ChartComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 6, "div", [["class", "ngx-charts-outer"]], [[4, "width", "px"], [24, "@animationState", 0], [24, "@.disabled", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:svg", [["class", "ngx-charts"]], [[1, "width", 0], [1, "height", 0]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵncd"](null, 0), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_ChartComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](4, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_ChartComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](6, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_5 = _co.showLegend && _co.legendType === "scaleLegend";
+
+        _ck(_v, 4, 0, currVal_5);
+
+        var currVal_6 = _co.showLegend && _co.legendType === "legend";
+
+        _ck(_v, 6, 0, currVal_6);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.view[0];
+        var currVal_1 = "active";
+        var currVal_2 = !_co.animations;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2);
+
+        var currVal_3 = _co.chartWidth;
+        var currVal_4 = _co.view[1];
+
+        _ck(_v, 1, 0, currVal_3, currVal_4);
+      });
+    }
+
+    function View_ChartComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 16777216, null, null, 2, "ngx-charts-chart", [], null, null, null, View_ChartComponent_0, RenderType_ChartComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, _tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"], _tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"], [_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_8__["InjectionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 573440, null, 0, _chart_component__WEBPACK_IMPORTED_MODULE_9__["ChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_7__["TooltipService"]], null, null)], null, null);
+    }
+
+    var ChartComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("ngx-charts-chart", _chart_component__WEBPACK_IMPORTED_MODULE_9__["ChartComponent"], View_ChartComponent_Host_0, {
+      view: "view",
+      showLegend: "showLegend",
+      legendOptions: "legendOptions",
+      data: "data",
+      legendData: "legendData",
+      legendType: "legendType",
+      colors: "colors",
+      activeEntries: "activeEntries",
+      animations: "animations"
+    }, {
+      legendLabelClick: "legendLabelClick",
+      legendLabelActivate: "legendLabelActivate",
+      legendLabelDeactivate: "legendLabelDeactivate"
+    }, ["*"]);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/circle-series.component.ngfactory.js":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/circle-series.component.ngfactory.js ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: RenderType_CircleSeriesComponent, View_CircleSeriesComponent_0, View_CircleSeriesComponent_Host_0, CircleSeriesComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonCircleSeriesComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_CircleSeriesComponent", function () {
+      return RenderType_CircleSeriesComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_CircleSeriesComponent_0", function () {
+      return View_CircleSeriesComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_CircleSeriesComponent_Host_0", function () {
+      return View_CircleSeriesComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CircleSeriesComponentNgFactory", function () {
+      return CircleSeriesComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./svg-linear-gradient.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./svg-linear-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _circle_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./circle.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/circle.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./tooltip/tooltip.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.directive.js");
+    /* harmony import */
+
+
+    var _tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _circle_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./circle.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/circle.component.js");
+    /* harmony import */
+
+
+    var _circle_series_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./circle-series.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/circle-series.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_CircleSeriesComponent = [];
+
+    var RenderType_CircleSeriesComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_CircleSeriesComponent,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: ":enter",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 0
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 1
+                },
+                offset: null
+              },
+              timings: 250
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_CircleSeriesComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:rect", [["class", "tooltip-bar"]], [[24, "@animationState", 0], [1, "x", 0], [1, "y", 0], [1, "width", 0], [1, "height", 0], [1, "fill", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "active";
+        var currVal_1 = _co.circle.cx - _co.circle.radius;
+        var currVal_2 = _co.circle.cy;
+        var currVal_3 = _co.circle.radius * 2;
+        var currVal_4 = _co.circle.height;
+        var currVal_5 = _co.gradientFill;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5);
+      });
+    }
+
+    function View_CircleSeriesComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 9, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 2, ":svg:defs", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 1, ":svg:g", [["ngx-charts-svg-linear-gradient", ""], ["orientation", "vertical"]], null, null, null, _svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_SvgLinearGradientComponent_0"], _svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_SvgLinearGradientComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 573440, null, 0, _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgLinearGradientComponent"], [], {
+        orientation: [0, "orientation"],
+        name: [1, "name"],
+        stops: [2, "stops"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_CircleSeriesComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](6, 16777216, null, null, 3, ":svg:g", [["class", "circle"], ["ngx-charts-circle", ""], ["ngx-tooltip", ""]], [[2, "active", null]], [[null, "select"], [null, "activate"], [null, "deactivate"], [null, "focusin"], [null, "blur"], [null, "mouseenter"], [null, "mouseleave"], [null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("focusin" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 7).onFocus() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 7).onBlur() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 7).onMouseEnter() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 7).onMouseLeave($event.target) !== false;
+          ad = pd_3 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 7).onMouseClick() !== false;
+          ad = pd_4 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 8).onClick() !== false;
+          ad = pd_5 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 8).onMouseEnter() !== false;
+          ad = pd_6 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 8).onMouseLeave() !== false;
+          ad = pd_7 && ad;
+        }
+
+        if ("select" === en) {
+          var pd_8 = _co.onClick(_co.circle.data) !== false;
+          ad = pd_8 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_9 = _co.activateCircle() !== false;
+          ad = pd_9 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_10 = _co.deactivateCircle() !== false;
+          ad = pd_10 && ad;
+        }
+
+        return ad;
+      }, _circle_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_CircleComponent_0"], _circle_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_CircleComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](7, 147456, null, 0, _tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_5__["TooltipDirective"], [_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_6__["TooltipService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], {
+        tooltipTitle: [0, "tooltipTitle"],
+        tooltipDisabled: [1, "tooltipDisabled"],
+        tooltipPlacement: [2, "tooltipPlacement"],
+        tooltipType: [3, "tooltipType"],
+        tooltipTemplate: [4, "tooltipTemplate"],
+        tooltipContext: [5, "tooltipContext"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](8, 573440, null, 0, _circle_component__WEBPACK_IMPORTED_MODULE_7__["CircleComponent"], [], {
+        cx: [0, "cx"],
+        cy: [1, "cy"],
+        r: [2, "r"],
+        fill: [3, "fill"],
+        data: [4, "data"],
+        classNames: [5, "classNames"],
+        pointerEvents: [6, "pointerEvents"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](9, {
+        name: 0
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "vertical";
+        var currVal_1 = _co.gradientId;
+        var currVal_2 = _co.circle.gradientStops;
+
+        _ck(_v, 3, 0, currVal_0, currVal_1, currVal_2);
+
+        var currVal_3 = _co.barVisible && _co.type === "standard";
+
+        _ck(_v, 5, 0, currVal_3);
+
+        var currVal_5 = _co.tooltipTemplate ? undefined : _co.getTooltipText(_co.circle);
+        var currVal_6 = _co.tooltipDisabled;
+        var currVal_7 = "top";
+        var currVal_8 = "tooltip";
+        var currVal_9 = _co.tooltipTemplate;
+        var currVal_10 = _co.circle.data;
+
+        _ck(_v, 7, 0, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10);
+
+        var currVal_11 = _co.circle.cx;
+        var currVal_12 = _co.circle.cy;
+        var currVal_13 = _co.circle.radius;
+        var currVal_14 = _co.circle.color;
+        var currVal_15 = _co.circle.value;
+        var currVal_16 = _co.circle.classNames;
+        var currVal_17 = _co.circle.value === 0 ? "none" : "all";
+
+        _ck(_v, 8, 0, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_4 = _co.isActive(_ck(_v, 9, 0, _co.circle.seriesName));
+
+        _ck(_v, 6, 0, currVal_4);
+      });
+    }
+
+    function View_CircleSeriesComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_CircleSeriesComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.circle;
+
+        _ck(_v, 1, 0, currVal_0);
+      }, null);
+    }
+
+    function View_CircleSeriesComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-circle-series", ""]], null, null, null, View_CircleSeriesComponent_0, RenderType_CircleSeriesComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 638976, null, 0, _circle_series_component__WEBPACK_IMPORTED_MODULE_8__["CircleSeriesComponent"], [], null, null)], function (_ck, _v) {
+        _ck(_v, 1, 0);
+      }, null);
+    }
+
+    var CircleSeriesComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-circle-series]", _circle_series_component__WEBPACK_IMPORTED_MODULE_8__["CircleSeriesComponent"], View_CircleSeriesComponent_Host_0, {
+      data: "data",
+      type: "type",
+      xScale: "xScale",
+      yScale: "yScale",
+      colors: "colors",
+      scaleType: "scaleType",
+      visibleValue: "visibleValue",
+      activeEntries: "activeEntries",
+      tooltipDisabled: "tooltipDisabled",
+      tooltipTemplate: "tooltipTemplate"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/circle.component.ngfactory.js":
+  /*!****************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/circle.component.ngfactory.js ***!
+    \****************************************************************************************/
+
+  /*! exports provided: RenderType_CircleComponent, View_CircleComponent_0, View_CircleComponent_Host_0, CircleComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonCircleComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_CircleComponent", function () {
+      return RenderType_CircleComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_CircleComponent_0", function () {
+      return View_CircleComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_CircleComponent_Host_0", function () {
+      return View_CircleComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CircleComponentNgFactory", function () {
+      return CircleComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _circle_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./circle.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/circle.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_CircleComponent = [];
+
+    var RenderType_CircleComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_CircleComponent,
+      data: {}
+    });
+
+    function View_CircleComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:circle", [], [[1, "cx", 0], [1, "cy", 0], [1, "r", 0], [1, "fill", 0], [1, "stroke", 0], [1, "opacity", 0], [1, "class", 0], [1, "pointer-events", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.cx;
+        var currVal_1 = _co.cy;
+        var currVal_2 = _co.r;
+        var currVal_3 = _co.fill;
+        var currVal_4 = _co.stroke;
+        var currVal_5 = _co.circleOpacity;
+        var currVal_6 = _co.classNames;
+        var currVal_7 = _co.pointerEvents;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
+      });
+    }
+
+    function View_CircleComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-circle", ""]], null, [[null, "click"], [null, "mouseenter"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("click" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onClick() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseEnter() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseLeave() !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, View_CircleComponent_0, RenderType_CircleComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _circle_component__WEBPACK_IMPORTED_MODULE_1__["CircleComponent"], [], null, null)], null, null);
+    }
+
+    var CircleComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-circle]", _circle_component__WEBPACK_IMPORTED_MODULE_1__["CircleComponent"], View_CircleComponent_Host_0, {
+      cx: "cx",
+      cy: "cy",
+      r: "r",
+      fill: "fill",
+      stroke: "stroke",
+      data: "data",
+      classNames: "classNames",
+      circleOpacity: "circleOpacity",
+      pointerEvents: "pointerEvents"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/count/count.directive.ngfactory.js":
+  /*!*********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/count/count.directive.ngfactory.js ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: RenderType_CountUpDirective, View_CountUpDirective_0, View_CountUpDirective_Host_0, CountUpDirectiveNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonCountCountDirectiveNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_CountUpDirective", function () {
+      return RenderType_CountUpDirective;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_CountUpDirective_0", function () {
+      return View_CountUpDirective_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_CountUpDirective_Host_0", function () {
+      return View_CountUpDirective_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CountUpDirectiveNgFactory", function () {
+      return CountUpDirectiveNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _count_directive__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./count.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/count/count.directive.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_CountUpDirective = [];
+
+    var RenderType_CountUpDirective = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_CountUpDirective,
+      data: {}
+    });
+
+    function View_CountUpDirective_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](0, null, ["", ""]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.value;
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_CountUpDirective_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "div", [["ngx-charts-count-up", ""]], null, null, null, View_CountUpDirective_0, RenderType_CountUpDirective)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 180224, null, 0, _count_directive__WEBPACK_IMPORTED_MODULE_1__["CountUpDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null);
+    }
+
+    var CountUpDirectiveNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("[ngx-charts-count-up]", _count_directive__WEBPACK_IMPORTED_MODULE_1__["CountUpDirective"], View_CountUpDirective_Host_0, {
+      countDuration: "countDuration",
+      countPrefix: "countPrefix",
+      countSuffix: "countSuffix",
+      valueFormatting: "valueFormatting",
+      countDecimals: "countDecimals",
+      countTo: "countTo",
+      countFrom: "countFrom"
+    }, {
+      countChange: "countChange",
+      countFinish: "countFinish"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.css.ngstyle.js":
+  /*!**********************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.css.ngstyle.js ***!
+    \**********************************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendAdvancedLegendComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".advanced-pie-legend {\n  float: left;\n  position: relative;\n  top: 50%;\n  transform: translate(0, -50%); }\n  .advanced-pie-legend .total-value {\n    font-size: 36px; }\n  .advanced-pie-legend .total-label {\n    font-size: 24px;\n    margin-bottom: 19px; }\n  .advanced-pie-legend .legend-items-container {\n    width: 100%; }\n  .advanced-pie-legend .legend-items-container .legend-items {\n      white-space: nowrap;\n      overflow: auto; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item {\n        margin-right: 20px;\n        display: inline-block;\n        cursor: pointer; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item:focus {\n          outline: none; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item:hover {\n          color: #000;\n          transition: 0.2s; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item .item-value {\n          font-size: 24px;\n          margin-top: -6px;\n          margin-left: 11px; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item .item-label {\n          font-size: 14px;\n          opacity: 0.7;\n          margin-left: 11px;\n          margin-top: -6px; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item .item-percent {\n          font-size: 24px;\n          opacity: 0.7;\n          margin-left: 11px; }\n  .advanced-pie-legend .legend-items-container .legend-items .legend-item .item-color {\n          border-left: 4px solid;\n          width: 4px;\n          height: 42px;\n          float: left;\n          margin-right: 7px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2NvbW1vbi9sZWdlbmQvYWR2YW5jZWQtbGVnZW5kLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUiw2QkFBNkIsRUFBRTtFQUMvQjtJQUNFLGVBQWUsRUFBRTtFQUNuQjtJQUNFLGVBQWU7SUFDZixtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLFdBQVcsRUFBRTtFQUNiO01BQ0UsbUJBQW1CO01BQ25CLGNBQWMsRUFBRTtFQUNoQjtRQUNFLGtCQUFrQjtRQUNsQixxQkFBcUI7UUFDckIsZUFBZSxFQUFFO0VBQ2pCO1VBQ0UsYUFBYSxFQUFFO0VBQ2pCO1VBQ0UsV0FBVztVQUdYLGdCQUFnQixFQUFFO0VBQ3BCO1VBQ0UsZUFBZTtVQUNmLGdCQUFnQjtVQUNoQixpQkFBaUIsRUFBRTtFQUNyQjtVQUNFLGVBQWU7VUFDZixZQUFZO1VBQ1osaUJBQWlCO1VBQ2pCLGdCQUFnQixFQUFFO0VBQ3BCO1VBQ0UsZUFBZTtVQUNmLFlBQVk7VUFDWixpQkFBaUIsRUFBRTtFQUNyQjtVQUNFLHNCQUFzQjtVQUN0QixVQUFVO1VBQ1YsWUFBWTtVQUNaLFdBQVc7VUFDWCxpQkFBaUIsRUFBRSIsImZpbGUiOiJub2RlX21vZHVsZXMvQHN3aW1sYW5lL25neC1jaGFydHMvcmVsZWFzZS9jb21tb24vbGVnZW5kL2FkdmFuY2VkLWxlZ2VuZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkdmFuY2VkLXBpZS1sZWdlbmQge1xuICBmbG9hdDogbGVmdDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IDUwJTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoMCwgLTUwJSk7IH1cbiAgLmFkdmFuY2VkLXBpZS1sZWdlbmQgLnRvdGFsLXZhbHVlIHtcbiAgICBmb250LXNpemU6IDM2cHg7IH1cbiAgLmFkdmFuY2VkLXBpZS1sZWdlbmQgLnRvdGFsLWxhYmVsIHtcbiAgICBmb250LXNpemU6IDI0cHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMTlweDsgfVxuICAuYWR2YW5jZWQtcGllLWxlZ2VuZCAubGVnZW5kLWl0ZW1zLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7IH1cbiAgICAuYWR2YW5jZWQtcGllLWxlZ2VuZCAubGVnZW5kLWl0ZW1zLWNvbnRhaW5lciAubGVnZW5kLWl0ZW1zIHtcbiAgICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgICBvdmVyZmxvdzogYXV0bzsgfVxuICAgICAgLmFkdmFuY2VkLXBpZS1sZWdlbmQgLmxlZ2VuZC1pdGVtcy1jb250YWluZXIgLmxlZ2VuZC1pdGVtcyAubGVnZW5kLWl0ZW0ge1xuICAgICAgICBtYXJnaW4tcmlnaHQ6IDIwcHg7XG4gICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyOyB9XG4gICAgICAgIC5hZHZhbmNlZC1waWUtbGVnZW5kIC5sZWdlbmQtaXRlbXMtY29udGFpbmVyIC5sZWdlbmQtaXRlbXMgLmxlZ2VuZC1pdGVtOmZvY3VzIHtcbiAgICAgICAgICBvdXRsaW5lOiBub25lOyB9XG4gICAgICAgIC5hZHZhbmNlZC1waWUtbGVnZW5kIC5sZWdlbmQtaXRlbXMtY29udGFpbmVyIC5sZWdlbmQtaXRlbXMgLmxlZ2VuZC1pdGVtOmhvdmVyIHtcbiAgICAgICAgICBjb2xvcjogIzAwMDtcbiAgICAgICAgICAtd2Via2l0LXRyYW5zaXRpb246IDAuMnM7XG4gICAgICAgICAgLW1vei10cmFuc2l0aW9uOiAwLjJzO1xuICAgICAgICAgIHRyYW5zaXRpb246IDAuMnM7IH1cbiAgICAgICAgLmFkdmFuY2VkLXBpZS1sZWdlbmQgLmxlZ2VuZC1pdGVtcy1jb250YWluZXIgLmxlZ2VuZC1pdGVtcyAubGVnZW5kLWl0ZW0gLml0ZW0tdmFsdWUge1xuICAgICAgICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAtNnB4O1xuICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxMXB4OyB9XG4gICAgICAgIC5hZHZhbmNlZC1waWUtbGVnZW5kIC5sZWdlbmQtaXRlbXMtY29udGFpbmVyIC5sZWdlbmQtaXRlbXMgLmxlZ2VuZC1pdGVtIC5pdGVtLWxhYmVsIHtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgb3BhY2l0eTogMC43O1xuICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxMXB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IC02cHg7IH1cbiAgICAgICAgLmFkdmFuY2VkLXBpZS1sZWdlbmQgLmxlZ2VuZC1pdGVtcy1jb250YWluZXIgLmxlZ2VuZC1pdGVtcyAubGVnZW5kLWl0ZW0gLml0ZW0tcGVyY2VudCB7XG4gICAgICAgICAgZm9udC1zaXplOiAyNHB4O1xuICAgICAgICAgIG9wYWNpdHk6IDAuNztcbiAgICAgICAgICBtYXJnaW4tbGVmdDogMTFweDsgfVxuICAgICAgICAuYWR2YW5jZWQtcGllLWxlZ2VuZCAubGVnZW5kLWl0ZW1zLWNvbnRhaW5lciAubGVnZW5kLWl0ZW1zIC5sZWdlbmQtaXRlbSAuaXRlbS1jb2xvciB7XG4gICAgICAgICAgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZDtcbiAgICAgICAgICB3aWR0aDogNHB4O1xuICAgICAgICAgIGhlaWdodDogNDJweDtcbiAgICAgICAgICBmbG9hdDogbGVmdDtcbiAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDdweDsgfVxuIl19 */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.ngfactory.js":
+  /*!********************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.ngfactory.js ***!
+    \********************************************************************************************************/
+
+  /*! exports provided: RenderType_AdvancedLegendComponent, View_AdvancedLegendComponent_0, View_AdvancedLegendComponent_Host_0, AdvancedLegendComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendAdvancedLegendComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_AdvancedLegendComponent", function () {
+      return RenderType_AdvancedLegendComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AdvancedLegendComponent_0", function () {
+      return View_AdvancedLegendComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AdvancedLegendComponent_Host_0", function () {
+      return View_AdvancedLegendComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdvancedLegendComponentNgFactory", function () {
+      return AdvancedLegendComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _advanced_legend_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./advanced-legend.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../count/count.directive.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/count/count.directive.ngfactory.js");
+    /* harmony import */
+
+
+    var _count_count_directive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../count/count.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/count/count.directive.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _advanced_legend_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./advanced-legend.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_AdvancedLegendComponent = [_advanced_legend_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_AdvancedLegendComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_AdvancedLegendComponent,
+      data: {}
+    });
+
+    function View_AdvancedLegendComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "div", [["class", "total-value"], ["ngx-charts-count-up", ""]], null, null, null, _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_CountUpDirective_0"], _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_CountUpDirective"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 180224, null, 0, _count_count_directive__WEBPACK_IMPORTED_MODULE_3__["CountUpDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], {
+        valueFormatting: [0, "valueFormatting"],
+        countTo: [1, "countTo"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.valueFormatting;
+        var currVal_1 = _co.roundedTotal;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+      }, null);
+    }
+
+    function View_AdvancedLegendComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "div", [["class", "total-value"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](1, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.valueFormatting ? _co.valueFormatting(_co.roundedTotal) : _co.defaultValueFormatting(_co.roundedTotal);
+
+        _ck(_v, 1, 0, currVal_0);
+      });
+    }
+
+    function View_AdvancedLegendComponent_4(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "div", [["class", "item-value"], ["ngx-charts-count-up", ""]], null, null, null, _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_CountUpDirective_0"], _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_CountUpDirective"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 180224, null, 0, _count_count_directive__WEBPACK_IMPORTED_MODULE_3__["CountUpDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], {
+        valueFormatting: [0, "valueFormatting"],
+        countTo: [1, "countTo"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.valueFormatting;
+        var currVal_1 = _v.parent.context.$implicit._value;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+      }, null);
+    }
+
+    function View_AdvancedLegendComponent_5(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "div", [["class", "item-value"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](1, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.valueFormatting ? _co.valueFormatting(_v.parent.context.$implicit.value) : _co.defaultValueFormatting(_v.parent.context.$implicit.value);
+
+        _ck(_v, 1, 0, currVal_0);
+      });
+    }
+
+    function View_AdvancedLegendComponent_6(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "div", [["class", "item-percent"], ["ngx-charts-count-up", ""]], null, null, null, _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_CountUpDirective_0"], _count_count_directive_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_CountUpDirective"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 180224, null, 0, _count_count_directive__WEBPACK_IMPORTED_MODULE_3__["CountUpDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], {
+        countSuffix: [0, "countSuffix"],
+        countTo: [1, "countTo"]
+      }, null)], function (_ck, _v) {
+        var currVal_0 = "%";
+        var currVal_1 = _v.parent.context.$implicit.percentage;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+      }, null);
+    }
+
+    function View_AdvancedLegendComponent_7(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "div", [["class", "item-percent"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](1, null, ["", "%"]))], null, function (_ck, _v) {
+        var currVal_0 = _v.parent.context.$implicit.percentage.toLocaleString();
+
+        _ck(_v, 1, 0, currVal_0);
+      });
+    }
+
+    function View_AdvancedLegendComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 11, "div", [["class", "legend-item"], ["tabindex", "-1"]], null, [[null, "mouseenter"], [null, "mouseleave"], [null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("mouseenter" === en) {
+          var pd_0 = _co.activate.emit(_v.context.$implicit.data) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_1 = _co.deactivate.emit(_v.context.$implicit.data) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_2 = _co.select.emit(_v.context.$implicit.data) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 0, "div", [["class", "item-color"]], [[4, "border-left-color", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_5)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](5, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 1, "div", [["class", "item-label"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](7, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_6)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](9, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_7)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](11, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.animations;
+
+        _ck(_v, 3, 0, currVal_1);
+
+        var currVal_2 = !_co.animations;
+
+        _ck(_v, 5, 0, currVal_2);
+
+        var currVal_4 = _co.animations;
+
+        _ck(_v, 9, 0, currVal_4);
+
+        var currVal_5 = !_co.animations;
+
+        _ck(_v, 11, 0, currVal_5);
+      }, function (_ck, _v) {
+        var currVal_0 = _v.context.$implicit.color;
+
+        _ck(_v, 1, 0, currVal_0);
+
+        var currVal_3 = _v.context.$implicit.displayLabel;
+
+        _ck(_v, 7, 0, currVal_3);
+      });
+    }
+
+    function View_AdvancedLegendComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 10, "div", [["class", "advanced-pie-legend"]], [[4, "width", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](4, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 1, "div", [["class", "total-label"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](6, null, [" ", " "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 3, "div", [["class", "legend-items-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 2, "div", [["class", "legend-items"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_AdvancedLegendComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](10, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.animations;
+
+        _ck(_v, 2, 0, currVal_1);
+
+        var currVal_2 = !_co.animations;
+
+        _ck(_v, 4, 0, currVal_2);
+
+        var currVal_4 = _co.legendItems;
+        var currVal_5 = _co.trackBy;
+
+        _ck(_v, 10, 0, currVal_4, currVal_5);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.width;
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_3 = _co.label;
+
+        _ck(_v, 6, 0, currVal_3);
+      });
+    }
+
+    function View_AdvancedLegendComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "ngx-charts-advanced-legend", [], null, null, null, View_AdvancedLegendComponent_0, RenderType_AdvancedLegendComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _advanced_legend_component__WEBPACK_IMPORTED_MODULE_5__["AdvancedLegendComponent"], [], null, null)], null, null);
+    }
+
+    var AdvancedLegendComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("ngx-charts-advanced-legend", _advanced_legend_component__WEBPACK_IMPORTED_MODULE_5__["AdvancedLegendComponent"], View_AdvancedLegendComponent_Host_0, {
+      width: "width",
+      data: "data",
+      colors: "colors",
+      label: "label",
+      animations: "animations",
+      valueFormatting: "valueFormatting",
+      labelFormatting: "labelFormatting",
+      percentageFormatting: "percentageFormatting"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/legend-entry.component.ngfactory.js":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/legend-entry.component.ngfactory.js ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: RenderType_LegendEntryComponent, View_LegendEntryComponent_0, View_LegendEntryComponent_Host_0, LegendEntryComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendLegendEntryComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_LegendEntryComponent", function () {
+      return RenderType_LegendEntryComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LegendEntryComponent_0", function () {
+      return View_LegendEntryComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LegendEntryComponent_Host_0", function () {
+      return View_LegendEntryComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LegendEntryComponentNgFactory", function () {
+      return LegendEntryComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _legend_entry_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./legend-entry.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend-entry.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_LegendEntryComponent = [];
+
+    var RenderType_LegendEntryComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_LegendEntryComponent,
+      data: {}
+    });
+
+    function View_LegendEntryComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 3, "span", [["tabindex", "-1"]], [[8, "title", 0], [2, "active", null]], [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.select.emit(_co.formattedLabel) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 0, "span", [["class", "legend-label-color"]], [[4, "background-color", null]], [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.toggle.emit(_co.formattedLabel) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 1, "span", [["class", "legend-label-text"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](3, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.formattedLabel;
+        var currVal_1 = _co.isActive;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1);
+
+        var currVal_2 = _co.color;
+
+        _ck(_v, 1, 0, currVal_2);
+
+        var currVal_3 = _co.trimmedLabel;
+
+        _ck(_v, 3, 0, currVal_3);
+      });
+    }
+
+    function View_LegendEntryComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "ngx-charts-legend-entry", [], null, [[null, "mouseenter"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("mouseenter" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseEnter() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onMouseLeave() !== false;
+          ad = pd_1 && ad;
+        }
+
+        return ad;
+      }, View_LegendEntryComponent_0, RenderType_LegendEntryComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 49152, null, 0, _legend_entry_component__WEBPACK_IMPORTED_MODULE_1__["LegendEntryComponent"], [], null, null)], null, null);
+    }
+
+    var LegendEntryComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("ngx-charts-legend-entry", _legend_entry_component__WEBPACK_IMPORTED_MODULE_1__["LegendEntryComponent"], View_LegendEntryComponent_Host_0, {
+      color: "color",
+      label: "label",
+      formattedLabel: "formattedLabel",
+      isActive: "isActive"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate",
+      toggle: "toggle"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.css.ngstyle.js":
+  /*!*************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.css.ngstyle.js ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendLegendComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".chart-legend {\n  display: inline-block;\n  padding: 0;\n  width: auto !important; }\n  .chart-legend .legend-title {\n    white-space: nowrap;\n    overflow: hidden;\n    margin-left: 10px;\n    margin-bottom: 5px;\n    font-size: 14px;\n    font-weight: bold; }\n  .chart-legend ul, .chart-legend li {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n  .chart-legend .horizontal-legend li {\n    display: inline-block; }\n  .chart-legend .legend-wrap {\n    width: calc(100% - 10px); }\n  .chart-legend .legend-labels {\n    line-height: 85%;\n    list-style: none;\n    text-align: left;\n    float: left;\n    width: 100%;\n    border-radius: 3px;\n    overflow-y: auto;\n    overflow-x: hidden;\n    white-space: nowrap;\n    background: rgba(0, 0, 0, 0.05); }\n  .chart-legend .legend-label {\n    cursor: pointer;\n    font-size: 90%;\n    margin: 8px;\n    color: #AFB7C8; }\n  .chart-legend .legend-label:hover {\n      color: #000;\n      transition: 0.2s; }\n  .chart-legend .legend-label .active .legend-label-text {\n      color: #000; }\n  .chart-legend .legend-label-color {\n    display: inline-block;\n    height: 15px;\n    width: 15px;\n    margin-right: 5px;\n    color: #5b646b;\n    border-radius: 3px; }\n  .chart-legend .legend-label-text {\n    display: inline-block;\n    vertical-align: top;\n    line-height: 15px;\n    font-size: 12px;\n    width: calc(100% - 20px);\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    overflow: hidden; }\n  .chart-legend .legend-title-text {\n    vertical-align: bottom;\n    display: inline-block;\n    line-height: 16px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2NvbW1vbi9sZWdlbmQvbGVnZW5kLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7RUFDckIsVUFBVTtFQUNWLHNCQUFzQixFQUFFO0VBQ3hCO0lBQ0UsbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixpQkFBaUIsRUFBRTtFQUNyQjtJQUNFLFVBQVU7SUFDVixTQUFTO0lBQ1QsZ0JBQWdCLEVBQUU7RUFDcEI7SUFDRSxxQkFBcUIsRUFBRTtFQUN6QjtJQUNFLHdCQUF3QixFQUFFO0VBQzVCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsK0JBQStCLEVBQUU7RUFDbkM7SUFDRSxlQUFlO0lBQ2YsY0FBYztJQUNkLFdBQVc7SUFDWCxjQUFjLEVBQUU7RUFDaEI7TUFDRSxXQUFXO01BR1gsZ0JBQWdCLEVBQUU7RUFDcEI7TUFDRSxXQUFXLEVBQUU7RUFDakI7SUFDRSxxQkFBcUI7SUFDckIsWUFBWTtJQUNaLFdBQVc7SUFDWCxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGtCQUFrQixFQUFFO0VBQ3RCO0lBQ0UscUJBQXFCO0lBQ3JCLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdCQUFnQixFQUFFO0VBQ3BCO0lBQ0Usc0JBQXNCO0lBQ3RCLHFCQUFxQjtJQUNyQixpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLG1CQUFtQjtJQUNuQix1QkFBdUIsRUFBRSIsImZpbGUiOiJub2RlX21vZHVsZXMvQHN3aW1sYW5lL25neC1jaGFydHMvcmVsZWFzZS9jb21tb24vbGVnZW5kL2xlZ2VuZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNoYXJ0LWxlZ2VuZCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcGFkZGluZzogMDtcbiAgd2lkdGg6IGF1dG8gIWltcG9ydGFudDsgfVxuICAuY2hhcnQtbGVnZW5kIC5sZWdlbmQtdGl0bGUge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICBtYXJnaW4tbGVmdDogMTBweDtcbiAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkOyB9XG4gIC5jaGFydC1sZWdlbmQgdWwsIC5jaGFydC1sZWdlbmQgbGkge1xuICAgIHBhZGRpbmc6IDA7XG4gICAgbWFyZ2luOiAwO1xuICAgIGxpc3Qtc3R5bGU6IG5vbmU7IH1cbiAgLmNoYXJ0LWxlZ2VuZCAuaG9yaXpvbnRhbC1sZWdlbmQgbGkge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsgfVxuICAuY2hhcnQtbGVnZW5kIC5sZWdlbmQtd3JhcCB7XG4gICAgd2lkdGg6IGNhbGMoMTAwJSAtIDEwcHgpOyB9XG4gIC5jaGFydC1sZWdlbmQgLmxlZ2VuZC1sYWJlbHMge1xuICAgIGxpbmUtaGVpZ2h0OiA4NSU7XG4gICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICAgIGZsb2F0OiBsZWZ0O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgICBvdmVyZmxvdy15OiBhdXRvO1xuICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4wNSk7IH1cbiAgLmNoYXJ0LWxlZ2VuZCAubGVnZW5kLWxhYmVsIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgZm9udC1zaXplOiA5MCU7XG4gICAgbWFyZ2luOiA4cHg7XG4gICAgY29sb3I6ICNBRkI3Qzg7IH1cbiAgICAuY2hhcnQtbGVnZW5kIC5sZWdlbmQtbGFiZWw6aG92ZXIge1xuICAgICAgY29sb3I6ICMwMDA7XG4gICAgICAtd2Via2l0LXRyYW5zaXRpb246IDAuMnM7XG4gICAgICAtbW96LXRyYW5zaXRpb246IDAuMnM7XG4gICAgICB0cmFuc2l0aW9uOiAwLjJzOyB9XG4gICAgLmNoYXJ0LWxlZ2VuZCAubGVnZW5kLWxhYmVsIC5hY3RpdmUgLmxlZ2VuZC1sYWJlbC10ZXh0IHtcbiAgICAgIGNvbG9yOiAjMDAwOyB9XG4gIC5jaGFydC1sZWdlbmQgLmxlZ2VuZC1sYWJlbC1jb2xvciB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGhlaWdodDogMTVweDtcbiAgICB3aWR0aDogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgICBjb2xvcjogIzViNjQ2YjtcbiAgICBib3JkZXItcmFkaXVzOiAzcHg7IH1cbiAgLmNoYXJ0LWxlZ2VuZCAubGVnZW5kLWxhYmVsLXRleHQge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuICAgIGxpbmUtaGVpZ2h0OiAxNXB4O1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICB3aWR0aDogY2FsYygxMDAlIC0gMjBweCk7XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuOyB9XG4gIC5jaGFydC1sZWdlbmQgLmxlZ2VuZC10aXRsZS10ZXh0IHtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBsaW5lLWhlaWdodDogMTZweDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7IH1cbiJdfQ== */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.ngfactory.js":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.ngfactory.js ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: RenderType_LegendComponent, View_LegendComponent_0, View_LegendComponent_Host_0, LegendComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendLegendComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_LegendComponent", function () {
+      return RenderType_LegendComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LegendComponent_0", function () {
+      return View_LegendComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LegendComponent_Host_0", function () {
+      return View_LegendComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LegendComponentNgFactory", function () {
+      return LegendComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _legend_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./legend.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _legend_entry_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./legend-entry.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend-entry.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _legend_entry_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./legend-entry.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend-entry.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _legend_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./legend.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/legend.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_LegendComponent = [_legend_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_LegendComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_LegendComponent,
+      data: {}
+    });
+
+    function View_LegendComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "header", [["class", "legend-title"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, "span", [["class", "legend-title-text"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](2, null, ["", ""]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.title;
+
+        _ck(_v, 2, 0, currVal_0);
+      });
+    }
+
+    function View_LegendComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "li", [["class", "legend-label"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, "ngx-charts-legend-entry", [], null, [[null, "select"], [null, "activate"], [null, "deactivate"], [null, "mouseenter"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("mouseenter" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 2).onMouseEnter() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 2).onMouseLeave() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("select" === en) {
+          var pd_2 = _co.labelClick.emit($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_3 = _co.activate($event) !== false;
+          ad = pd_3 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_4 = _co.deactivate($event) !== false;
+          ad = pd_4 && ad;
+        }
+
+        return ad;
+      }, _legend_entry_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_LegendEntryComponent_0"], _legend_entry_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_LegendEntryComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 49152, null, 0, _legend_entry_component__WEBPACK_IMPORTED_MODULE_3__["LegendEntryComponent"], [], {
+        color: [0, "color"],
+        label: [1, "label"],
+        formattedLabel: [2, "formattedLabel"],
+        isActive: [3, "isActive"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.context.$implicit.color;
+        var currVal_1 = _v.context.$implicit.label;
+        var currVal_2 = _v.context.$implicit.formattedLabel;
+
+        var currVal_3 = _co.isActive(_v.context.$implicit);
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3);
+      }, null);
+    }
+
+    function View_LegendComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 6, "div", [], [[4, "width", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LegendComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 3, "div", [["class", "legend-wrap"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 2, "ul", [["class", "legend-labels"]], [[2, "horizontal-legend", null], [4, "max-height", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LegendComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](6, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = (_co.title == null ? null : _co.title.length) > 0;
+
+        _ck(_v, 2, 0, currVal_1);
+
+        var currVal_4 = _co.legendEntries;
+        var currVal_5 = _co.trackBy;
+
+        _ck(_v, 6, 0, currVal_4, currVal_5);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.width;
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_2 = _co.horizontal;
+        var currVal_3 = _co.height - 45;
+
+        _ck(_v, 4, 0, currVal_2, currVal_3);
+      });
+    }
+
+    function View_LegendComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "ngx-charts-legend", [], null, null, null, View_LegendComponent_0, RenderType_LegendComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _legend_component__WEBPACK_IMPORTED_MODULE_5__["LegendComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], null, null)], null, null);
+    }
+
+    var LegendComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("ngx-charts-legend", _legend_component__WEBPACK_IMPORTED_MODULE_5__["LegendComponent"], View_LegendComponent_Host_0, {
+      data: "data",
+      title: "title",
+      colors: "colors",
+      height: "height",
+      width: "width",
+      activeEntries: "activeEntries",
+      horizontal: "horizontal"
+    }, {
+      labelClick: "labelClick",
+      labelActivate: "labelActivate",
+      labelDeactivate: "labelDeactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.css.ngstyle.js":
+  /*!*******************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.css.ngstyle.js ***!
+    \*******************************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendScaleLegendComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".chart-legend {\n  display: inline-block;\n  padding: 0;\n  width: auto !important; }\n  .chart-legend .scale-legend {\n    text-align: center;\n    display: flex;\n    flex-direction: column; }\n  .chart-legend .scale-legend-wrap {\n    display: inline-block;\n    flex: 1;\n    width: 30px;\n    border-radius: 5px;\n    margin: 0 auto; }\n  .chart-legend .scale-legend-label {\n    font-size: 12px; }\n  .chart-legend .horizontal-legend.scale-legend {\n    flex-direction: row; }\n  .chart-legend .horizontal-legend .scale-legend-wrap {\n    width: auto;\n    height: 30px;\n    margin: 0 16px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2NvbW1vbi9sZWdlbmQvc2NhbGUtbGVnZW5kLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7RUFDckIsVUFBVTtFQUNWLHNCQUFzQixFQUFFO0VBQ3hCO0lBQ0Usa0JBQWtCO0lBQ2xCLGFBQWE7SUFDYixzQkFBc0IsRUFBRTtFQUMxQjtJQUNFLHFCQUFxQjtJQUNyQixPQUFPO0lBQ1AsV0FBVztJQUNYLGtCQUFrQjtJQUNsQixjQUFjLEVBQUU7RUFDbEI7SUFDRSxlQUFlLEVBQUU7RUFDbkI7SUFDRSxtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLFdBQVc7SUFDWCxZQUFZO0lBQ1osY0FBYyxFQUFFIiwiZmlsZSI6Im5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2NvbW1vbi9sZWdlbmQvc2NhbGUtbGVnZW5kLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2hhcnQtbGVnZW5kIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBwYWRkaW5nOiAwO1xuICB3aWR0aDogYXV0byAhaW1wb3J0YW50OyB9XG4gIC5jaGFydC1sZWdlbmQgLnNjYWxlLWxlZ2VuZCB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgfVxuICAuY2hhcnQtbGVnZW5kIC5zY2FsZS1sZWdlbmQtd3JhcCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGZsZXg6IDE7XG4gICAgd2lkdGg6IDMwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIG1hcmdpbjogMCBhdXRvOyB9XG4gIC5jaGFydC1sZWdlbmQgLnNjYWxlLWxlZ2VuZC1sYWJlbCB7XG4gICAgZm9udC1zaXplOiAxMnB4OyB9XG4gIC5jaGFydC1sZWdlbmQgLmhvcml6b250YWwtbGVnZW5kLnNjYWxlLWxlZ2VuZCB7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdzsgfVxuICAuY2hhcnQtbGVnZW5kIC5ob3Jpem9udGFsLWxlZ2VuZCAuc2NhbGUtbGVnZW5kLXdyYXAge1xuICAgIHdpZHRoOiBhdXRvO1xuICAgIGhlaWdodDogMzBweDtcbiAgICBtYXJnaW46IDAgMTZweDsgfVxuIl19 */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.ngfactory.js":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.ngfactory.js ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: RenderType_ScaleLegendComponent, View_ScaleLegendComponent_0, View_ScaleLegendComponent_Host_0, ScaleLegendComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonLegendScaleLegendComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_ScaleLegendComponent", function () {
+      return RenderType_ScaleLegendComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_ScaleLegendComponent_0", function () {
+      return View_ScaleLegendComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_ScaleLegendComponent_Host_0", function () {
+      return View_ScaleLegendComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ScaleLegendComponentNgFactory", function () {
+      return ScaleLegendComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _scale_legend_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./scale-legend.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _scale_legend_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./scale-legend.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/scale-legend.component.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_ScaleLegendComponent = [_scale_legend_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_ScaleLegendComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_ScaleLegendComponent,
+      data: {}
+    });
+
+    function View_ScaleLegendComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 7, "div", [["class", "scale-legend"]], [[2, "horizontal-legend", null], [4, "height", "px"], [4, "width", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 2, "div", [["class", "scale-legend-label"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](3, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 0, "div", [["class", "scale-legend-wrap"]], [[4, "background", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 2, "div", [["class", "scale-legend-label"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](7, null, ["", ""]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.horizontal;
+        var currVal_1 = _co.horizontal ? undefined : _co.height;
+        var currVal_2 = _co.width;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2);
+
+        var currVal_3 = _co.valueRange[1].toLocaleString();
+
+        _ck(_v, 3, 0, currVal_3);
+
+        var currVal_4 = _co.gradient;
+
+        _ck(_v, 4, 0, currVal_4);
+
+        var currVal_5 = _co.valueRange[0].toLocaleString();
+
+        _ck(_v, 7, 0, currVal_5);
+      });
+    }
+
+    function View_ScaleLegendComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "ngx-charts-scale-legend", [], null, null, null, View_ScaleLegendComponent_0, RenderType_ScaleLegendComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _scale_legend_component__WEBPACK_IMPORTED_MODULE_2__["ScaleLegendComponent"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]], null, null)], null, null);
+    }
+
+    var ScaleLegendComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("ngx-charts-scale-legend", _scale_legend_component__WEBPACK_IMPORTED_MODULE_2__["ScaleLegendComponent"], View_ScaleLegendComponent_Host_0, {
+      valueRange: "valueRange",
+      colors: "colors",
+      height: "height",
+      width: "width",
+      horizontal: "horizontal"
+    }, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.ngfactory.js":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.ngfactory.js ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: RenderType_SvgLinearGradientComponent, View_SvgLinearGradientComponent_0, View_SvgLinearGradientComponent_Host_0, SvgLinearGradientComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonSvgLinearGradientComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_SvgLinearGradientComponent", function () {
+      return RenderType_SvgLinearGradientComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SvgLinearGradientComponent_0", function () {
+      return View_SvgLinearGradientComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SvgLinearGradientComponent_Host_0", function () {
+      return View_SvgLinearGradientComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SvgLinearGradientComponentNgFactory", function () {
+      return SvgLinearGradientComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./svg-linear-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_SvgLinearGradientComponent = [];
+
+    var RenderType_SvgLinearGradientComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_SvgLinearGradientComponent,
+      data: {}
+    });
+
+    function View_SvgLinearGradientComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:stop", [], [[1, "offset", 0], [4, "stop-color", null], [4, "stop-opacity", null]], null, null, null, null))], null, function (_ck, _v) {
+        var currVal_0 = _v.context.$implicit.offset + "%";
+        var currVal_1 = _v.context.$implicit.color;
+        var currVal_2 = _v.context.$implicit.opacity;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2);
+      });
+    }
+
+    function View_SvgLinearGradientComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:linearGradient", [], [[8, "id", 0], [1, "x1", 0], [1, "y1", 0], [1, "x2", 0], [1, "y2", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SvgLinearGradientComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_5 = _co.stops;
+
+        _ck(_v, 2, 0, currVal_5);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.name;
+        var currVal_1 = _co.x1;
+        var currVal_2 = _co.y1;
+        var currVal_3 = _co.x2;
+        var currVal_4 = _co.y2;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+      });
+    }
+
+    function View_SvgLinearGradientComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-svg-linear-gradient", ""]], null, null, null, View_SvgLinearGradientComponent_0, RenderType_SvgLinearGradientComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgLinearGradientComponent"], [], null, null)], null, null);
+    }
+
+    var SvgLinearGradientComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-svg-linear-gradient]", _svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgLinearGradientComponent"], View_SvgLinearGradientComponent_Host_0, {
+      orientation: "orientation",
+      name: "name",
+      stops: "stops"
+    }, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/svg-radial-gradient.component.ngfactory.js":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/svg-radial-gradient.component.ngfactory.js ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: RenderType_SvgRadialGradientComponent, View_SvgRadialGradientComponent_0, View_SvgRadialGradientComponent_Host_0, SvgRadialGradientComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonSvgRadialGradientComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_SvgRadialGradientComponent", function () {
+      return RenderType_SvgRadialGradientComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SvgRadialGradientComponent_0", function () {
+      return View_SvgRadialGradientComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_SvgRadialGradientComponent_Host_0", function () {
+      return View_SvgRadialGradientComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SvgRadialGradientComponentNgFactory", function () {
+      return SvgRadialGradientComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _svg_radial_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./svg-radial-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-radial-gradient.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_SvgRadialGradientComponent = [];
+
+    var RenderType_SvgRadialGradientComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_SvgRadialGradientComponent,
+      data: {}
+    });
+
+    function View_SvgRadialGradientComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:stop", [], [[1, "offset", 0], [4, "stop-color", null], [4, "stop-opacity", null]], null, null, null, null))], null, function (_ck, _v) {
+        var currVal_0 = _v.context.$implicit.offset + "%";
+        var currVal_1 = _v.context.$implicit.color;
+        var currVal_2 = _v.context.$implicit.opacity;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2);
+      });
+    }
+
+    function View_SvgRadialGradientComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:radialGradient", [["gradientUnits", "userSpaceOnUse"]], [[8, "id", 0], [1, "cx", 0], [1, "cy", 0], [1, "r", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_SvgRadialGradientComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_4 = _co.stops;
+
+        _ck(_v, 2, 0, currVal_4);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.name;
+        var currVal_1 = _co.cx;
+        var currVal_2 = _co.cy;
+        var currVal_3 = _co.r;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3);
+      });
+    }
+
+    function View_SvgRadialGradientComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-svg-radial-gradient", ""]], null, null, null, View_SvgRadialGradientComponent_0, RenderType_SvgRadialGradientComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _svg_radial_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgRadialGradientComponent"], [], null, null)], null, null);
+    }
+
+    var SvgRadialGradientComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-svg-radial-gradient]", _svg_radial_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgRadialGradientComponent"], View_SvgRadialGradientComponent_Host_0, {
+      color: "color",
+      name: "name",
+      startOpacity: "startOpacity",
+      endOpacity: "endOpacity",
+      cx: "cx",
+      cy: "cy",
+      stops: "stops"
+    }, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.css.ngstyle.js":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.css.ngstyle.js ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonTimelineTimelineComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".timeline .brush-background {\n  fill: rgba(0, 0, 0, 0.05); }\n\n.timeline .brush .selection {\n  fill: rgba(0, 0, 0, 0.1);\n  stroke-width: 1px;\n  stroke: #888888; }\n\n.timeline .brush .handle {\n  fill-opacity: 0; }\n\n.timeline .embedded-chart {\n  opacity: 0.6; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL2NvbW1vbi90aW1lbGluZS90aW1lbGluZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UseUJBQXlCLEVBQUU7O0FBRTdCO0VBQ0Usd0JBQXdCO0VBQ3hCLGlCQUFpQjtFQUNqQixlQUFlLEVBQUU7O0FBRW5CO0VBQ0UsZUFBZSxFQUFFOztBQUVuQjtFQUNFLFlBQVksRUFBRSIsImZpbGUiOiJub2RlX21vZHVsZXMvQHN3aW1sYW5lL25neC1jaGFydHMvcmVsZWFzZS9jb21tb24vdGltZWxpbmUvdGltZWxpbmUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50aW1lbGluZSAuYnJ1c2gtYmFja2dyb3VuZCB7XG4gIGZpbGw6IHJnYmEoMCwgMCwgMCwgMC4wNSk7IH1cblxuLnRpbWVsaW5lIC5icnVzaCAuc2VsZWN0aW9uIHtcbiAgZmlsbDogcmdiYSgwLCAwLCAwLCAwLjEpO1xuICBzdHJva2Utd2lkdGg6IDFweDtcbiAgc3Ryb2tlOiAjODg4ODg4OyB9XG5cbi50aW1lbGluZSAuYnJ1c2ggLmhhbmRsZSB7XG4gIGZpbGwtb3BhY2l0eTogMDsgfVxuXG4udGltZWxpbmUgLmVtYmVkZGVkLWNoYXJ0IHtcbiAgb3BhY2l0eTogMC42OyB9XG4iXX0= */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.ngfactory.js":
+  /*!***************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.ngfactory.js ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: RenderType_Timeline, View_Timeline_0, View_Timeline_Host_0, TimelineNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonTimelineTimelineComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_Timeline", function () {
+      return RenderType_Timeline;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_Timeline_0", function () {
+      return View_Timeline_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_Timeline_Host_0", function () {
+      return View_Timeline_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TimelineNgFactory", function () {
+      return TimelineNgFactory;
+    });
+    /* harmony import */
+
+
+    var _timeline_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./timeline.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _timeline_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./timeline.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_Timeline = [_timeline_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_Timeline = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_Timeline,
+      data: {}
+    });
+
+    function View_Timeline_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 6, ":svg:g", [["class", "timeline"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, ":svg:filter", [], [[1, "id", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 0, ":svg:feColorMatrix", [["in", "SourceGraphic"], ["type", "matrix"], ["values", "0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 1, ":svg:g", [["class", "embedded-chart"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵncd"](null, 0), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 0, ":svg:rect", [["class", "brush-background"], ["x", "0"], ["y", "0"]], [[1, "width", 0], [1, "height", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, ":svg:g", [["class", "brush"]], null, null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.transform;
+
+        _ck(_v, 0, 0, currVal_0);
+
+        var currVal_1 = _co.filterId;
+
+        _ck(_v, 1, 0, currVal_1);
+
+        var currVal_2 = _co.view[0];
+        var currVal_3 = _co.height;
+
+        _ck(_v, 5, 0, currVal_2, currVal_3);
+      });
+    }
+
+    function View_Timeline_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-timeline", ""]], null, null, null, View_Timeline_0, RenderType_Timeline)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _timeline_component__WEBPACK_IMPORTED_MODULE_2__["Timeline"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], null, null)], null, null);
+    }
+
+    var TimelineNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("g[ngx-charts-timeline]", _timeline_component__WEBPACK_IMPORTED_MODULE_2__["Timeline"], View_Timeline_Host_0, {
+      view: "view",
+      state: "state",
+      results: "results",
+      scheme: "scheme",
+      customColors: "customColors",
+      legend: "legend",
+      miniChart: "miniChart",
+      autoScale: "autoScale",
+      scaleType: "scaleType",
+      height: "height"
+    }, {
+      select: "select",
+      onDomainChange: "onDomainChange"
+    }, ["*"]);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/common/tooltip-area.component.ngfactory.js":
+  /*!**********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/common/tooltip-area.component.ngfactory.js ***!
+    \**********************************************************************************************/
+
+  /*! exports provided: RenderType_TooltipArea, View_TooltipArea_0, View_TooltipArea_Host_0, TooltipAreaNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseCommonTooltipAreaComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_TooltipArea", function () {
+      return RenderType_TooltipArea;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_TooltipArea_0", function () {
+      return View_TooltipArea_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_TooltipArea_Host_0", function () {
+      return View_TooltipArea_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TooltipAreaNgFactory", function () {
+      return TooltipAreaNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./tooltip/tooltip.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.directive.js");
+    /* harmony import */
+
+
+    var _tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _tooltip_area_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./tooltip-area.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip-area.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_TooltipArea = [];
+
+    var RenderType_TooltipArea = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_TooltipArea,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: "inactive => active",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 0
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 0.7
+                },
+                offset: null
+              },
+              timings: 250
+            }],
+            options: null
+          }, {
+            type: 1,
+            expr: "active => inactive",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 0.7
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 0
+                },
+                offset: null
+              },
+              timings: 250
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_TooltipArea_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":xhtml:div", [["class", "tooltip-item"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 0, ":xhtml:span", [["class", "tooltip-item-color"]], [[4, "background-color", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, [" ", " "]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.context.$implicit.color;
+
+        _ck(_v, 1, 0, currVal_0);
+
+        var currVal_1 = _co.getToolTipText(_v.context.$implicit);
+
+        _ck(_v, 2, 0, currVal_1);
+      });
+    }
+
+    function View_TooltipArea_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":xhtml:div", [["class", "area-tooltip-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_TooltipArea_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var currVal_0 = _v.context.model;
+
+        _ck(_v, 2, 0, currVal_0);
+      }, null);
+    }
+
+    function View_TooltipArea_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, {
+        tooltipAnchor: 0
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 4, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 0, ":svg:rect", [["class", "tooltip-area"], ["style", "opacity: 0; cursor: 'auto';"], ["y", "0"]], [[1, "x", 0], [1, "width", 0], [1, "height", 0]], [[null, "mousemove"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("mousemove" === en) {
+          var pd_0 = _co.mouseMove($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_1 = _co.hideTooltip() !== false;
+          ad = pd_1 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["defaultTooltipTemplate", 2]], null, 0, null, View_TooltipArea_1)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](4, 16777216, [[1, 0], ["tooltipAnchor", 1]], null, 1, ":svg:rect", [["class", "tooltip-anchor"], ["ngx-tooltip", ""], ["y", "0"]], [[24, "@animationState", 0], [1, "x", 0], [1, "width", 0], [1, "height", 0], [4, "opacity", null], [4, "pointer-events", null]], [[null, "focusin"], [null, "blur"], [null, "mouseenter"], [null, "mouseleave"], [null, "click"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("focusin" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).onFocus() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).onBlur() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).onMouseEnter() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).onMouseLeave($event.target) !== false;
+          ad = pd_3 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).onMouseClick() !== false;
+          ad = pd_4 && ad;
+        }
+
+        return ad;
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 147456, null, 0, _tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__["TooltipDirective"], [_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_3__["TooltipService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], {
+        tooltipSpacing: [0, "tooltipSpacing"],
+        tooltipDisabled: [1, "tooltipDisabled"],
+        tooltipPlacement: [2, "tooltipPlacement"],
+        tooltipType: [3, "tooltipType"],
+        tooltipTemplate: [4, "tooltipTemplate"],
+        tooltipContext: [5, "tooltipContext"],
+        tooltipImmediateExit: [6, "tooltipImmediateExit"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_9 = 15;
+        var currVal_10 = _co.tooltipDisabled;
+        var currVal_11 = "right";
+        var currVal_12 = "tooltip";
+        var currVal_13 = _co.tooltipTemplate ? _co.tooltipTemplate : _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 3);
+        var currVal_14 = _co.anchorValues;
+        var currVal_15 = true;
+
+        _ck(_v, 5, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = 0;
+        var currVal_1 = _co.dims.width;
+        var currVal_2 = _co.dims.height;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2);
+
+        var currVal_3 = _co.anchorOpacity !== 0 ? "active" : "inactive";
+        var currVal_4 = _co.anchorPos;
+        var currVal_5 = 1;
+        var currVal_6 = _co.dims.height;
+        var currVal_7 = _co.anchorOpacity;
+        var currVal_8 = "none";
+
+        _ck(_v, 4, 0, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
+      });
+    }
+
+    function View_TooltipArea_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-tooltip-area", ""]], null, null, null, View_TooltipArea_0, RenderType_TooltipArea)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 49152, null, 0, _tooltip_area_component__WEBPACK_IMPORTED_MODULE_4__["TooltipArea"], [], null, null)], null, null);
+    }
+
+    var TooltipAreaNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-tooltip-area]", _tooltip_area_component__WEBPACK_IMPORTED_MODULE_4__["TooltipArea"], View_TooltipArea_Host_0, {
+      dims: "dims",
+      xSet: "xSet",
+      xScale: "xScale",
+      yScale: "yScale",
+      results: "results",
+      colors: "colors",
+      showPercentage: "showPercentage",
+      tooltipDisabled: "tooltipDisabled",
+      tooltipTemplate: "tooltipTemplate"
+    }, {
+      hover: "hover"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.component.ngfactory.js":
+  /*!************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.component.ngfactory.js ***!
+    \************************************************************************************************/
+
+  /*! exports provided: RenderType_LineChartComponent, View_LineChartComponent_0, View_LineChartComponent_Host_0, LineChartComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseLineChartLineChartComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_LineChartComponent", function () {
+      return RenderType_LineChartComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LineChartComponent_0", function () {
+      return View_LineChartComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LineChartComponent_Host_0", function () {
+      return View_LineChartComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LineChartComponentNgFactory", function () {
+      return LineChartComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ../common/base-chart.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/base-chart.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/axes/x-axis.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_axes_x_axis_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/axes/x-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/x-axis.component.js");
+    /* harmony import */
+
+
+    var _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../common/axes/y-axis.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_axes_y_axis_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../common/axes/y-axis.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/y-axis.component.js");
+    /* harmony import */
+
+
+    var _line_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./line-series.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-series.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _line_series_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./line-series.component */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-series.component.js");
+    /* harmony import */
+
+
+    var _common_circle_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../common/circle-series.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/circle-series.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_circle_series_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../common/circle-series.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/circle-series.component.js");
+    /* harmony import */
+
+
+    var _common_tooltip_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ../common/tooltip-area.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip-area.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_area_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ../common/tooltip-area.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip-area.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _common_timeline_timeline_component_ngfactory__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ../common/timeline/timeline.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! ../common/timeline/timeline.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/timeline/timeline.component.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ../common/charts/chart.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    /*! ../common/tooltip/injection.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/injection.service.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! ../common/charts/chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.js");
+    /* harmony import */
+
+
+    var _line_chart_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    /*! ./line-chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_LineChartComponent = [_common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_LineChartComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_LineChartComponent,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: ":leave",
+            animation: [{
+              type: 6,
+              styles: {
+                opacity: 1
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  opacity: 0
+                },
+                offset: null
+              },
+              timings: 500
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_LineChartComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-x-axis", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.updateXAxisHeight($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_XAxisComponent_0"], _common_axes_x_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_XAxisComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_axes_x_axis_component__WEBPACK_IMPORTED_MODULE_3__["XAxisComponent"], [], {
+        xScale: [0, "xScale"],
+        dims: [1, "dims"],
+        trimTicks: [2, "trimTicks"],
+        rotateTicks: [3, "rotateTicks"],
+        maxTickLength: [4, "maxTickLength"],
+        tickFormatting: [5, "tickFormatting"],
+        showGridLines: [6, "showGridLines"],
+        showLabel: [7, "showLabel"],
+        labelText: [8, "labelText"],
+        ticks: [9, "ticks"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.xScale;
+        var currVal_1 = _co.dims;
+        var currVal_2 = _co.trimXAxisTicks;
+        var currVal_3 = _co.rotateXAxisTicks;
+        var currVal_4 = _co.maxXAxisTickLength;
+        var currVal_5 = _co.xAxisTickFormatting;
+        var currVal_6 = _co.showGridLines;
+        var currVal_7 = _co.showXAxisLabel;
+        var currVal_8 = _co.xAxisLabel;
+        var currVal_9 = _co.xAxisTicks;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9);
+      }, null);
+    }
+
+    function View_LineChartComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-y-axis", ""]], null, [[null, "dimensionsChanged"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("dimensionsChanged" === en) {
+          var pd_0 = _co.updateYAxisWidth($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_YAxisComponent_0"], _common_axes_y_axis_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_YAxisComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_axes_y_axis_component__WEBPACK_IMPORTED_MODULE_5__["YAxisComponent"], [], {
+        yScale: [0, "yScale"],
+        dims: [1, "dims"],
+        trimTicks: [2, "trimTicks"],
+        maxTickLength: [3, "maxTickLength"],
+        tickFormatting: [4, "tickFormatting"],
+        ticks: [5, "ticks"],
+        showGridLines: [6, "showGridLines"],
+        showLabel: [7, "showLabel"],
+        labelText: [8, "labelText"],
+        referenceLines: [9, "referenceLines"],
+        showRefLines: [10, "showRefLines"],
+        showRefLabels: [11, "showRefLabels"]
+      }, {
+        dimensionsChanged: "dimensionsChanged"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.yScale;
+        var currVal_1 = _co.dims;
+        var currVal_2 = _co.trimYAxisTicks;
+        var currVal_3 = _co.maxYAxisTickLength;
+        var currVal_4 = _co.yAxisTickFormatting;
+        var currVal_5 = _co.yAxisTicks;
+        var currVal_6 = _co.showGridLines;
+        var currVal_7 = _co.showYAxisLabel;
+        var currVal_8 = _co.yAxisLabel;
+        var currVal_9 = _co.referenceLines;
+        var currVal_10 = _co.showRefLines;
+        var currVal_11 = _co.showRefLabels;
+
+        _ck(_v, 1, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11]);
+      }, null);
+    }
+
+    function View_LineChartComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], [[24, "@animationState", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-line-series", ""]], null, null, null, _line_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["View_LineSeriesComponent_0"], _line_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["RenderType_LineSeriesComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 573440, null, 0, _line_series_component__WEBPACK_IMPORTED_MODULE_7__["LineSeriesComponent"], [], {
+        data: [0, "data"],
+        xScale: [1, "xScale"],
+        yScale: [2, "yScale"],
+        colors: [3, "colors"],
+        scaleType: [4, "scaleType"],
+        curve: [5, "curve"],
+        activeEntries: [6, "activeEntries"],
+        rangeFillOpacity: [7, "rangeFillOpacity"],
+        hasRange: [8, "hasRange"],
+        animations: [9, "animations"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _v.context.$implicit;
+        var currVal_2 = _co.xScale;
+        var currVal_3 = _co.yScale;
+        var currVal_4 = _co.colors;
+        var currVal_5 = _co.scaleType;
+        var currVal_6 = _co.curve;
+        var currVal_7 = _co.activeEntries;
+        var currVal_8 = _co.rangeFillOpacity;
+        var currVal_9 = _co.hasRange;
+        var currVal_10 = _co.animations;
+
+        _ck(_v, 2, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10);
+      }, function (_ck, _v) {
+        var currVal_0 = "active";
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_LineChartComponent_5(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-circle-series", ""]], null, [[null, "select"], [null, "activate"], [null, "deactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("select" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_1 = _co.onActivate($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_2 = _co.onDeactivate($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _common_circle_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["View_CircleSeriesComponent_0"], _common_circle_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["RenderType_CircleSeriesComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 638976, null, 0, _common_circle_series_component__WEBPACK_IMPORTED_MODULE_9__["CircleSeriesComponent"], [], {
+        data: [0, "data"],
+        xScale: [1, "xScale"],
+        yScale: [2, "yScale"],
+        colors: [3, "colors"],
+        scaleType: [4, "scaleType"],
+        visibleValue: [5, "visibleValue"],
+        activeEntries: [6, "activeEntries"],
+        tooltipDisabled: [7, "tooltipDisabled"],
+        tooltipTemplate: [8, "tooltipTemplate"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.context.$implicit;
+        var currVal_1 = _co.xScale;
+        var currVal_2 = _co.yScale;
+        var currVal_3 = _co.colors;
+        var currVal_4 = _co.scaleType;
+        var currVal_5 = _co.hoveredVertical;
+        var currVal_6 = _co.activeEntries;
+        var currVal_7 = _co.tooltipDisabled;
+        var currVal_8 = _co.tooltipTemplate;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
+      }, null);
+    }
+
+    function View_LineChartComponent_4(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 4, ":svg:g", [], null, [[null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("mouseleave" === en) {
+          var pd_0 = _co.hideCircles() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-tooltip-area", ""]], null, [[null, "hover"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("hover" === en) {
+          var pd_0 = _co.updateHoveredVertical($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_tooltip_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_10__["View_TooltipArea_0"], _common_tooltip_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_10__["RenderType_TooltipArea"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 49152, null, 0, _common_tooltip_area_component__WEBPACK_IMPORTED_MODULE_11__["TooltipArea"], [], {
+        dims: [0, "dims"],
+        xSet: [1, "xSet"],
+        xScale: [2, "xScale"],
+        yScale: [3, "yScale"],
+        results: [4, "results"],
+        colors: [5, "colors"],
+        tooltipDisabled: [6, "tooltipDisabled"],
+        tooltipTemplate: [7, "tooltipTemplate"]
+      }, {
+        hover: "hover"
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LineChartComponent_5)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](4, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.dims;
+        var currVal_1 = _co.xSet;
+        var currVal_2 = _co.xScale;
+        var currVal_3 = _co.yScale;
+        var currVal_4 = _co.results;
+        var currVal_5 = _co.colors;
+        var currVal_6 = _co.tooltipDisabled;
+        var currVal_7 = _co.seriesTooltipTemplate;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
+
+        var currVal_8 = _co.results;
+
+        _ck(_v, 4, 0, currVal_8);
+      }, null);
+    }
+
+    function View_LineChartComponent_7(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-line-series", ""]], null, null, null, _line_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["View_LineSeriesComponent_0"], _line_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["RenderType_LineSeriesComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 573440, null, 0, _line_series_component__WEBPACK_IMPORTED_MODULE_7__["LineSeriesComponent"], [], {
+        data: [0, "data"],
+        xScale: [1, "xScale"],
+        yScale: [2, "yScale"],
+        colors: [3, "colors"],
+        scaleType: [4, "scaleType"],
+        curve: [5, "curve"],
+        hasRange: [6, "hasRange"],
+        animations: [7, "animations"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.context.$implicit;
+        var currVal_1 = _co.timelineXScale;
+        var currVal_2 = _co.timelineYScale;
+        var currVal_3 = _co.colors;
+        var currVal_4 = _co.scaleType;
+        var currVal_5 = _co.curve;
+        var currVal_6 = _co.hasRange;
+        var currVal_7 = _co.animations;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
+      }, null);
+    }
+
+    function View_LineChartComponent_6(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 4, ":svg:g", [["ngx-charts-timeline", ""]], [[1, "transform", 0]], [[null, "onDomainChange"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("onDomainChange" === en) {
+          var pd_0 = _co.updateDomain($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _common_timeline_timeline_component_ngfactory__WEBPACK_IMPORTED_MODULE_13__["View_Timeline_0"], _common_timeline_timeline_component_ngfactory__WEBPACK_IMPORTED_MODULE_13__["RenderType_Timeline"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 573440, null, 0, _common_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_14__["Timeline"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], {
+        view: [0, "view"],
+        results: [1, "results"],
+        scheme: [2, "scheme"],
+        customColors: [3, "customColors"],
+        legend: [4, "legend"],
+        scaleType: [5, "scaleType"],
+        height: [6, "height"]
+      }, {
+        onDomainChange: "onDomainChange"
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](2, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, 0, 1, null, View_LineChartComponent_7)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](4, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_1 = _ck(_v, 2, 0, _co.timelineWidth, _co.height);
+
+        var currVal_2 = _co.results;
+        var currVal_3 = _co.scheme;
+        var currVal_4 = _co.customColors;
+        var currVal_5 = _co.legend;
+        var currVal_6 = _co.scaleType;
+        var currVal_7 = _co.timelineHeight;
+
+        _ck(_v, 1, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
+
+        var currVal_8 = _co.results;
+        var currVal_9 = _co.trackBy;
+
+        _ck(_v, 4, 0, currVal_8, currVal_9);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.timelineTransform;
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_LineChartComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 16777216, null, null, 18, "ngx-charts-chart", [], null, [[null, "legendLabelClick"], [null, "legendLabelActivate"], [null, "legendLabelDeactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("legendLabelClick" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("legendLabelActivate" === en) {
+          var pd_1 = _co.onActivate($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("legendLabelDeactivate" === en) {
+          var pd_2 = _co.onDeactivate($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_15__["View_ChartComponent_0"], _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_15__["RenderType_ChartComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_16__["TooltipService"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_16__["TooltipService"], [_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_17__["InjectionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 573440, null, 0, _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_18__["ChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_16__["TooltipService"]], {
+        view: [0, "view"],
+        showLegend: [1, "showLegend"],
+        legendOptions: [2, "legendOptions"],
+        activeEntries: [3, "activeEntries"],
+        animations: [4, "animations"]
+      }, {
+        legendLabelClick: "legendLabelClick",
+        legendLabelActivate: "legendLabelActivate",
+        legendLabelDeactivate: "legendLabelDeactivate"
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](3, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, 0, 2, ":svg:defs", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 1, ":svg:clipPath", [], [[1, "id", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, ":svg:rect", [], [[1, "width", 0], [1, "height", 0], [1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, 0, 9, ":svg:g", [["class", "line-chart chart"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LineChartComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](9, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LineChartComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](11, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 4, ":svg:g", [], [[1, "clip-path", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LineChartComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](14, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_LineChartComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](16, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, 0, 1, null, View_LineChartComponent_6)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](18, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _ck(_v, 3, 0, _co.width, _co.height);
+
+        var currVal_1 = _co.legend;
+        var currVal_2 = _co.legendOptions;
+        var currVal_3 = _co.activeEntries;
+        var currVal_4 = _co.animations;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4);
+
+        var currVal_10 = _co.xAxis;
+
+        _ck(_v, 9, 0, currVal_10);
+
+        var currVal_11 = _co.yAxis;
+
+        _ck(_v, 11, 0, currVal_11);
+
+        var currVal_13 = _co.results;
+        var currVal_14 = _co.trackBy;
+
+        _ck(_v, 14, 0, currVal_13, currVal_14);
+
+        var currVal_15 = !_co.tooltipDisabled;
+
+        _ck(_v, 16, 0, currVal_15);
+
+        var currVal_16 = _co.timeline && _co.scaleType != "ordinal";
+
+        _ck(_v, 18, 0, currVal_16);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_5 = _co.clipPathId;
+
+        _ck(_v, 5, 0, currVal_5);
+
+        var currVal_6 = _co.dims.width + 10;
+        var currVal_7 = _co.dims.height + 10;
+        var currVal_8 = "translate(-5, -5)";
+
+        _ck(_v, 6, 0, currVal_6, currVal_7, currVal_8);
+
+        var currVal_9 = _co.transform;
+
+        _ck(_v, 7, 0, currVal_9);
+
+        var currVal_12 = _co.clipPath;
+
+        _ck(_v, 12, 0, currVal_12);
+      });
+    }
+
+    function View_LineChartComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 3, "ngx-charts-line-chart", [], null, [[null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("mouseleave" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).hideCircles() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, View_LineChartComponent_0, RenderType_LineChartComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 4898816, null, 2, _line_chart_component__WEBPACK_IMPORTED_MODULE_19__["LineChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 1, {
+        tooltipTemplate: 0
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 2, {
+        seriesTooltipTemplate: 0
+      })], null, null);
+    }
+
+    var LineChartComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("ngx-charts-line-chart", _line_chart_component__WEBPACK_IMPORTED_MODULE_19__["LineChartComponent"], View_LineChartComponent_Host_0, {
+      results: "results",
+      view: "view",
+      scheme: "scheme",
+      schemeType: "schemeType",
+      customColors: "customColors",
+      animations: "animations",
+      legend: "legend",
+      legendTitle: "legendTitle",
+      legendPosition: "legendPosition",
+      xAxis: "xAxis",
+      yAxis: "yAxis",
+      showXAxisLabel: "showXAxisLabel",
+      showYAxisLabel: "showYAxisLabel",
+      xAxisLabel: "xAxisLabel",
+      yAxisLabel: "yAxisLabel",
+      autoScale: "autoScale",
+      timeline: "timeline",
+      gradient: "gradient",
+      showGridLines: "showGridLines",
+      curve: "curve",
+      activeEntries: "activeEntries",
+      rangeFillOpacity: "rangeFillOpacity",
+      trimXAxisTicks: "trimXAxisTicks",
+      trimYAxisTicks: "trimYAxisTicks",
+      rotateXAxisTicks: "rotateXAxisTicks",
+      maxXAxisTickLength: "maxXAxisTickLength",
+      maxYAxisTickLength: "maxYAxisTickLength",
+      xAxisTickFormatting: "xAxisTickFormatting",
+      yAxisTickFormatting: "yAxisTickFormatting",
+      xAxisTicks: "xAxisTicks",
+      yAxisTicks: "yAxisTicks",
+      roundDomains: "roundDomains",
+      tooltipDisabled: "tooltipDisabled",
+      showRefLines: "showRefLines",
+      referenceLines: "referenceLines",
+      showRefLabels: "showRefLabels",
+      xScaleMin: "xScaleMin",
+      xScaleMax: "xScaleMax",
+      yScaleMin: "yScaleMin",
+      yScaleMax: "yScaleMax"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/line-chart/line-series.component.ngfactory.js":
+  /*!*************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/line-chart/line-series.component.ngfactory.js ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: RenderType_LineSeriesComponent, View_LineSeriesComponent_0, View_LineSeriesComponent_Host_0, LineSeriesComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseLineChartLineSeriesComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_LineSeriesComponent", function () {
+      return RenderType_LineSeriesComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LineSeriesComponent_0", function () {
+      return View_LineSeriesComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LineSeriesComponent_Host_0", function () {
+      return View_LineSeriesComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LineSeriesComponentNgFactory", function () {
+      return LineSeriesComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../common/svg-linear-gradient.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/svg-linear-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-linear-gradient.component.js");
+    /* harmony import */
+
+
+    var _common_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/area.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/area.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_area_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../common/area.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/area.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _line_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./line.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _line_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./line.component */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line.component.js");
+    /* harmony import */
+
+
+    var _line_series_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./line-series.component */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-series.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_LineSeriesComponent = [];
+
+    var RenderType_LineSeriesComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_LineSeriesComponent,
+      data: {}
+    });
+
+    function View_LineSeriesComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-svg-linear-gradient", ""], ["orientation", "vertical"]], null, null, null, _common_svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_SvgLinearGradientComponent_0"], _common_svg_linear_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_SvgLinearGradientComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _common_svg_linear_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgLinearGradientComponent"], [], {
+        orientation: [0, "orientation"],
+        name: [1, "name"],
+        stops: [2, "stops"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "vertical";
+        var currVal_1 = _co.gradientId;
+        var currVal_2 = _co.gradientStops;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2);
+      }, null);
+    }
+
+    function View_LineSeriesComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["class", "line-series-range"], ["ngx-charts-area", ""]], [[2, "active", null], [2, "inactive", null]], null, null, _common_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["View_AreaComponent_0"], _common_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["RenderType_AreaComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _common_area_component__WEBPACK_IMPORTED_MODULE_4__["AreaComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        data: [0, "data"],
+        path: [1, "path"],
+        fill: [2, "fill"],
+        opacity: [3, "opacity"],
+        animations: [4, "animations"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_2 = _co.data;
+        var currVal_3 = _co.outerPath;
+        var currVal_4 = _co.hasGradient ? _co.gradientUrl : _co.colors.getColor(_co.data.name);
+        var currVal_5 = _co.rangeFillOpacity;
+        var currVal_6 = _co.animations;
+
+        _ck(_v, 1, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.isActive(_co.data);
+
+        var currVal_1 = _co.isInactive(_co.data);
+
+        _ck(_v, 0, 0, currVal_0, currVal_1);
+      });
+    }
+
+    function View_LineSeriesComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 9, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 2, ":svg:defs", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_LineSeriesComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](4, 0, null, null, 1, ":svg:g", [["class", "line-highlight"], ["ngx-charts-area", ""]], [[2, "active", null], [2, "inactive", null]], null, null, _common_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["View_AreaComponent_0"], _common_area_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["RenderType_AreaComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 573440, null, 0, _common_area_component__WEBPACK_IMPORTED_MODULE_4__["AreaComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        data: [0, "data"],
+        path: [1, "path"],
+        fill: [2, "fill"],
+        opacity: [3, "opacity"],
+        startOpacity: [4, "startOpacity"],
+        gradient: [5, "gradient"],
+        stops: [6, "stops"],
+        animations: [7, "animations"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](6, 0, null, null, 1, ":svg:g", [["class", "line-series"], ["ngx-charts-line", ""]], [[2, "active", null], [2, "inactive", null]], null, null, _line_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["View_LineComponent_0"], _line_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["RenderType_LineComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](7, 573440, null, 0, _line_component__WEBPACK_IMPORTED_MODULE_7__["LineComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        path: [0, "path"],
+        stroke: [1, "stroke"],
+        data: [2, "data"],
+        animations: [3, "animations"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_LineSeriesComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](9, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.hasGradient;
+
+        _ck(_v, 3, 0, currVal_0);
+
+        var currVal_3 = _co.data;
+        var currVal_4 = _co.areaPath;
+        var currVal_5 = _co.hasGradient ? _co.gradientUrl : _co.colors.getColor(_co.data.name);
+        var currVal_6 = 0.25;
+        var currVal_7 = 0;
+        var currVal_8 = true;
+        var currVal_9 = _co.areaGradientStops;
+        var currVal_10 = _co.animations;
+
+        _ck(_v, 5, 0, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10);
+
+        var currVal_13 = _co.path;
+        var currVal_14 = _co.stroke;
+        var currVal_15 = _co.data;
+        var currVal_16 = _co.animations;
+
+        _ck(_v, 7, 0, currVal_13, currVal_14, currVal_15, currVal_16);
+
+        var currVal_17 = _co.hasRange;
+
+        _ck(_v, 9, 0, currVal_17);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_1 = _co.isActive(_co.data);
+
+        var currVal_2 = _co.isInactive(_co.data);
+
+        _ck(_v, 4, 0, currVal_1, currVal_2);
+
+        var currVal_11 = _co.isActive(_co.data);
+
+        var currVal_12 = _co.isInactive(_co.data);
+
+        _ck(_v, 6, 0, currVal_11, currVal_12);
+      });
+    }
+
+    function View_LineSeriesComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-line-series", ""]], null, null, null, View_LineSeriesComponent_0, RenderType_LineSeriesComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _line_series_component__WEBPACK_IMPORTED_MODULE_8__["LineSeriesComponent"], [], null, null)], null, null);
+    }
+
+    var LineSeriesComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-line-series]", _line_series_component__WEBPACK_IMPORTED_MODULE_8__["LineSeriesComponent"], View_LineSeriesComponent_Host_0, {
+      data: "data",
+      xScale: "xScale",
+      yScale: "yScale",
+      colors: "colors",
+      scaleType: "scaleType",
+      curve: "curve",
+      activeEntries: "activeEntries",
+      rangeFillOpacity: "rangeFillOpacity",
+      hasRange: "hasRange",
+      animations: "animations"
+    }, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/line-chart/line.component.ngfactory.js":
+  /*!******************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/line-chart/line.component.ngfactory.js ***!
+    \******************************************************************************************/
+
+  /*! exports provided: RenderType_LineComponent, View_LineComponent_0, View_LineComponent_Host_0, LineComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleaseLineChartLineComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_LineComponent", function () {
+      return RenderType_LineComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LineComponent_0", function () {
+      return View_LineComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_LineComponent_Host_0", function () {
+      return View_LineComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LineComponentNgFactory", function () {
+      return LineComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _line_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./line.component */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_LineComponent = [];
+
+    var RenderType_LineComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_LineComponent,
+      data: {
+        "animation": [{
+          type: 7,
+          name: "animationState",
+          definitions: [{
+            type: 1,
+            expr: ":enter",
+            animation: [{
+              type: 6,
+              styles: {
+                strokeDasharray: 2000,
+                strokeDashoffset: 2000
+              },
+              offset: null
+            }, {
+              type: 4,
+              styles: {
+                type: 6,
+                styles: {
+                  strokeDashoffset: 0
+                },
+                offset: null
+              },
+              timings: 1000
+            }],
+            options: null
+          }],
+          options: {}
+        }]
+      }
+    });
+
+    function View_LineComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 0, ":svg:path", [["class", "line"], ["stroke-width", "1.5px"]], [[24, "@animationState", 0], [1, "d", 0], [1, "fill", 0], [1, "stroke", 0]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = "active";
+        var currVal_1 = _co.initialPath;
+        var currVal_2 = _co.fill;
+        var currVal_3 = _co.stroke;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3);
+      });
+    }
+
+    function View_LineComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-line", ""]], null, null, null, View_LineComponent_0, RenderType_LineComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _line_component__WEBPACK_IMPORTED_MODULE_1__["LineComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null);
+    }
+
+    var LineComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-line]", _line_component__WEBPACK_IMPORTED_MODULE_1__["LineComponent"], View_LineComponent_Host_0, {
+      path: "path",
+      stroke: "stroke",
+      data: "data",
+      fill: "fill",
+      animations: "animations"
+    }, {
+      select: "select"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.css.ngstyle.js":
+  /*!*********************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.css.ngstyle.js ***!
+    \*********************************************************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleasePieChartAdvancedPieChartComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".advanced-pie {\n  display: inline-block;\n  float: left; }\n\n.advanced-pie-legend-wrapper {\n  display: inline-block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9Ac3dpbWxhbmUvbmd4LWNoYXJ0cy9yZWxlYXNlL3BpZS1jaGFydC9hZHZhbmNlZC1waWUtY2hhcnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtFQUNyQixXQUFXLEVBQUU7O0FBRWY7RUFDRSxxQkFBcUIsRUFBRSIsImZpbGUiOiJub2RlX21vZHVsZXMvQHN3aW1sYW5lL25neC1jaGFydHMvcmVsZWFzZS9waWUtY2hhcnQvYWR2YW5jZWQtcGllLWNoYXJ0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWR2YW5jZWQtcGllIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBmbG9hdDogbGVmdDsgfVxuXG4uYWR2YW5jZWQtcGllLWxlZ2VuZC13cmFwcGVyIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrOyB9XG4iXX0= */"];
+    /***/
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.ngfactory.js":
+  /*!*******************************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.ngfactory.js ***!
+    \*******************************************************************************************************/
+
+  /*! exports provided: RenderType_AdvancedPieChartComponent, View_AdvancedPieChartComponent_0, View_AdvancedPieChartComponent_Host_0, AdvancedPieChartComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleasePieChartAdvancedPieChartComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_AdvancedPieChartComponent", function () {
+      return RenderType_AdvancedPieChartComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AdvancedPieChartComponent_0", function () {
+      return View_AdvancedPieChartComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_AdvancedPieChartComponent_Host_0", function () {
+      return View_AdvancedPieChartComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdvancedPieChartComponentNgFactory", function () {
+      return AdvancedPieChartComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ../common/base-chart.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/common/base-chart.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _advanced_pie_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./advanced-pie-chart.component.css.ngstyle */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/charts/chart.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../common/tooltip/injection.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/injection.service.js");
+    /* harmony import */
+
+
+    var _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../common/charts/chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/charts/chart.component.js");
+    /* harmony import */
+
+
+    var _pie_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./pie-series.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-series.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _pie_series_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./pie-series.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-series.component.js");
+    /* harmony import */
+
+
+    var _common_legend_advanced_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../common/legend/advanced-legend.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_legend_advanced_legend_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ../common/legend/advanced-legend.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/legend/advanced-legend.component.js");
+    /* harmony import */
+
+
+    var _advanced_pie_chart_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./advanced-pie-chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_AdvancedPieChartComponent = [_common_base_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"], _advanced_pie_chart_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_1__["styles"]];
+
+    var RenderType_AdvancedPieChartComponent = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_AdvancedPieChartComponent,
+      data: {}
+    });
+
+    function View_AdvancedPieChartComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](0, 0, null, null, 11, "div", [], [[4, "width", "px"], [4, "height", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](1, 0, null, null, 7, "div", [["class", "advanced-pie chart"]], [[4, "width", "px"], [4, "height", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](2, 16777216, null, null, 6, "ngx-charts-chart", [], null, null, null, _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["View_ChartComponent_0"], _common_charts_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["RenderType_ChartComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵprd"](512, null, _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_4__["TooltipService"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_4__["TooltipService"], [_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_5__["InjectionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵdid"](4, 573440, null, 0, _common_charts_chart_component__WEBPACK_IMPORTED_MODULE_6__["ChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"], _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_4__["TooltipService"]], {
+        view: [0, "view"],
+        showLegend: [1, "showLegend"],
+        animations: [2, "animations"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵpad"](5, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](6, 0, null, 0, 2, ":svg:g", [["class", "pie chart"]], [[1, "transform", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](7, 0, null, null, 1, ":svg:g", [["ngx-charts-pie-series", ""]], null, [[null, "select"], [null, "activate"], [null, "deactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("select" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_1 = _co.onActivate($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_2 = _co.onDeactivate($event) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _pie_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_7__["View_PieSeriesComponent_0"], _pie_series_component_ngfactory__WEBPACK_IMPORTED_MODULE_7__["RenderType_PieSeriesComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵdid"](8, 573440, null, 0, _pie_series_component__WEBPACK_IMPORTED_MODULE_8__["PieSeriesComponent"], [], {
+        colors: [0, "colors"],
+        series: [1, "series"],
+        innerRadius: [2, "innerRadius"],
+        outerRadius: [3, "outerRadius"],
+        gradient: [4, "gradient"],
+        activeEntries: [5, "activeEntries"],
+        tooltipText: [6, "tooltipText"],
+        tooltipDisabled: [7, "tooltipDisabled"],
+        tooltipTemplate: [8, "tooltipTemplate"],
+        animations: [9, "animations"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](9, 0, null, null, 2, "div", [["class", "advanced-pie-legend-wrapper"]], [[4, "width", "px"], [4, "height", "px"]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](10, 0, null, null, 1, "ngx-charts-advanced-legend", [], null, [[null, "select"], [null, "activate"], [null, "deactivate"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("select" === en) {
+          var pd_0 = _co.onClick($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_1 = _co.onActivate($event, true) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_2 = _co.onDeactivate($event, true) !== false;
+          ad = pd_2 && ad;
+        }
+
+        return ad;
+      }, _common_legend_advanced_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_9__["View_AdvancedLegendComponent_0"], _common_legend_advanced_legend_component_ngfactory__WEBPACK_IMPORTED_MODULE_9__["RenderType_AdvancedLegendComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵdid"](11, 573440, null, 0, _common_legend_advanced_legend_component__WEBPACK_IMPORTED_MODULE_10__["AdvancedLegendComponent"], [], {
+        width: [0, "width"],
+        data: [1, "data"],
+        colors: [2, "colors"],
+        label: [3, "label"],
+        animations: [4, "animations"],
+        valueFormatting: [5, "valueFormatting"],
+        labelFormatting: [6, "labelFormatting"],
+        percentageFormatting: [7, "percentageFormatting"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_4 = _ck(_v, 5, 0, _co.width, _co.height);
+
+        var currVal_5 = false;
+        var currVal_6 = _co.animations;
+
+        _ck(_v, 4, 0, currVal_4, currVal_5, currVal_6);
+
+        var currVal_8 = _co.colors;
+        var currVal_9 = _co.results;
+        var currVal_10 = _co.innerRadius;
+        var currVal_11 = _co.outerRadius;
+        var currVal_12 = _co.gradient;
+        var currVal_13 = _co.activeEntries;
+        var currVal_14 = _co.tooltipText;
+        var currVal_15 = _co.tooltipDisabled;
+        var currVal_16 = _co.tooltipTemplate;
+        var currVal_17 = _co.animations;
+
+        _ck(_v, 8, 0, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17);
+
+        var currVal_20 = _co.width - _co.dims.width - _co.margin[1];
+        var currVal_21 = _co.results;
+        var currVal_22 = _co.colors;
+        var currVal_23 = _co.label;
+        var currVal_24 = _co.animations;
+        var currVal_25 = _co.valueFormatting;
+        var currVal_26 = _co.nameFormatting;
+        var currVal_27 = _co.percentageFormatting;
+
+        _ck(_v, 11, 0, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.width;
+        var currVal_1 = _co.height;
+
+        _ck(_v, 0, 0, currVal_0, currVal_1);
+
+        var currVal_2 = _co.dims.width;
+        var currVal_3 = _co.dims.height;
+
+        _ck(_v, 1, 0, currVal_2, currVal_3);
+
+        var currVal_7 = _co.transform;
+
+        _ck(_v, 6, 0, currVal_7);
+
+        var currVal_18 = _co.width - _co.dims.width;
+        var currVal_19 = _co.height;
+
+        _ck(_v, 9, 0, currVal_18, currVal_19);
+      });
+    }
+
+    function View_AdvancedPieChartComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵeld"](0, 0, null, null, 2, "ngx-charts-advanced-pie-chart", [], null, null, null, View_AdvancedPieChartComponent_0, RenderType_AdvancedPieChartComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵdid"](1, 4898816, null, 1, _advanced_pie_chart_component__WEBPACK_IMPORTED_MODULE_11__["AdvancedPieChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵqud"](603979776, 1, {
+        tooltipTemplate: 0
+      })], null, null);
+    }
+
+    var AdvancedPieChartComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵccf"]("ngx-charts-advanced-pie-chart", _advanced_pie_chart_component__WEBPACK_IMPORTED_MODULE_11__["AdvancedPieChartComponent"], View_AdvancedPieChartComponent_Host_0, {
+      results: "results",
+      view: "view",
+      scheme: "scheme",
+      schemeType: "schemeType",
+      customColors: "customColors",
+      animations: "animations",
+      gradient: "gradient",
+      activeEntries: "activeEntries",
+      tooltipDisabled: "tooltipDisabled",
+      tooltipText: "tooltipText",
+      label: "label",
+      valueFormatting: "valueFormatting",
+      nameFormatting: "nameFormatting",
+      percentageFormatting: "percentageFormatting"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-arc.component.ngfactory.js":
+  /*!********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-arc.component.ngfactory.js ***!
+    \********************************************************************************************/
+
+  /*! exports provided: RenderType_PieArcComponent, View_PieArcComponent_0, View_PieArcComponent_Host_0, PieArcComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleasePieChartPieArcComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_PieArcComponent", function () {
+      return RenderType_PieArcComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_PieArcComponent_0", function () {
+      return View_PieArcComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_PieArcComponent_Host_0", function () {
+      return View_PieArcComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PieArcComponentNgFactory", function () {
+      return PieArcComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _common_svg_radial_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../common/svg-radial-gradient.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-radial-gradient.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_svg_radial_gradient_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../common/svg-radial-gradient.component */
+    "./node_modules/@swimlane/ngx-charts/release/common/svg-radial-gradient.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _pie_arc_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./pie-arc.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-arc.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_PieArcComponent = [];
+
+    var RenderType_PieArcComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_PieArcComponent,
+      data: {}
+    });
+
+    function View_PieArcComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, ":svg:defs", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, ":svg:g", [["ngx-charts-svg-radial-gradient", ""], ["orientation", "vertical"]], null, null, null, _common_svg_radial_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_SvgRadialGradientComponent_0"], _common_svg_radial_gradient_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_SvgRadialGradientComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 573440, null, 0, _common_svg_radial_gradient_component__WEBPACK_IMPORTED_MODULE_2__["SvgRadialGradientComponent"], [], {
+        color: [0, "color"],
+        name: [1, "name"],
+        startOpacity: [2, "startOpacity"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.fill;
+        var currVal_1 = _co.radialGradientId;
+        var currVal_2 = _co.startOpacity;
+
+        _ck(_v, 2, 0, currVal_0, currVal_1, currVal_2);
+      }, null);
+    }
+
+    function View_PieArcComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 3, ":svg:g", [["class", "arc-group"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_PieArcComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](3, 0, null, null, 0, ":svg:path", [["class", "arc"]], [[1, "d", 0], [2, "active", null], [1, "fill", 0], [4, "pointer-events", null]], [[null, "click"], [null, "dblclick"], [null, "mouseenter"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.onClick() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("dblclick" === en) {
+          var pd_1 = _co.onDblClick($event) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _co.activate.emit(_co.data) !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _co.deactivate.emit(_co.data) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, null, null))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.gradient;
+
+        _ck(_v, 2, 0, currVal_0);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = _co.path;
+        var currVal_2 = _co.isActive;
+
+        var currVal_3 = _co.getGradient();
+
+        var currVal_4 = _co.getPointerEvents();
+
+        _ck(_v, 3, 0, currVal_1, currVal_2, currVal_3, currVal_4);
+      });
+    }
+
+    function View_PieArcComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-pie-arc", ""]], null, null, null, View_PieArcComponent_0, RenderType_PieArcComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _pie_arc_component__WEBPACK_IMPORTED_MODULE_4__["PieArcComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null);
+    }
+
+    var PieArcComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-pie-arc]", _pie_arc_component__WEBPACK_IMPORTED_MODULE_4__["PieArcComponent"], View_PieArcComponent_Host_0, {
+      fill: "fill",
+      startAngle: "startAngle",
+      endAngle: "endAngle",
+      innerRadius: "innerRadius",
+      outerRadius: "outerRadius",
+      cornerRadius: "cornerRadius",
+      value: "value",
+      max: "max",
+      data: "data",
+      explodeSlices: "explodeSlices",
+      gradient: "gradient",
+      animate: "animate",
+      pointerEvents: "pointerEvents",
+      isActive: "isActive"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate",
+      dblclick: "dblclick"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-label.component.ngfactory.js":
+  /*!**********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-label.component.ngfactory.js ***!
+    \**********************************************************************************************/
+
+  /*! exports provided: RenderType_PieLabelComponent, View_PieLabelComponent_0, View_PieLabelComponent_Host_0, PieLabelComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleasePieChartPieLabelComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_PieLabelComponent", function () {
+      return RenderType_PieLabelComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_PieLabelComponent_0", function () {
+      return View_PieLabelComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_PieLabelComponent_Host_0", function () {
+      return View_PieLabelComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PieLabelComponentNgFactory", function () {
+      return PieLabelComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _pie_label_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./pie-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-label.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_PieLabelComponent = [];
+
+    var RenderType_PieLabelComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_PieLabelComponent,
+      data: {}
+    });
+
+    function View_PieLabelComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "title", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](1, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 2, ":svg:g", [], [[1, "transform", 0], [4, "transform", null], [4, "transition", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](3, 0, null, null, 1, ":svg:text", [["class", "pie-label"], ["dy", ".35em"]], [[2, "animation", null], [4, "textAnchor", null], [4, "shapeRendering", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](4, null, [" ", " "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](5, 0, null, null, 0, ":svg:path", [["class", "pie-label-line line"], ["fill", "none"]], [[1, "d", 0], [1, "stroke", 0], [2, "animation", null]], null, null, null, null))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.label;
+
+        _ck(_v, 1, 0, currVal_0);
+
+        var currVal_1 = _co.attrTransform;
+        var currVal_2 = _co.styleTransform;
+        var currVal_3 = _co.textTransition;
+
+        _ck(_v, 2, 0, currVal_1, currVal_2, currVal_3);
+
+        var currVal_4 = _co.animations;
+
+        var currVal_5 = _co.textAnchor();
+
+        var currVal_6 = "crispEdges";
+
+        _ck(_v, 3, 0, currVal_4, currVal_5, currVal_6);
+
+        var currVal_7 = _co.labelTrim ? _co.trimLabel(_co.label, _co.labelTrimSize) : _co.label;
+
+        _ck(_v, 4, 0, currVal_7);
+
+        var currVal_8 = _co.line;
+        var currVal_9 = _co.color;
+        var currVal_10 = _co.animations;
+
+        _ck(_v, 5, 0, currVal_8, currVal_9, currVal_10);
+      });
+    }
+
+    function View_PieLabelComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-pie-label", ""]], null, null, null, View_PieLabelComponent_0, RenderType_PieLabelComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _pie_label_component__WEBPACK_IMPORTED_MODULE_1__["PieLabelComponent"], [], null, null)], null, null);
+    }
+
+    var PieLabelComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-pie-label]", _pie_label_component__WEBPACK_IMPORTED_MODULE_1__["PieLabelComponent"], View_PieLabelComponent_Host_0, {
+      data: "data",
+      radius: "radius",
+      label: "label",
+      color: "color",
+      max: "max",
+      value: "value",
+      explodeSlices: "explodeSlices",
+      animations: "animations",
+      labelTrim: "labelTrim",
+      labelTrimSize: "labelTrimSize"
+    }, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-series.component.ngfactory.js":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-series.component.ngfactory.js ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: RenderType_PieSeriesComponent, View_PieSeriesComponent_0, View_PieSeriesComponent_Host_0, PieSeriesComponentNgFactory */
+
+  /***/
+  function node_modulesSwimlaneNgxChartsReleasePieChartPieSeriesComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_PieSeriesComponent", function () {
+      return RenderType_PieSeriesComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_PieSeriesComponent_0", function () {
+      return View_PieSeriesComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_PieSeriesComponent_Host_0", function () {
+      return View_PieSeriesComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PieSeriesComponentNgFactory", function () {
+      return PieSeriesComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _pie_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./pie-label.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-label.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _pie_label_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./pie-label.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-label.component.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _pie_arc_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./pie-arc.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-arc.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.directive */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.directive.js");
+    /* harmony import */
+
+
+    var _common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _pie_arc_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./pie-arc.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-arc.component.js");
+    /* harmony import */
+
+
+    var _pie_series_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./pie-series.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-series.component.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_PieSeriesComponent = [];
+
+    var RenderType_PieSeriesComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_PieSeriesComponent,
+      data: {}
+    });
+
+    function View_PieSeriesComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, ":svg:g", [["ngx-charts-pie-label", ""]], null, null, null, _pie_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_PieLabelComponent_0"], _pie_label_component_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_PieLabelComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _pie_label_component__WEBPACK_IMPORTED_MODULE_2__["PieLabelComponent"], [], {
+        data: [0, "data"],
+        radius: [1, "radius"],
+        label: [2, "label"],
+        color: [3, "color"],
+        max: [4, "max"],
+        value: [5, "value"],
+        explodeSlices: [6, "explodeSlices"],
+        animations: [7, "animations"],
+        labelTrim: [8, "labelTrim"],
+        labelTrimSize: [9, "labelTrimSize"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _v.parent.context.$implicit;
+        var currVal_1 = _co.outerRadius;
+
+        var currVal_2 = _co.labelText(_v.parent.context.$implicit);
+
+        var currVal_3 = _co.color(_v.parent.context.$implicit);
+
+        var currVal_4 = _co.max;
+        var currVal_5 = _v.parent.context.$implicit.value;
+        var currVal_6 = _co.explodeSlices;
+        var currVal_7 = _co.animations;
+        var currVal_8 = _co.trimLabels;
+        var currVal_9 = _co.maxLabelLength;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9);
+      }, null);
+    }
+
+    function View_PieSeriesComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 5, ":svg:g", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_PieSeriesComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](3, 16777216, null, null, 2, ":svg:g", [["ngx-charts-pie-arc", ""], ["ngx-tooltip", ""]], null, [[null, "select"], [null, "activate"], [null, "deactivate"], [null, "dblclick"], [null, "focusin"], [null, "blur"], [null, "mouseenter"], [null, "mouseleave"], [null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("focusin" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 4).onFocus() !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 4).onBlur() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 4).onMouseEnter() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 4).onMouseLeave($event.target) !== false;
+          ad = pd_3 && ad;
+        }
+
+        if ("click" === en) {
+          var pd_4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 4).onMouseClick() !== false;
+          ad = pd_4 && ad;
+        }
+
+        if ("select" === en) {
+          var pd_5 = _co.onClick($event) !== false;
+          ad = pd_5 && ad;
+        }
+
+        if ("activate" === en) {
+          var pd_6 = _co.activate.emit($event) !== false;
+          ad = pd_6 && ad;
+        }
+
+        if ("deactivate" === en) {
+          var pd_7 = _co.deactivate.emit($event) !== false;
+          ad = pd_7 && ad;
+        }
+
+        if ("dblclick" === en) {
+          var pd_8 = _co.dblclick.emit($event) !== false;
+          ad = pd_8 && ad;
+        }
+
+        return ad;
+      }, _pie_arc_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_PieArcComponent_0"], _pie_arc_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_PieArcComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](4, 147456, null, 0, _common_tooltip_tooltip_directive__WEBPACK_IMPORTED_MODULE_5__["TooltipDirective"], [_common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_6__["TooltipService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], {
+        tooltipTitle: [0, "tooltipTitle"],
+        tooltipDisabled: [1, "tooltipDisabled"],
+        tooltipPlacement: [2, "tooltipPlacement"],
+        tooltipType: [3, "tooltipType"],
+        tooltipTemplate: [4, "tooltipTemplate"],
+        tooltipContext: [5, "tooltipContext"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 573440, null, 0, _pie_arc_component__WEBPACK_IMPORTED_MODULE_7__["PieArcComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], {
+        fill: [0, "fill"],
+        startAngle: [1, "startAngle"],
+        endAngle: [2, "endAngle"],
+        innerRadius: [3, "innerRadius"],
+        outerRadius: [4, "outerRadius"],
+        value: [5, "value"],
+        max: [6, "max"],
+        data: [7, "data"],
+        explodeSlices: [8, "explodeSlices"],
+        gradient: [9, "gradient"],
+        animate: [10, "animate"],
+        isActive: [11, "isActive"]
+      }, {
+        select: "select",
+        activate: "activate",
+        deactivate: "deactivate",
+        dblclick: "dblclick"
+      })], function (_ck, _v) {
+        var _co = _v.component;
+
+        var currVal_0 = _co.labelVisible(_v.context.$implicit);
+
+        _ck(_v, 2, 0, currVal_0);
+
+        var currVal_1 = _co.getTooltipTitle(_v.context.$implicit);
+
+        var currVal_2 = _co.tooltipDisabled;
+        var currVal_3 = "top";
+        var currVal_4 = "tooltip";
+        var currVal_5 = _co.tooltipTemplate;
+        var currVal_6 = _v.context.$implicit.data;
+
+        _ck(_v, 4, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
+
+        var currVal_7 = _co.color(_v.context.$implicit);
+
+        var currVal_8 = _v.context.$implicit.startAngle;
+        var currVal_9 = _v.context.$implicit.endAngle;
+        var currVal_10 = _co.innerRadius;
+        var currVal_11 = _co.outerRadius;
+        var currVal_12 = _v.context.$implicit.data.value;
+        var currVal_13 = _co.max;
+        var currVal_14 = _v.context.$implicit.data;
+        var currVal_15 = _co.explodeSlices;
+        var currVal_16 = _co.gradient;
+        var currVal_17 = _co.animations;
+
+        var currVal_18 = _co.isActive(_v.context.$implicit.data);
+
+        _ck(_v, 5, 1, [currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18]);
+      }, null);
+    }
+
+    function View_PieSeriesComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](2, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_PieSeriesComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"],
+        ngForTrackBy: [1, "ngForTrackBy"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.data;
+        var currVal_1 = _co.trackBy;
+
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+      }, null);
+    }
+
+    function View_PieSeriesComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "g", [["ngx-charts-pie-series", ""]], null, null, null, View_PieSeriesComponent_0, RenderType_PieSeriesComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 573440, null, 0, _pie_series_component__WEBPACK_IMPORTED_MODULE_8__["PieSeriesComponent"], [], null, null)], null, null);
+    }
+
+    var PieSeriesComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("g[ngx-charts-pie-series]", _pie_series_component__WEBPACK_IMPORTED_MODULE_8__["PieSeriesComponent"], View_PieSeriesComponent_Host_0, {
+      colors: "colors",
+      series: "series",
+      dims: "dims",
+      innerRadius: "innerRadius",
+      outerRadius: "outerRadius",
+      explodeSlices: "explodeSlices",
+      showLabels: "showLabels",
+      gradient: "gradient",
+      activeEntries: "activeEntries",
+      labelFormatting: "labelFormatting",
+      trimLabels: "trimLabels",
+      maxLabelLength: "maxLabelLength",
+      tooltipText: "tooltipText",
+      tooltipDisabled: "tooltipDisabled",
+      tooltipTemplate: "tooltipTemplate",
+      animations: "animations"
+    }, {
+      select: "select",
+      activate: "activate",
+      deactivate: "deactivate",
+      dblclick: "dblclick"
+    }, []);
+    /***/
+
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard-routing.module.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/dashboard/dashboard-routing.module.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: DashboardRoutingModule, ɵ0 */
+
+  /***/
+  function srcAppDashboardDashboardRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardRoutingModule", function () {
+      return DashboardRoutingModule;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ɵ0", function () {
+      return ɵ0;
+    });
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _dashboard_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./dashboard.component */
+    "./src/app/dashboard/dashboard.component.ts");
+
+    var ɵ0 = {
+      breadcrumb: 'Dashboard'
+    };
+    var routes = [{
+      path: '',
+      component: _dashboard_component__WEBPACK_IMPORTED_MODULE_1__["DashboardComponent"],
+      data: ɵ0
+    }];
+
+    var DashboardRoutingModule = function DashboardRoutingModule() {
+      _classCallCheck(this, DashboardRoutingModule);
+    };
+    /***/
+
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard.component.css.ngstyle.js":
+  /*!**************************************************************!*\
+    !*** ./src/app/dashboard/dashboard.component.css.ngstyle.js ***!
+    \**************************************************************/
+
+  /*! exports provided: styles */
+
+  /***/
+  function srcAppDashboardDashboardComponentCssNgstyleJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "styles", function () {
+      return styles;
+    });
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles = [".dashboard-container {\n  display: flex;\n  width: 100%;\n  flex-wrap: wrap;\n}\n\n.card-dashboard {\n  flex: 1;\n  background-color: white;\n  border-radius: 12px;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  padding: 20px;\n  margin: 10px;\n  max-width: calc(100% / 4);\n  \n}\n\n.chart-container {\n  max-width: 100%;\n  \n  max-height: 500px;\n  \n  overflow: auto;\n  \n  position: relative;\n  \n}\n\n.clickable {\n  cursor: pointer;\n}\n\n.card-content {\n  display: flex;\n  align-items: center;\n}\n\n.icon-container {\n  flex-shrink: 0;\n  margin-right: 20px;\n}\n\n.text-container {\n  text-align: left;\n}\n\nh3 {\n  margin: 0;\n  font-size: 2rem;\n  color: #333;\n}\n\np {\n  margin: 5px 0 0 0;\n  color: #777;\n}\n\n.contenedor-userinfo {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 10px;\n}\n\n.contenedor-userinfo span {\n  font-size: 1.2rem;\n}\n\n.contenedor-desc {\n  display: flex;\n  flex-direction: column;\n  padding-top: 10px;\n}\n\n.contenedor-desc span {\n  color: rgb(109, 109, 109);\n}\n\n.contenedor-venue {\n  display: flex;\n  flex-direction: row;\n  padding-top: 10px;\n  align-items: center;\n  justify-content: space-between;\n  gap: 10px;\n  width: 100%;\n  position: relative;\n  \n}\n\n.contenedor-venue span {\n  font-size: 1.2rem;\n  color: black;\n  font-weight: bold;\n}\n\n.contenedor-rating {\n  display: flex;\n  padding-top: 10px;\n}\n\n.image-container {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  overflow: hidden;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f0f0f0;\n}\n\n.image-container img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n.image-container2 {\n  width: 120px;\n  \n  height: 120px;\n  border-radius: 50%;\n  overflow: hidden;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f0f0f0;\n  position: absolute;\n  \n  right: -50px;\n  \n  top: 50%;\n  \n  transform: translateY(-85%);\n  \n  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;\n}\n\n.image-container2 img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n#dash-graficas {\n  max-width: 100%;\n  overflow: scroll;\n  padding-top: 10px;\n}\n\n.card {\n  background-color: white;\n  border-radius: 12px;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n\n@media (max-width: 1200px) {\n  .card-dashboard {\n    max-width: calc(100% / 3);\n    \n  }\n\n}\n\n@media (max-width: 992px) {\n  .card-dashboard {\n    max-width: calc(100% / 2);\n    \n  }\n\n}\n\n@media (max-width: 768px) {\n  .card-dashboard {\n    max-width: 100%;\n    \n  }\n\n}\n\n.custom-carousel {\n  margin-bottom: 40px;\n  width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsT0FBTztFQUNQLHVCQUF1QjtFQUN2QixtQkFBbUI7RUFDbkIsd0NBQXdDO0VBQ3hDLGFBQWE7RUFDYixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLGlDQUFpQztBQUNuQzs7QUFFQTtFQUNFLGVBQWU7RUFDZiwrQ0FBK0M7RUFDL0MsaUJBQWlCO0VBQ2pCLDBEQUEwRDtFQUMxRCxjQUFjO0VBQ2Qsa0VBQWtFO0VBQ2xFLGtCQUFrQjtFQUNsQixzRUFBc0U7QUFDeEU7O0FBR0E7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsZUFBZTtFQUNmLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQiw4QkFBOEI7RUFDOUIsU0FBUztFQUNULFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsMkNBQTJDO0FBQzdDOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osb0JBQWlCO0tBQWpCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixtQ0FBbUM7RUFDbkMsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQiw2REFBNkQ7RUFDN0QsWUFBWTtFQUNaLG9DQUFvQztFQUNwQyxRQUFRO0VBQ1IsZ0RBQWdEO0VBQ2hELDJCQUEyQjtFQUMzQixzQ0FBc0M7RUFDdEMsOEZBQThGO0FBQ2hHOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixvQkFBaUI7S0FBakIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLHdDQUF3QztBQUMxQzs7QUFHQTtFQUNFO0lBQ0UseUJBQXlCO0lBQ3pCLHFCQUFxQjtFQUN2Qjs7QUFFRjs7QUFFQTtFQUNFO0lBQ0UseUJBQXlCO0lBQ3pCLHFCQUFxQjtFQUN2Qjs7QUFFRjs7QUFFQTtFQUNFO0lBQ0UsZUFBZTtJQUNmLG9CQUFvQjtFQUN0Qjs7QUFFRjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9kYXNoYm9hcmQvZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZGFzaGJvYXJkLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHdpZHRoOiAxMDAlO1xuICBmbGV4LXdyYXA6IHdyYXA7XG59XG5cbi5jYXJkLWRhc2hib2FyZCB7XG4gIGZsZXg6IDE7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3JkZXItcmFkaXVzOiAxMnB4O1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICBwYWRkaW5nOiAyMHB4O1xuICBtYXJnaW46IDEwcHg7XG4gIG1heC13aWR0aDogY2FsYygxMDAlIC8gNCk7XG4gIC8qIFBvciBkZWZlY3RvIDQgY2FyZHMgcG9yIGZpbGEgKi9cbn1cblxuLmNoYXJ0LWNvbnRhaW5lciB7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgLyogTGltaXRhIGVsIGFuY2hvIG3DoXhpbW8gYWwgY29udGVuZWRvciBwYWRyZSAqL1xuICBtYXgtaGVpZ2h0OiA1MDBweDtcbiAgLyogUHVlZGVzIGFqdXN0YXIgZXN0YSBhbHR1cmEgbcOheGltYSBzZWfDum4gc2VhIG5lY2VzYXJpbyAqL1xuICBvdmVyZmxvdzogYXV0bztcbiAgLyogUGVybWl0ZSBhZ3JlZ2FyIHNjcm9sbCBzaSBlbCBjb250ZW5pZG8gc3VwZXJhIGxhcyBkaW1lbnNpb25lcyAqL1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIC8qIEFzZWd1cmEgcXVlIGxvcyBlbGVtZW50b3MgaGlqb3MgcGVybWFuZXpjYW4gZGVudHJvIGRlbCBjb250ZW5lZG9yICovXG59XG5cblxuLmNsaWNrYWJsZSB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLmNhcmQtY29udGVudCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5pY29uLWNvbnRhaW5lciB7XG4gIGZsZXgtc2hyaW5rOiAwO1xuICBtYXJnaW4tcmlnaHQ6IDIwcHg7XG59XG5cbi50ZXh0LWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG59XG5cbmgzIHtcbiAgbWFyZ2luOiAwO1xuICBmb250LXNpemU6IDJyZW07XG4gIGNvbG9yOiAjMzMzO1xufVxuXG5wIHtcbiAgbWFyZ2luOiA1cHggMCAwIDA7XG4gIGNvbG9yOiAjNzc3O1xufVxuXG4uY29udGVuZWRvci11c2VyaW5mbyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGdhcDogMTBweDtcbn1cblxuLmNvbnRlbmVkb3ItdXNlcmluZm8gc3BhbiB7XG4gIGZvbnQtc2l6ZTogMS4ycmVtO1xufVxuXG4uY29udGVuZWRvci1kZXNjIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgcGFkZGluZy10b3A6IDEwcHg7XG59XG5cbi5jb250ZW5lZG9yLWRlc2Mgc3BhbiB7XG4gIGNvbG9yOiByZ2IoMTA5LCAxMDksIDEwOSk7XG59XG5cbi5jb250ZW5lZG9yLXZlbnVlIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgcGFkZGluZy10b3A6IDEwcHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgZ2FwOiAxMHB4O1xuICB3aWR0aDogMTAwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAvKiBQYXJhIHBlcm1pdGlyIHBvc2ljaW9uYW1pZW50byByZWxhdGl2byAqL1xufVxuXG4uY29udGVuZWRvci12ZW51ZSBzcGFuIHtcbiAgZm9udC1zaXplOiAxLjJyZW07XG4gIGNvbG9yOiBibGFjaztcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi5jb250ZW5lZG9yLXJhdGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4uaW1hZ2UtY29udGFpbmVyIHtcbiAgd2lkdGg6IDUwcHg7XG4gIGhlaWdodDogNTBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YwZjBmMDtcbn1cblxuLmltYWdlLWNvbnRhaW5lciBpbWcge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvYmplY3QtZml0OiBjb3Zlcjtcbn1cblxuLmltYWdlLWNvbnRhaW5lcjIge1xuICB3aWR0aDogMTIwcHg7XG4gIC8qIFRhbWHDsW8gbcOhcyBncmFuZGUgZGUgbGEgaW1hZ2VuICovXG4gIGhlaWdodDogMTIwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmMGYwZjA7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgLyogUG9zaWNpw7NuIGFic29sdXRhIHBhcmEgcXVlIG5vIGFmZWN0ZSBlbCBmbHVqbyBkZWwgZGlzZcOxbyAqL1xuICByaWdodDogLTUwcHg7XG4gIC8qIEFqdXN0YSBsYSBwb3NpY2nDs24gYSBsYSBkZXJlY2hhICovXG4gIHRvcDogNTAlO1xuICAvKiBDZW50cmEgdmVydGljYWxtZW50ZSByZXNwZWN0byBhbCBjb250ZW5lZG9yICovXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtODUlKTtcbiAgLyogQWp1c3RlIHBhcmEgY2VudHJhciBjb3JyZWN0YW1lbnRlICovXG4gIGJveC1zaGFkb3c6IHJnYmEoNTAsIDUwLCA5MywgMC4yNSkgMHB4IDMwcHggNjBweCAtMTJweCwgcmdiYSgwLCAwLCAwLCAwLjMpIDBweCAxOHB4IDM2cHggLTE4cHg7XG59XG5cbi5pbWFnZS1jb250YWluZXIyIGltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG9iamVjdC1maXQ6IGNvdmVyO1xufVxuXG4jZGFzaC1ncmFmaWNhcyB7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgb3ZlcmZsb3c6IHNjcm9sbDtcbiAgcGFkZGluZy10b3A6IDEwcHg7XG59XG5cbi5jYXJkIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJvcmRlci1yYWRpdXM6IDEycHg7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG59XG5cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAuY2FyZC1kYXNoYm9hcmQge1xuICAgIG1heC13aWR0aDogY2FsYygxMDAlIC8gMyk7XG4gICAgLyogMyBjYXJkcyBwb3IgZmlsYSAqL1xuICB9XG5cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDk5MnB4KSB7XG4gIC5jYXJkLWRhc2hib2FyZCB7XG4gICAgbWF4LXdpZHRoOiBjYWxjKDEwMCUgLyAyKTtcbiAgICAvKiAyIGNhcmRzIHBvciBmaWxhICovXG4gIH1cblxufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgLmNhcmQtZGFzaGJvYXJkIHtcbiAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgLyogMSBjYXJkIHBvciBmaWxhICovXG4gIH1cblxufVxuXG4uY3VzdG9tLWNhcm91c2VsIHtcbiAgbWFyZ2luLWJvdHRvbTogNDBweDtcbiAgd2lkdGg6IDEwMCU7XG59Il19 */"];
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard.component.ngfactory.js":
+  /*!************************************************************!*\
+    !*** ./src/app/dashboard/dashboard.component.ngfactory.js ***!
+    \************************************************************/
+
+  /*! exports provided: RenderType_DashboardComponent, View_DashboardComponent_0, View_DashboardComponent_Host_0, DashboardComponentNgFactory */
+
+  /***/
+  function srcAppDashboardDashboardComponentNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RenderType_DashboardComponent", function () {
+      return RenderType_DashboardComponent;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_DashboardComponent_0", function () {
+      return View_DashboardComponent_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "View_DashboardComponent_Host_0", function () {
+      return View_DashboardComponent_Host_0;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardComponentNgFactory", function () {
+      return DashboardComponentNgFactory;
+    });
+    /* harmony import */
+
+
+    var _dashboard_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./dashboard.component.css.ngstyle */
+    "./src/app/dashboard/dashboard.component.css.ngstyle.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../../node_modules/@ng-bootstrap/ng-bootstrap/ng-bootstrap.ngfactory */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/ng-bootstrap.ngfactory.js");
+    /* harmony import */
+
+
+    var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ngx-translate/core */
+    "./node_modules/@ngx-translate/core/fesm2015/ngx-translate-core.js");
+    /* harmony import */
+
+
+    var _node_modules_swimlane_ngx_charts_release_bar_chart_bar_vertical_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../../node_modules/@swimlane/ngx-charts/release/bar-chart/bar-vertical.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-vertical.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_bar_chart_bar_vertical_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/bar-chart/bar-vertical.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-vertical.component.js");
+    /* harmony import */
+
+
+    var _node_modules_swimlane_ngx_charts_release_pie_chart_advanced_pie_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../../../node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_pie_chart_advanced_pie_chart_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/advanced-pie-chart.component.js");
+    /* harmony import */
+
+
+    var _node_modules_swimlane_ngx_charts_release_line_chart_line_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ../../../node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/line-chart/line-chart.component */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.component.js");
+    /* harmony import */
+
+
+    var _node_modules_swimlane_ngx_charts_release_bar_chart_bar_horizontal_component_ngfactory__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ../../../node_modules/@swimlane/ngx-charts/release/bar-chart/bar-horizontal.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-horizontal.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_bar_chart_bar_horizontal_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/bar-chart/bar-horizontal.component */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-horizontal.component.js");
+    /* harmony import */
+
+
+    var _dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! ./dashboard.component */
+    "./src/app/dashboard/dashboard.component.ts");
+    /* harmony import */
+
+
+    var _services_apis_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ../services/apis.service */
+    "./src/app/services/apis.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var styles_DashboardComponent = [_dashboard_component_css_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
+
+    var RenderType_DashboardComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({
+      encapsulation: 2,
+      styles: styles_DashboardComponent,
+      data: {}
+    });
+
+    function View_DashboardComponent_4(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 25, "div", [["class", "card-dashboard clickable"], ["style", "flex: 1; margin: 10px; position: relative;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 24, "div", [["class", "card-content"], ["style", "display: flex; flex-direction: column; align-items: start;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 4, "div", [["class", "contenedor-userinfo"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 1, "div", [["class", "image-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 0, "img", [["alt", "Profile Image"], ["height", "50"], ["width", "50"]], [[8, "src", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](6, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 4, "div", [["class", "contenedor-venue"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](9, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](10, 0, null, null, 1, "div", [["class", "image-container2"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 0, "img", [["alt", "Profile Image"]], [[8, "src", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 2, "div", [["class", "contenedor-desc"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](13, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](14, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 1, "div", [["class", "contenedor-rating"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](16, 0, null, null, 0, "span", [], [[8, "innerHTML", 1]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 0, "div", [["style", "border: 1px solid lightgrey;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 7, "div", [["class", "contenedor-fecha-hora"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](19, 0, null, null, 6, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](20, 0, null, null, 1, "strong", [["style", "color: #490608"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Fecha publicada: "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](22, null, ["", " / "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](23, 0, null, null, 1, "strong", [["style", "color: #490608"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Hora: "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](25, null, ["", ""]))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = (_v.context.$implicit == null ? null : _v.context.$implicit.uid == null ? null : _v.context.$implicit.uid.cover) ? _v.context.$implicit.uid.cover : "assets/images/user.png";
+
+        _ck(_v, 4, 0, currVal_0);
+
+        var currVal_1 = _v.context.$implicit == null ? null : _v.context.$implicit.uid == null ? null : _v.context.$implicit.uid.fullname;
+
+        _ck(_v, 6, 0, currVal_1);
+
+        var currVal_2 = _v.context.$implicit == null ? null : _v.context.$implicit.vid == null ? null : _v.context.$implicit.vid.name;
+
+        _ck(_v, 9, 0, currVal_2);
+
+        var currVal_3 = (_v.context.$implicit == null ? null : _v.context.$implicit.cover) ? _v.context.$implicit.cover : _v.context.$implicit == null ? null : _v.context.$implicit.vid == null ? null : _v.context.$implicit.vid.cover;
+
+        _ck(_v, 11, 0, currVal_3);
+
+        var currVal_4 = _v.context.$implicit == null ? null : _v.context.$implicit.descriptions;
+
+        _ck(_v, 14, 0, currVal_4);
+
+        var currVal_5 = _co.getStars(_v.context.$implicit == null ? null : _v.context.$implicit.rate);
+
+        _ck(_v, 16, 0, currVal_5);
+
+        var currVal_6 = _v.context.$implicit == null ? null : _v.context.$implicit.createdAt;
+
+        _ck(_v, 22, 0, currVal_6);
+
+        var currVal_7 = _co.convertTo12Hour(_v.context.$implicit == null ? null : _v.context.$implicit.createdTime);
+
+        _ck(_v, 25, 0, currVal_7);
+      });
+    }
+
+    function View_DashboardComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "div", [["class", "d-flex justify-content-around"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_DashboardComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var currVal_0 = _v.parent.context.$implicit;
+
+        _ck(_v, 2, 0, currVal_0);
+      }, null);
+    }
+
+    function View_DashboardComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](0, null, null, 1, null, View_DashboardComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 16384, [[6, 4]], 0, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbSlide"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], null, null)], null, null);
+    }
+
+    function View_DashboardComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 4, "ngb-carousel", [["class", "custom-carousel carousel slide"], ["tabIndex", "0"]], [[4, "display", null]], [[null, "keydown.arrowLeft"], [null, "keydown.arrowRight"], [null, "mouseenter"], [null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("keydown.arrowLeft" === en) {
+          var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).keyboard && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).prev(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).NgbSlideEventSource.ARROW_LEFT)) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("keydown.arrowRight" === en) {
+          var pd_1 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).keyboard && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).next(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).NgbSlideEventSource.ARROW_RIGHT)) !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("mouseenter" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).mouseEnter() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("mouseleave" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).mouseLeave() !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["View_NgbCarousel_0"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["RenderType_NgbCarousel"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 3325952, null, 1, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbCarousel"], [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbCarouselConfig"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["PLATFORM_ID"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], {
+        interval: [0, "interval"],
+        wrap: [1, "wrap"],
+        keyboard: [2, "keyboard"],
+        pauseOnHover: [3, "pauseOnHover"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 6, {
+        slides: 1
+      }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_DashboardComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](4, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_1 = 5000;
+        var currVal_2 = true;
+        var currVal_3 = true;
+        var currVal_4 = true;
+
+        _ck(_v, 1, 0, currVal_1, currVal_2, currVal_3, currVal_4);
+
+        var currVal_5 = _co.groupedReviews;
+
+        _ck(_v, 4, 0, currVal_5);
+      }, function (_ck, _v) {
+        var currVal_0 = "block";
+
+        _ck(_v, 0, 0, currVal_0);
+      });
+    }
+
+    function View_DashboardComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 94, "div", [["class", "dashboard-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 23, "div", [["class", "card-dashboard clickable"]], null, [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.redirectToOrders() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 22, "div", [["class", "card-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 15, "div", [["class", "icon-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 14, ":svg:svg", [["fill", "none"], ["height", "85"], ["viewBox", "0 0 85 85"], ["width", "85"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 0, ":svg:ellipse", [["cx", "42.1554"], ["cy", "42.5"], ["fill", "#00B074"], ["fill-opacity", "0.15"], ["rx", "42.1554"], ["ry", "42.5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, ":svg:path", [["d", "M18.6518 64.2747C21.8187 64.2747 24.4062 61.6627 24.4062 58.466V21.041H58.006V58.466C58.006 61.6627 55.4184 64.2747 52.2516 64.2747"], ["fill", "#00B074"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 0, ":svg:path", [["d", "M46.4972 58.4659V54.0607H12.8974V58.4659C12.8974 61.6626 15.485 64.2746 18.6518 64.2746H52.2516C49.0847 64.2746 46.4972 61.6626 46.4972 58.4659Z"], ["fill", "#0A5239"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 0, ":svg:path", [["d", "M34.718 28.4868H30.4311V30.3581H34.718V28.4868Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 0, ":svg:path", [["d", "M51.2088 28.4868H38.0393V30.3581H51.2088V28.4868Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](10, 0, null, null, 0, ":svg:path", [["d", "M34.718 35.1141H30.4311V36.9854H34.718V35.1141Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 0, ":svg:path", [["d", "M51.2088 35.1141H38.0393V36.9854H51.2088V35.1141Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 0, ":svg:path", [["d", "M34.718 41.7417H30.4311V43.6129H34.718V41.7417Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](13, 0, null, null, 0, ":svg:path", [["d", "M51.2088 41.7417H38.0393V43.6129H51.2088V41.7417Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](14, 0, null, null, 0, ":svg:path", [["d", "M34.718 48.369H30.4311V50.2403H34.718V48.369Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 0, ":svg:path", [["d", "M51.2088 48.369H38.0393V50.2403H51.2088V48.369Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](16, 0, null, null, 0, ":svg:path", [["d", "M58.006 48.681V26.4209C57.5426 26.3429 57.0405 26.304 56.5384 26.304C50.3978 26.304 45.4157 31.3329 45.4157 37.5315C45.4157 43.73 50.3978 48.7589 56.5384 48.7589C57.0405 48.7979 57.5426 48.759 58.006 48.681Z"], ["fill", "#0C1E5B"], ["opacity", "0.1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 0, ":svg:path", [["d", "M60.4398 46.5371C66.5828 46.5371 71.5626 41.5103 71.5626 35.3095C71.5626 29.1086 66.5828 24.0818 60.4398 24.0818C54.2969 24.0818 49.317 29.1086 49.317 35.3095C49.317 41.5103 54.2969 46.5371 60.4398 46.5371Z"], ["fill", "#FF5B5B"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 0, ":svg:path", [["d", "M62.4089 36.0889V29.1107H58.4696V36.0889H55.8434L60.4392 41.5077L65.035 36.0889H62.4089Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](19, 0, null, null, 5, "div", [["class", "text-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](20, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](21, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](22, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](23, null, ["", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](25, 0, null, null, 24, "div", [["class", "card-dashboard clickable"]], null, [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.redirectToOrders() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](26, 0, null, null, 23, "div", [["class", "card-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](27, 0, null, null, 16, "div", [["class", "icon-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](28, 0, null, null, 15, ":svg:svg", [["fill", "none"], ["height", "85"], ["viewBox", "0 0 85 85"], ["width", "85"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](29, 0, null, null, 0, ":svg:ellipse", [["cx", "42.1554"], ["cy", "42.5"], ["fill", "#00B074"], ["fill-opacity", "0.15"], ["rx", "42.1554"], ["ry", "42.5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](30, 0, null, null, 0, ":svg:path", [["d", "M18.6519 64.2747C21.8187 64.2747 24.4063 61.6627 24.4063 58.466V21.041H58.0061V58.466C58.0061 61.6627 55.4185 64.2747 52.2516 64.2747"], ["fill", "#00B074"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](31, 0, null, null, 0, ":svg:path", [["d", "M46.4972 58.4659V54.0607H12.8974V58.4659C12.8974 61.6626 15.485 64.2746 18.6519 64.2746H52.2517C49.0848 64.2746 46.4972 61.6626 46.4972 58.4659Z"], ["fill", "#0A5239"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](32, 0, null, null, 0, ":svg:path", [["d", "M34.718 28.4868H30.4312V30.3581H34.718V28.4868Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](33, 0, null, null, 0, ":svg:path", [["d", "M51.2088 28.4868H38.0393V30.3581H51.2088V28.4868Z"], ["fill", "#F3F2F7"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](34, 0, null, null, 0, ":svg:path", [["d", "M34.718 35.1141H30.4312V36.9854H34.718V35.1141Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](35, 0, null, null, 0, ":svg:path", [["d", "M51.2088 35.1141H38.0393V36.9854H51.2088V35.1141Z"], ["fill", "#F3F2F7"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](36, 0, null, null, 0, ":svg:path", [["d", "M34.718 41.7417H30.4312V43.6129H34.718V41.7417Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](37, 0, null, null, 0, ":svg:path", [["d", "M51.2088 41.7417H38.0393V43.6129H51.2088V41.7417Z"], ["fill", "#F3F2F7"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](38, 0, null, null, 0, ":svg:path", [["d", "M34.718 48.369H30.4312V50.2403H34.718V48.369Z"], ["fill", "#F7C604"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](39, 0, null, null, 0, ":svg:path", [["d", "M51.2088 48.369H38.0393V50.2403H51.2088V48.369Z"], ["fill", "#F3F2F7"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](40, 0, null, null, 0, ":svg:path", [["d", "M58.0061 48.681V26.4209C57.5427 26.3429 57.0406 26.304 56.5385 26.304C50.3979 26.304 45.4159 31.3329 45.4159 37.5315C45.4159 43.73 50.3979 48.7589 56.5385 48.7589C57.0406 48.7979 57.5427 48.759 58.0061 48.681Z"], ["fill", "#0C1E5B"], ["opacity", "0.1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](41, 0, null, null, 0, ":svg:path", [["d", "M60.4399 46.5371C66.5828 46.5371 71.5627 41.5103 71.5627 35.3095C71.5627 29.1086 66.5828 24.0818 60.4399 24.0818C54.2969 24.0818 49.3171 29.1086 49.3171 35.3095C49.3171 41.5103 54.2969 46.5371 60.4399 46.5371Z"], ["fill", "#FF5B5B"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](42, 0, null, null, 0, ":svg:path", [["d", "M64.8063 30.7308L55.7267 39.8846M55.7267 30.7308L64.8063 39.8846"], ["stroke", "white"], ["stroke-width", "4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](43, 0, null, null, 0, ":svg:path", [["d", "M64.8063 30.7308L55.7267 39.8846M55.7267 30.7308L64.8063 39.8846"], ["stroke", "white"], ["stroke-width", "4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](44, 0, null, null, 5, "div", [["class", "text-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](45, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](46, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](47, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](48, null, ["", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](50, 0, null, null, 17, "div", [["class", "card-dashboard clickable"]], null, [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.redirectToOrders() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](51, 0, null, null, 16, "div", [["class", "card-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](52, 0, null, null, 9, "div", [["class", "icon-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](53, 0, null, null, 8, ":svg:svg", [["fill", "none"], ["height", "85"], ["viewBox", "0 0 85 85"], ["width", "85"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](54, 0, null, null, 0, ":svg:ellipse", [["cx", "42.1554"], ["cy", "42.5"], ["fill", "#00B074"], ["fill-opacity", "0.15"], ["rx", "42.1554"], ["ry", "42.5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](55, 0, null, null, 0, ":svg:path", [["d", "M41.7136 23.9521C41.1199 23.9521 40.6534 23.4818 40.6534 22.8832V20.1896C40.6534 17.2822 38.3209 14.9306 35.4795 14.9306C34.08 14.9306 32.8077 15.4865 31.7899 16.4698C30.7721 17.4532 30.2632 18.7786 30.2632 20.1896V22.8832C30.2632 23.4818 29.7967 23.9521 29.2029 23.9521C28.6092 23.9521 28.1427 23.4818 28.1427 22.8832V20.1896C28.1427 18.2228 28.9061 16.3843 30.2632 14.9734C31.6626 13.5624 33.4862 12.7928 35.437 12.7928C39.4659 12.7928 42.7314 16.085 42.7314 20.1468V22.8404C42.7738 23.4818 42.3073 23.9521 41.7136 23.9521Z"], ["fill", "#FFD497"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](56, 0, null, null, 0, ":svg:path", [["d", "M58.3802 59.9952H27.464L22.3325 20.0614H56.2173L58.3802 59.9952Z"], ["fill", "#00B074"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](57, 0, null, null, 0, ":svg:path", [["d", "M27.4639 59.9952L20.1271 58.7125L12.7479 59.9952L14.9532 20.0614H25.2586L27.4639 59.9952Z"], ["fill", "#0A5239"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](58, 0, null, null, 0, ":svg:path", [["d", "M40.9076 33.8287C36.8787 33.8287 33.6132 30.5365 33.6132 26.4747V23.7811C33.6132 23.1825 34.0797 22.7122 34.6734 22.7122C35.2672 22.7122 35.7337 23.1825 35.7337 23.7811V26.4747C35.7337 29.3821 38.0662 31.6909 40.9076 31.6909C43.749 31.6909 46.1239 29.3393 46.1239 26.4319V23.7383C46.1239 23.1397 46.5904 22.6694 47.1841 22.6694C47.7778 22.6694 48.2443 23.1397 48.2443 23.7383V26.4319C48.2443 30.5365 44.9788 33.8287 40.9076 33.8287Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](59, 0, null, null, 0, ":svg:path", [["d", "M42.8162 54.5224C42.8162 56.4892 43.3251 58.3704 44.2157 59.9952H58.4227L57.5322 43.577C56.4719 43.2349 55.3693 43.0639 54.2242 43.0639C47.9053 43.0639 42.8162 48.1946 42.8162 54.5224Z"], ["fill", "#0C1E5B"], ["opacity", "0.1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](60, 0, null, null, 0, ":svg:path", [["d", "M60.119 65.9809C66.396 65.9809 71.4846 60.8508 71.4846 54.5224C71.4846 48.1941 66.396 43.0639 60.119 43.0639C53.8419 43.0639 48.7534 48.1941 48.7534 54.5224C48.7534 60.8508 53.8419 65.9809 60.119 65.9809Z"], ["fill", "#FF6966"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](61, 0, null, null, 0, ":svg:path", [["d", "M58.9314 58.9691C58.5922 58.9691 58.2953 58.8409 58.0408 58.5843L54.4361 54.9501C53.9272 54.437 53.9272 53.6247 54.4361 53.1544C54.945 52.6413 55.7507 52.6413 56.2172 53.1544L58.9314 55.8907L64.0205 50.76C64.5294 50.247 65.3352 50.247 65.8017 50.76C66.3106 51.2731 66.3106 52.0855 65.8017 52.5558L59.822 58.5843C59.5676 58.8409 59.2283 58.9691 58.9314 58.9691Z"], ["fill", "white"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](62, 0, null, null, 5, "div", [["class", "text-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](63, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](64, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](65, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](66, null, ["", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](68, 0, null, null, 12, "div", [["class", "card-dashboard clickable"]], null, [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.redirectToUsers() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](69, 0, null, null, 11, "div", [["class", "card-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](70, 0, null, null, 4, "div", [["class", "icon-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](71, 0, null, null, 3, ":svg:svg", [["fill", "none"], ["height", "85"], ["viewBox", "0 0 85 85"], ["width", "85"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](72, 0, null, null, 0, ":svg:ellipse", [["cx", "42.1554"], ["cy", "42.5"], ["fill", "#00B074"], ["fill-opacity", "0.15"], ["rx", "42.1554"], ["ry", "42.5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](73, 0, null, null, 0, ":svg:circle", [["cx", "42.1554"], ["cy", "30"], ["fill", "#FF5B5B"], ["r", "12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](74, 0, null, null, 0, ":svg:path", [["d", "M26.1554 50 C26.1554 40, 58.1554 40, 58.1554 50 Q58.1554 60, 50 64 Q34.1554 64, 26.1554 50 Z"], ["fill", "#00B074"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](75, 0, null, null, 5, "div", [["class", "text-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](76, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](77, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](78, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](79, null, ["", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](81, 0, null, null, 13, "div", [["class", "card-dashboard clickable"]], null, [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.redirectToRestaurants() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](82, 0, null, null, 12, "div", [["class", "card-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](83, 0, null, null, 5, "div", [["class", "icon-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](84, 0, null, null, 4, ":svg:svg", [["height", "85"], ["id", "store-shop"], ["viewBox", "0 0 85 85"], ["width", "85"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](85, 0, null, null, 0, ":svg:ellipse", [["cx", "42.1554"], ["cy", "42.5"], ["fill", "#00B074"], ["fill-opacity", "0.15"], ["rx", "42.1554"], ["ry", "42.5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](86, 0, null, null, 2, ":svg:g", [["id", "store-shop"], ["transform", "translate(17, 15)"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](87, 0, null, null, 0, ":svg:path", [["d", "m44.68 10.4-3-4a4.94 4.94 0 0 0 -3.9-1.9h-25.6a5 5 0 0 0 -3.72 1.66l-4.16 5a12.37 12.37 0 0 0 -3.18 8.34v7a2 2 0 0 0 2 2h41.6a2 2 0 0 0 2-2v-7.35a12.4 12.4 0 0 0 -2.72-7.75zm-25.28 7.1v8h-4v-8a26.38 26.38 0 0 1 4-13h4s-4 8-4 13zm20 8h-4v-8c0-5-4-13-4-13h4a26.38 26.38 0 0 1 4 13z"], ["fill", "#FF5B5B"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](88, 0, null, null, 0, ":svg:path", [["d", "m4 28v16a6 6 0 0 0 6 6h8.8v-8.8a7 7 0 0 1 14 0v8.8h8.8a6 6 0 0 0 6-6v-16z"], ["fill", "#00B074"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](89, 0, null, null, 5, "div", [["class", "text-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](90, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](91, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](92, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](93, null, ["", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](95, 0, null, null, 43, "div", [["class", "dashboard-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](96, 0, null, null, 42, "div", [["id", "dash-graficas"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](97, 0, null, null, 41, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](98, 0, null, null, 9, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](99, 0, null, null, 8, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](100, 0, null, null, 7, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](101, 0, null, null, 1, "h5", [["class", "card-title mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Pedidos Entregados, Cancelados y Rechazados"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](103, 0, null, null, 4, "div", [["class", "chart-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](104, 0, null, null, 3, "ngx-charts-bar-vertical", [], null, null, null, _node_modules_swimlane_ngx_charts_release_bar_chart_bar_vertical_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["View_BarVerticalComponent_0"], _node_modules_swimlane_ngx_charts_release_bar_chart_bar_vertical_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["RenderType_BarVerticalComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](105, 4898816, null, 1, _swimlane_ngx_charts_release_bar_chart_bar_vertical_component__WEBPACK_IMPORTED_MODULE_7__["BarVerticalComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], {
+        results: [0, "results"],
+        view: [1, "view"],
+        scheme: [2, "scheme"],
+        legend: [3, "legend"],
+        xAxis: [4, "xAxis"],
+        yAxis: [5, "yAxis"],
+        showXAxisLabel: [6, "showXAxisLabel"],
+        showYAxisLabel: [7, "showYAxisLabel"],
+        xAxisLabel: [8, "xAxisLabel"],
+        yAxisLabel: [9, "yAxisLabel"],
+        gradient: [10, "gradient"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 1, {
+        tooltipTemplate: 0
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](107, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](108, 0, null, null, 9, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](109, 0, null, null, 8, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](110, 0, null, null, 7, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](111, 0, null, null, 1, "h5", [["class", "card-title mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Clientes y Repartidores"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](113, 0, null, null, 4, "div", [["class", "chart-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](114, 0, null, null, 3, "ngx-charts-advanced-pie-chart", [], null, null, null, _node_modules_swimlane_ngx_charts_release_pie_chart_advanced_pie_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["View_AdvancedPieChartComponent_0"], _node_modules_swimlane_ngx_charts_release_pie_chart_advanced_pie_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["RenderType_AdvancedPieChartComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](115, 4898816, null, 1, _swimlane_ngx_charts_release_pie_chart_advanced_pie_chart_component__WEBPACK_IMPORTED_MODULE_9__["AdvancedPieChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], {
+        results: [0, "results"],
+        view: [1, "view"],
+        scheme: [2, "scheme"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 2, {
+        tooltipTemplate: 0
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](117, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](118, 0, null, null, 10, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](119, 0, null, null, 9, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](120, 0, null, null, 8, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](121, 0, null, null, 1, "h5", [["class", "card-title mb-5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Pedidos Por Mes"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](123, 0, null, null, 5, "div", [["class", "chart-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](124, 0, null, null, 4, "ngx-charts-line-chart", [], null, [[null, "mouseleave"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("mouseleave" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 125).hideCircles() !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, _node_modules_swimlane_ngx_charts_release_line_chart_line_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_10__["View_LineChartComponent_0"], _node_modules_swimlane_ngx_charts_release_line_chart_line_chart_component_ngfactory__WEBPACK_IMPORTED_MODULE_10__["RenderType_LineChartComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](125, 4898816, null, 2, _swimlane_ngx_charts_release_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_11__["LineChartComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], {
+        results: [0, "results"],
+        view: [1, "view"],
+        scheme: [2, "scheme"],
+        legend: [3, "legend"],
+        xAxis: [4, "xAxis"],
+        yAxis: [5, "yAxis"],
+        showXAxisLabel: [6, "showXAxisLabel"],
+        showYAxisLabel: [7, "showYAxisLabel"],
+        xAxisLabel: [8, "xAxisLabel"],
+        yAxisLabel: [9, "yAxisLabel"],
+        timeline: [10, "timeline"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 3, {
+        tooltipTemplate: 0
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 4, {
+        seriesTooltipTemplate: 0
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](128, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](129, 0, null, null, 9, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](130, 0, null, null, 8, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](131, 0, null, null, 7, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](132, 0, null, null, 6, "div", [["class", "chart-container"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](133, 0, null, null, 1, "h5", [["class", "card-title mb-5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Ranking de Restaurantes"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](135, 0, null, null, 3, "ngx-charts-bar-horizontal", [], null, null, null, _node_modules_swimlane_ngx_charts_release_bar_chart_bar_horizontal_component_ngfactory__WEBPACK_IMPORTED_MODULE_12__["View_BarHorizontalComponent_0"], _node_modules_swimlane_ngx_charts_release_bar_chart_bar_horizontal_component_ngfactory__WEBPACK_IMPORTED_MODULE_12__["RenderType_BarHorizontalComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](136, 4898816, null, 1, _swimlane_ngx_charts_release_bar_chart_bar_horizontal_component__WEBPACK_IMPORTED_MODULE_13__["BarHorizontalComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]], {
+        results: [0, "results"],
+        view: [1, "view"],
+        legend: [2, "legend"],
+        xAxis: [3, "xAxis"],
+        yAxis: [4, "yAxis"],
+        showXAxisLabel: [5, "showXAxisLabel"],
+        showYAxisLabel: [6, "showYAxisLabel"],
+        xAxisLabel: [7, "xAxisLabel"],
+        yAxisLabel: [8, "yAxisLabel"],
+        gradient: [9, "gradient"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](603979776, 5, {
+        tooltipTemplate: 0
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpad"](138, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](139, 0, null, null, 1, "h1", [["style", "font-size: 20px; font-weight: bold; margin-top: 10px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Rese\xF1as de los clientes"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_DashboardComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](142, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null)], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_10 = _co.dataChartOrders;
+
+        var currVal_11 = _ck(_v, 107, 0, _co.containerWidth, _co.containerHeight);
+
+        var currVal_12 = _co.colorSchemeChartOrders;
+        var currVal_13 = _co.legend;
+        var currVal_14 = _co.showXAxis;
+        var currVal_15 = _co.showYAxis;
+        var currVal_16 = _co.showXAxisLabel;
+        var currVal_17 = _co.showYAxisLabel;
+        var currVal_18 = _co.xAxisLabel;
+        var currVal_19 = _co.yAxisLabel;
+        var currVal_20 = _co.gradient;
+
+        _ck(_v, 105, 1, [currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20]);
+
+        var currVal_21 = _co.dataPercentUsers;
+
+        var currVal_22 = _ck(_v, 117, 0, _co.containerWidth, _co.containerHeight);
+
+        var currVal_23 = _co.colorSchemePercentUsers;
+
+        _ck(_v, 115, 0, currVal_21, currVal_22, currVal_23);
+
+        var currVal_24 = _co.multi;
+
+        var currVal_25 = _ck(_v, 128, 0, 720, 350);
+
+        var currVal_26 = _co.colorSchemeLineChart;
+        var currVal_27 = _co.legend;
+        var currVal_28 = _co.xAxis;
+        var currVal_29 = _co.yAxis;
+        var currVal_30 = _co.showXAxisLabelLine;
+        var currVal_31 = _co.showYAxisLabelLine;
+        var currVal_32 = _co.xAxisLabelLine;
+        var currVal_33 = _co.yAxisLabelLine;
+        var currVal_34 = _co.timeline;
+
+        _ck(_v, 125, 1, [currVal_24, currVal_25, currVal_26, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34]);
+
+        var currVal_35 = _co.dataChartTopRest;
+
+        var currVal_36 = _ck(_v, 138, 0, 720, 350);
+
+        var currVal_37 = _co.legend;
+        var currVal_38 = _co.showXAxis;
+        var currVal_39 = _co.showYAxis;
+        var currVal_40 = _co.showXAxisLabel;
+        var currVal_41 = _co.showYAxisLabel;
+        var currVal_42 = "Califiaci\xF3n";
+        var currVal_43 = "Restaurantes";
+        var currVal_44 = _co.gradient;
+
+        _ck(_v, 136, 0, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44);
+
+        var currVal_45 = (_co.groupedReviews == null ? null : _co.groupedReviews.length) > 0;
+
+        _ck(_v, 142, 0, currVal_45);
+      }, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.orders.length;
+
+        _ck(_v, 21, 0, currVal_0);
+
+        var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 23, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 24).transform("Orders"));
+
+        _ck(_v, 23, 0, currVal_1);
+
+        var currVal_2 = _co.ordersCanceled.length;
+
+        _ck(_v, 46, 0, currVal_2);
+
+        var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 48, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 49).transform("Canceled Orders"));
+
+        _ck(_v, 48, 0, currVal_3);
+
+        var currVal_4 = _co.ordersDelivered.length;
+
+        _ck(_v, 64, 0, currVal_4);
+
+        var currVal_5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 66, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 67).transform("Delivered Orders"));
+
+        _ck(_v, 66, 0, currVal_5);
+
+        var currVal_6 = _co.users.length;
+
+        _ck(_v, 77, 0, currVal_6);
+
+        var currVal_7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 79, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 80).transform("Users"));
+
+        _ck(_v, 79, 0, currVal_7);
+
+        var currVal_8 = _co.rest.length;
+
+        _ck(_v, 91, 0, currVal_8);
+
+        var currVal_9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 93, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 94).transform("Restaurants"));
+
+        _ck(_v, 93, 0, currVal_9);
+      });
+    }
+
+    function View_DashboardComponent_Host_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "app-dashboard", [], null, [["window", "resize"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("window:resize" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 1).onResize($event) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, View_DashboardComponent_0, RenderType_DashboardComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"], [_services_apis_service__WEBPACK_IMPORTED_MODULE_15__["ApisService"], _angular_router__WEBPACK_IMPORTED_MODULE_16__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_16__["ActivatedRoute"]], null, null)], function (_ck, _v) {
+        _ck(_v, 1, 0);
+      }, null);
+    }
+
+    var DashboardComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("app-dashboard", _dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"], View_DashboardComponent_Host_0, {}, {}, []);
+    /***/
+
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard.component.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/dashboard/dashboard.component.ts ***!
+    \**************************************************/
+
+  /*! exports provided: DashboardComponent */
+
+  /***/
+  function srcAppDashboardDashboardComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardComponent", function () {
+      return DashboardComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! moment */
+    "./node_modules/moment/moment.js");
+    /* harmony import */
+
+
+    var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__); // import { Chart, ChartType } from 'chart.js/auto';
+
+
+    var DashboardComponent = /*#__PURE__*/function () {
+      function DashboardComponent(api, router, route) {
+        _classCallCheck(this, DashboardComponent);
+
+        this.api = api;
+        this.router = router;
+        this.route = route;
+        this.rest = [];
+        this.reviews = [];
+        this.users = [];
+        this.usersPercent = 0;
+        this.messagesCount = 0;
+        this.drivers = [];
+        this.driversPercent = 0;
+        this.orders = [];
+        this.displayOrders = [];
+        this.dummy = Array(10);
+        this.ordersCanceled = [];
+        this.ordersDelivered = [];
+        this.ordersRejected = [];
+        this.groupedReviews = []; // Arreglos para data de graficas
+
+        this.dataChartOrders = [];
+        this.dataChartTopRest = [];
+        this.dataPercentUsers = [];
+        this.colorSchemeChartOrders = {};
+        this.colorSchemePercentUsers = {}; //options generales para graficas
+
+        this.legend = true;
+        this.containerWidth = 720; // 80% del ancho de la ventana
+
+        this.containerHeight = 350; // 50% de la altura de la ventana
+        // options vertical chart
+
+        this.showXAxis = true;
+        this.showYAxis = true;
+        this.gradient = false;
+        this.showXAxisLabel = true;
+        this.xAxisLabel = 'Pedidos';
+        this.showYAxisLabel = true;
+        this.yAxisLabel = 'Cantidad'; // options pie chart
+
+        this.showLabels = true;
+        this.isDoughnut = true; // options line chart
+
+        this.showLabelsLine = true;
+        this.animations = true;
+        this.xAxis = true;
+        this.yAxis = true;
+        this.showYAxisLabelLine = true;
+        this.showXAxisLabelLine = true;
+        this.xAxisLabelLine = 'Mes';
+        this.yAxisLabelLine = 'Cantidad';
+        this.timeline = true;
+        this.colorSchemeLineChart = {
+          domain: ['#33bbff', '#5AA454', '#A10A28', 'orange']
+        };
+        this.getRest();
+        this.getUsers();
+        this.getAllOrders();
+        this.getOrdersByStatus();
+      }
+
+      _createClass(DashboardComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.getRest();
+          this.getReviews();
+          this.groupReviews();
+          window.addEventListener('resize', this.updateChartSize.bind(this));
+        }
+      }, {
+        key: "updateChartSize",
+        value: function updateChartSize() {
+          this.containerWidth = window.innerWidth * 0.8; // Ajustar ancho
+
+          this.containerHeight = window.innerHeight * 0.5; // Ajustar alto
+        } // Detecta cambios en el tamaño de la ventana
+
+      }, {
+        key: "onResize",
+        value: function onResize(event) {
+          this.groupReviews();
+        }
+      }, {
+        key: "getChunkSize",
+        value: function getChunkSize() {
+          var width = window.innerWidth;
+          if (width > 1200) return 4; // Pantallas grandes
+
+          if (width > 992) return 3; // Pantallas medianas
+
+          if (width > 768) return 2; // Pantallas pequeñas
+
+          return 1; // Móviles
+        }
+      }, {
+        key: "convertTo12Hour",
+        value: function convertTo12Hour(time) {
+          if (!time) return '';
+
+          var _time$split$map = time.split(':').map(Number),
+              _time$split$map2 = _slicedToArray(_time$split$map, 2),
+              hours = _time$split$map2[0],
+              minutes = _time$split$map2[1];
+
+          var suffix = hours >= 12 ? 'PM' : 'AM';
+          var hour12 = hours % 12 || 12; // Convierte 0 (medianoche) o 12 (mediodía) al formato adecuado.
+
+          return "".concat(hour12, ":").concat(minutes.toString().padStart(2, '0'), " ").concat(suffix);
+        }
+      }, {
+        key: "groupReviews",
+        value: function groupReviews() {
+          var chunkSize = this.getChunkSize();
+          this.groupedReviews = []; // Reinicia el agrupamiento cada vez
+
+          for (var i = 0; i < this.reviews.length; i += chunkSize) {
+            this.groupedReviews.push(this.reviews.slice(i, i + chunkSize));
+          }
+        }
+      }, {
+        key: "getRest",
+        value: function getRest() {
+          var _this = this;
+
+          this.api.getVenues().then(function (data) {
+            console.log('rest data', data);
+            _this.rest = data;
+
+            _this.getTopRest(_this.rest);
+          }, function (error) {
+            console.log(error);
+          })["catch"](function (error) {
+            console.log(error);
+          });
+        }
+      }, {
+        key: "getReviews",
+        value: function getReviews() {
+          var _this2 = this;
+
+          this.api.getAllReviews().then(function (data) {
+            console.log(data);
+
+            if (data && data.length) {
+              _this2.reviews = data;
+
+              _this2.groupReviews();
+            }
+          })["catch"](function (error) {
+            console.log(error);
+          });
+        }
+      }, {
+        key: "getStars",
+        value: function getStars(rating) {
+          var fullStar = '⭐';
+          var emptyStar = '★';
+          var maxStars = 5;
+          var stars = fullStar.repeat(rating) + emptyStar.repeat(maxStars - rating);
+          return stars;
+        }
+      }, {
+        key: "getUsers",
+        value: function getUsers() {
+          var _this3 = this;
+
+          this.users = [];
+          this.drivers = [];
+          this.messagesCount = 0;
+          this.api.getUsers().then(function (data) {
+            console.log('users data', data);
+            data.forEach(function (element) {
+              if (element.type === 'user') {
+                _this3.users.push(element);
+              } else if (element.type === 'delivery') {
+                _this3.drivers.push(element);
+              } //contar total de mensajes
+
+
+              if (!element.count) {
+                if (element.count) {}
+              } else {
+                _this3.messagesCount = _this3.messagesCount + element.count;
+              }
+            });
+
+            _this3.getPercentByUsers();
+
+            console.log('messagesCount', _this3.messagesCount);
+          }, function (error) {
+            console.log(error);
+          })["catch"](function (error) {
+            console.log(error);
+          });
+        }
+      }, {
+        key: "getOrdersByStatus",
+        value: function getOrdersByStatus() {
+          var _this4 = this;
+
+          this.api.getAllOrders().then(function (data) {
+            console.log('orders data', data);
+            data.forEach(function (element, i) {
+              console.log(element.status);
+
+              if (element.status === "canceled") {
+                _this4.ordersCanceled.push(element);
+              }
+
+              if (element.status === "delivered") {
+                _this4.ordersDelivered.push(element);
+              }
+
+              if (element.status === "rejected") {
+                _this4.ordersRejected.push(element);
+              }
+            });
+            _this4.dummy = [];
+
+            _this4.getOrdersChart(_this4.ordersDelivered.length, _this4.ordersCanceled.length, _this4.ordersRejected.length); // this.getOrdersPieChart(this.ordersDelivered.length, this.ordersCanceled.length);
+
+
+            _this4.getMonthlyOrdersData();
+          }, function (error) {
+            console.log(error);
+            _this4.dummy = [];
+          })["catch"](function (error) {
+            console.log(error);
+            _this4.dummy = [];
+          });
+        }
+      }, {
+        key: "getAllOrders",
+        value: function getAllOrders() {
+          var _this5 = this;
+
+          this.api.getAllOrders().then(function (data) {
+            console.log('orders data', data);
+            data.forEach(function (element) {
+              element.time = new Date(element.time);
+            });
+            data.sort(function (a, b) {
+              return b.time - a.time;
+            });
+            _this5.orders = data;
+
+            _this5.orders.forEach(function (element, i) {
+              if (i <= 9) {
+                element.order = JSON.parse(element.order);
+
+                _this5.displayOrders.push(element);
+              }
+            });
+
+            _this5.dummy = [];
+          }, function (error) {
+            console.log(error);
+            _this5.dummy = [];
+          })["catch"](function (error) {
+            console.log(error);
+            _this5.dummy = [];
+          });
+        }
+      }, {
+        key: "getDates",
+        value: function getDates(date) {
+          return moment__WEBPACK_IMPORTED_MODULE_1__(date).format('llll');
+        }
+      }, {
+        key: "getClass",
+        value: function getClass(item) {
+          if (item === 'created' || item === 'accepted' || item === 'picked') {
+            return 'btn btn-primary btn-round';
+          } else if (item === 'delivered') {
+            return 'btn btn-success btn-round';
+          } else if (item === 'rejected' || item === 'canceled') {
+            return 'btn btn-danger btn-round';
+          }
+
+          return 'btn btn-warning btn-round';
+        }
+      }, {
+        key: "openOrder",
+        value: function openOrder(item) {
+          console.log(item);
+          var navData = {
+            queryParams: {
+              id: item.id
+            }
+          };
+          this.router.navigate(['admin-orderdetails'], navData);
+        }
+      }, {
+        key: "getCurreny",
+        value: function getCurreny() {
+          return this.api.getCurrecySymbol();
+        }
+      }, {
+        key: "redirectToOrders",
+        value: function redirectToOrders() {
+          this.router.navigate(['/admin-orders']);
+        }
+      }, {
+        key: "redirectToRestaurants",
+        value: function redirectToRestaurants() {
+          this.router.navigate(['/admin-restaurants']);
+        }
+      }, {
+        key: "redirectToUsers",
+        value: function redirectToUsers() {
+          this.router.navigate(['/admin-users']);
+        }
+      }, {
+        key: "getOrdersChart",
+        value: function getOrdersChart(ordersDelivered, ordersCanceled, ordersRejected) {
+          this.dataChartOrders = [{
+            name: 'Entregados',
+            value: ordersDelivered
+          }, {
+            name: 'Cancelados',
+            value: ordersCanceled
+          }, {
+            name: 'Rechazados',
+            value: ordersRejected
+          }];
+          this.colorSchemeChartOrders = {
+            domain: ['#5AA454', '#A10A28', 'orange']
+          };
+        }
+      }, {
+        key: "getMonthlyOrdersData",
+        value: function getMonthlyOrdersData() {
+          var deliveredData = {};
+          var canceledData = {};
+          var totalOrders = {};
+          this.orders.forEach(function (order) {
+            // Convertir la fecha a un objeto Date
+            order.time = new Date(order.time);
+          }); // Ordenar las ordenes de forma ascendente (enero - diciembre)
+
+          this.orders.sort(function (a, b) {
+            return a.time - b.time;
+          });
+          this.orders.forEach(function (order) {
+            if (!isNaN(order.time.getTime())) {
+              var monthYear = order.time.toLocaleString('default', {
+                month: 'long',
+                year: 'numeric'
+              }); // Verificar el estado y contar la orden en el mes correspondiente
+
+              if (order.status === 'delivered') {
+                deliveredData[monthYear] = (deliveredData[monthYear] || 0) + 1;
+              } else if (order.status === 'canceled') {
+                canceledData[monthYear] = (canceledData[monthYear] || 0) + 1;
+              }
+
+              totalOrders[monthYear] = (totalOrders[monthYear] || 0) + 1;
+            }
+          }); // Convertir los datos a formato para el gráfico
+
+          this.multi = [{
+            name: "Recibidos",
+            series: Object.entries(totalOrders).map(function (_ref) {
+              var _ref2 = _slicedToArray(_ref, 2),
+                  month = _ref2[0],
+                  count = _ref2[1];
+
+              return {
+                name: month,
+                value: count
+              };
+            })
+          }, {
+            name: "Entregados",
+            series: Object.entries(deliveredData).map(function (_ref3) {
+              var _ref4 = _slicedToArray(_ref3, 2),
+                  month = _ref4[0],
+                  count = _ref4[1];
+
+              return {
+                name: month,
+                value: count
+              };
+            })
+          }, {
+            name: "Cancelados",
+            series: Object.entries(canceledData).map(function (_ref5) {
+              var _ref6 = _slicedToArray(_ref5, 2),
+                  month = _ref6[0],
+                  count = _ref6[1];
+
+              return {
+                name: month,
+                value: count
+              };
+            })
+          }];
+        }
+      }, {
+        key: "getTopRest",
+        value: function getTopRest(restaurants) {
+          // Ordenar por rating de mayor a menor
+          restaurants.sort(function (a, b) {
+            return b.ratting - a.ratting;
+          });
+          this.dataChartTopRest = restaurants.map(function (restaurant) {
+            return {
+              name: restaurant.name,
+              value: restaurant.ratting || 0
+            };
+          });
+          console.log('dataChartTopRests:', this.dataChartTopRest);
+        }
+      }, {
+        key: "getPercentByUsers",
+        value: function getPercentByUsers() {
+          var allUsers = this.users.length + this.drivers.length;
+          console.log('cantidad repartidores', this.drivers.length);
+          console.log('cantidad clientes', this.users.length);
+          console.log('cantidad allUsers', allUsers); //Calculo de porcentajes (para usar en caso de ser necesario)
+
+          this.driversPercent = this.drivers.length / allUsers * 100;
+          console.log('porcentaje repartidores', this.driversPercent);
+          this.usersPercent = this.users.length / allUsers * 100;
+          console.log('porcentaje clientes', this.usersPercent);
+          this.dataPercentUsers = [{
+            name: 'Clientes',
+            value: this.users.length
+          }, {
+            name: 'Repartidores',
+            value: this.drivers.length
+          }];
+          this.colorSchemePercentUsers = {
+            domain: ["#248abd", "#c53b3b"]
+          };
+        }
+      }]);
+
+      return DashboardComponent;
+    }();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard.module.ngfactory.js":
+  /*!*********************************************************!*\
+    !*** ./src/app/dashboard/dashboard.module.ngfactory.js ***!
+    \*********************************************************/
+
+  /*! exports provided: DashboardModuleNgFactory */
+
+  /***/
+  function srcAppDashboardDashboardModuleNgfactoryJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardModuleNgFactory", function () {
+      return DashboardModuleNgFactory;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _dashboard_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./dashboard.module */
+    "./src/app/dashboard/dashboard.module.ts");
+    /* harmony import */
+
+
+    var _node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../../node_modules/@angular/router/router.ngfactory */
+    "./node_modules/@angular/router/router.ngfactory.js");
+    /* harmony import */
+
+
+    var _dashboard_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./dashboard.component.ngfactory */
+    "./src/app/dashboard/dashboard.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../../node_modules/@ng-bootstrap/ng-bootstrap/ng-bootstrap.ngfactory */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/ng-bootstrap.ngfactory.js");
+    /* harmony import */
+
+
+    var _node_modules_swimlane_ngx_charts_release_common_tooltip_tooltip_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../../node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.component.ngfactory */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.component.ngfactory.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var ng2_toasty_src_toasty_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ng2-toasty/src/toasty.service */
+    "./node_modules/ng2-toasty/src/toasty.service.js");
+    /* harmony import */
+
+
+    var angular2_notifications_dist_src_simple_notifications_services_notifications_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! angular2-notifications/dist/src/simple-notifications/services/notifications.service */
+    "./node_modules/angular2-notifications/dist/src/simple-notifications/services/notifications.service.js");
+    /* harmony import */
+
+
+    var angular2_notifications_dist_src_simple_notifications_services_notifications_service__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(angular2_notifications_dist_src_simple_notifications_services_notifications_service__WEBPACK_IMPORTED_MODULE_10__);
+    /* harmony import */
+
+
+    var css_animator_angular_animation_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! css-animator/angular/animation.service */
+    "./node_modules/css-animator/angular/animation.service.js");
+    /* harmony import */
+
+
+    var css_animator_angular_animation_service__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(css_animator_angular_animation_service__WEBPACK_IMPORTED_MODULE_11__);
+    /* harmony import */
+
+
+    var _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! @nicky-lenaers/ngx-scroll-to */
+    "./node_modules/@nicky-lenaers/ngx-scroll-to/fesm2015/nicky-lenaers-ngx-scroll-to.js");
+    /* harmony import */
+
+
+    var _agm_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! @agm/core */
+    "./node_modules/@agm/core/fesm2015/agm-core.js");
+    /* harmony import */
+
+
+    var _shared_menu_items_menu_items__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! ../shared/menu-items/menu-items */
+    "./src/app/shared/menu-items/menu-items.ts");
+    /* harmony import */
+
+
+    var _shared_todo_todo_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ../shared/todo/todo.service */
+    "./src/app/shared/todo/todo.service.ts");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/common/tooltip/injection.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/injection.service.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/common/tooltip/tooltip.service */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.service.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    /*! ./dashboard-routing.module */
+    "./src/app/dashboard/dashboard-routing.module.ts");
+    /* harmony import */
+
+
+    var ng2_toasty__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! ng2-toasty */
+    "./node_modules/ng2-toasty/index.js");
+    /* harmony import */
+
+
+    var angular2_notifications_dist_src_simple_notifications_module__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    /*! angular2-notifications/dist/src/simple-notifications.module */
+    "./node_modules/angular2-notifications/dist/src/simple-notifications.module.js");
+    /* harmony import */
+
+
+    var angular2_notifications_dist_src_simple_notifications_module__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(angular2_notifications_dist_src_simple_notifications_module__WEBPACK_IMPORTED_MODULE_21__);
+    /* harmony import */
+
+
+    var css_animator_angular_animator_module__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    /*! css-animator/angular/animator.module */
+    "./node_modules/css-animator/angular/animator.module.js");
+    /* harmony import */
+
+
+    var css_animator_angular_animator_module__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(css_animator_angular_animator_module__WEBPACK_IMPORTED_MODULE_22__);
+    /* harmony import */
+
+
+    var ng_click_outside_lib_click_outside_module__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    /*! ng-click-outside/lib/click-outside.module */
+    "./node_modules/ng-click-outside/lib/click-outside.module.js");
+    /* harmony import */
+
+
+    var ng_click_outside_lib_click_outside_module__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(ng_click_outside_lib_click_outside_module__WEBPACK_IMPORTED_MODULE_23__);
+    /* harmony import */
+
+
+    var ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    /*! ngx-perfect-scrollbar */
+    "./node_modules/ngx-perfect-scrollbar/dist/ngx-perfect-scrollbar.es5.js");
+    /* harmony import */
+
+
+    var ngx_skeleton_loader__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ngx-skeleton-loader */
+    "./node_modules/ngx-skeleton-loader/fesm2015/ngx-skeleton-loader.js");
+    /* harmony import */
+
+
+    var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    /*! @ngx-translate/core */
+    "./node_modules/@ngx-translate/core/fesm2015/ngx-translate-core.js");
+    /* harmony import */
+
+
+    var _shared_shared_module__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    /*! ../shared/shared.module */
+    "./src/app/shared/shared.module.ts");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_common_axes_axes_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/common/axes/axes.module */
+    "./node_modules/@swimlane/ngx-charts/release/common/axes/axes.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_common_tooltip_tooltip_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/common/tooltip/tooltip.module */
+    "./node_modules/@swimlane/ngx-charts/release/common/tooltip/tooltip.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_common_chart_common_module__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/common/chart-common.module */
+    "./node_modules/@swimlane/ngx-charts/release/common/chart-common.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_area_chart_area_chart_module__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/area-chart/area-chart.module */
+    "./node_modules/@swimlane/ngx-charts/release/area-chart/area-chart.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_bar_chart_bar_chart_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/bar-chart/bar-chart.module */
+    "./node_modules/@swimlane/ngx-charts/release/bar-chart/bar-chart.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_bubble_chart_bubble_chart_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/bubble-chart/bubble-chart.module */
+    "./node_modules/@swimlane/ngx-charts/release/bubble-chart/bubble-chart.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_force_directed_graph_force_directed_graph_module__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/force-directed-graph/force-directed-graph.module */
+    "./node_modules/@swimlane/ngx-charts/release/force-directed-graph/force-directed-graph.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_heat_map_heat_map_module__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/heat-map/heat-map.module */
+    "./node_modules/@swimlane/ngx-charts/release/heat-map/heat-map.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_line_chart_line_chart_module__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/line-chart/line-chart.module */
+    "./node_modules/@swimlane/ngx-charts/release/line-chart/line-chart.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_pie_chart_pie_chart_module__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/pie-chart/pie-chart.module */
+    "./node_modules/@swimlane/ngx-charts/release/pie-chart/pie-chart.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_polar_chart_polar_chart_module__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/polar-chart/polar-chart.module */
+    "./node_modules/@swimlane/ngx-charts/release/polar-chart/polar-chart.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_number_card_number_card_module__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/number-card/number-card.module */
+    "./node_modules/@swimlane/ngx-charts/release/number-card/number-card.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_tree_map_tree_map_module__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/tree-map/tree-map.module */
+    "./node_modules/@swimlane/ngx-charts/release/tree-map/tree-map.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_gauge_gauge_module__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/gauge/gauge.module */
+    "./node_modules/@swimlane/ngx-charts/release/gauge/gauge.module.js");
+    /* harmony import */
+
+
+    var _swimlane_ngx_charts_release_ngx_charts_module__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
+    /*! @swimlane/ngx-charts/release/ngx-charts.module */
+    "./node_modules/@swimlane/ngx-charts/release/ngx-charts.module.js");
+    /* harmony import */
+
+
+    var _dashboard_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
+    /*! ./dashboard.component */
+    "./src/app/dashboard/dashboard.component.ts");
+    /**
+     * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+     *
+     * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+     * tslint:disable
+     */
+
+
+    var DashboardModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_dashboard_module__WEBPACK_IMPORTED_MODULE_1__["DashboardModule"], [], function (_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [_node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_2__["ɵangular_packages_router_router_lNgFactory"], _dashboard_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["DashboardComponentNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["NgbAlertNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["NgbDatepickerNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["ɵuNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["ɵvNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["ɵmNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["ɵrNgFactory"], _node_modules_ng_bootstrap_ng_bootstrap_ng_bootstrap_ngfactory__WEBPACK_IMPORTED_MODULE_4__["ɵsNgFactory"], _node_modules_swimlane_ngx_charts_release_common_tooltip_tooltip_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["TooltipContentComponentNgFactory"]]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ɵangular_packages_forms_forms_o"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ɵangular_packages_forms_forms_o"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormBuilder"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormBuilder"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModal"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModal"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["ɵw"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModalConfig"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, ng2_toasty_src_toasty_service__WEBPACK_IMPORTED_MODULE_9__["ToastyConfig"], ng2_toasty_src_toasty_service__WEBPACK_IMPORTED_MODULE_9__["ToastyConfig"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, ng2_toasty_src_toasty_service__WEBPACK_IMPORTED_MODULE_9__["ToastyService"], ng2_toasty_src_toasty_service__WEBPACK_IMPORTED_MODULE_9__["toastyServiceFactory"], [ng2_toasty_src_toasty_service__WEBPACK_IMPORTED_MODULE_9__["ToastyConfig"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, angular2_notifications_dist_src_simple_notifications_services_notifications_service__WEBPACK_IMPORTED_MODULE_10__["NotificationsService"], angular2_notifications_dist_src_simple_notifications_services_notifications_service__WEBPACK_IMPORTED_MODULE_10__["NotificationsService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, css_animator_angular_animation_service__WEBPACK_IMPORTED_MODULE_11__["AnimationService"], css_animator_angular_animation_service__WEBPACK_IMPORTED_MODULE_11__["AnimationService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_12__["ScrollToService"], _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_12__["ScrollToService"], [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _agm_core__WEBPACK_IMPORTED_MODULE_13__["ɵc"], _agm_core__WEBPACK_IMPORTED_MODULE_13__["ɵc"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _agm_core__WEBPACK_IMPORTED_MODULE_13__["ɵd"], _agm_core__WEBPACK_IMPORTED_MODULE_13__["ɵd"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _agm_core__WEBPACK_IMPORTED_MODULE_13__["MapsAPILoader"], _agm_core__WEBPACK_IMPORTED_MODULE_13__["LazyMapsAPILoader"], [[2, _agm_core__WEBPACK_IMPORTED_MODULE_13__["LAZY_MAPS_API_CONFIG"]], _agm_core__WEBPACK_IMPORTED_MODULE_13__["ɵc"], _agm_core__WEBPACK_IMPORTED_MODULE_13__["ɵd"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _shared_menu_items_menu_items__WEBPACK_IMPORTED_MODULE_14__["MenuItems"], _shared_menu_items_menu_items__WEBPACK_IMPORTED_MODULE_14__["MenuItems"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _shared_todo_todo_service__WEBPACK_IMPORTED_MODULE_15__["TodoService"], _shared_todo_todo_service__WEBPACK_IMPORTED_MODULE_15__["TodoService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _swimlane_ngx_charts_release_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_16__["InjectionService"], _swimlane_ngx_charts_release_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_16__["InjectionService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _swimlane_ngx_charts_release_common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_17__["TooltipService"], _swimlane_ngx_charts_release_common_tooltip_tooltip_service__WEBPACK_IMPORTED_MODULE_17__["TooltipService"], [_swimlane_ngx_charts_release_common_tooltip_injection_service__WEBPACK_IMPORTED_MODULE_16__["InjectionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_router__WEBPACK_IMPORTED_MODULE_18__["RouterModule"], _angular_router__WEBPACK_IMPORTED_MODULE_18__["RouterModule"], [[2, _angular_router__WEBPACK_IMPORTED_MODULE_18__["ɵangular_packages_router_router_a"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_18__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_19__["DashboardRoutingModule"], _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_19__["DashboardRoutingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ɵangular_packages_forms_forms_d"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ɵangular_packages_forms_forms_d"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbAccordionModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbAccordionModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbAlertModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbAlertModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbButtonsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbButtonsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbCarouselModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbCarouselModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbCollapseModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbCollapseModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbDatepickerModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbDatepickerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbDropdownModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbDropdownModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModalModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModalModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbNavModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbNavModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbPaginationModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbPaginationModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbPopoverModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbPopoverModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbProgressbarModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbProgressbarModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbRatingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbRatingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTabsetModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTabsetModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTimepickerModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTimepickerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbToastModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbToastModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTooltipModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTooltipModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTypeaheadModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbTypeaheadModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng2_toasty__WEBPACK_IMPORTED_MODULE_20__["ToastyModule"], ng2_toasty__WEBPACK_IMPORTED_MODULE_20__["ToastyModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, angular2_notifications_dist_src_simple_notifications_module__WEBPACK_IMPORTED_MODULE_21__["SimpleNotificationsModule"], angular2_notifications_dist_src_simple_notifications_module__WEBPACK_IMPORTED_MODULE_21__["SimpleNotificationsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, css_animator_angular_animator_module__WEBPACK_IMPORTED_MODULE_22__["AnimatorModule"], css_animator_angular_animator_module__WEBPACK_IMPORTED_MODULE_22__["AnimatorModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_12__["ScrollToModule"], _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_12__["ScrollToModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _agm_core__WEBPACK_IMPORTED_MODULE_13__["AgmCoreModule"], _agm_core__WEBPACK_IMPORTED_MODULE_13__["AgmCoreModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_click_outside_lib_click_outside_module__WEBPACK_IMPORTED_MODULE_23__["ClickOutsideModule"], ng_click_outside_lib_click_outside_module__WEBPACK_IMPORTED_MODULE_23__["ClickOutsideModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_24__["PerfectScrollbarModule"], ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_24__["PerfectScrollbarModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_skeleton_loader__WEBPACK_IMPORTED_MODULE_25__["NgxSkeletonLoaderModule"], ngx_skeleton_loader__WEBPACK_IMPORTED_MODULE_25__["NgxSkeletonLoaderModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_26__["TranslateModule"], _ngx_translate_core__WEBPACK_IMPORTED_MODULE_26__["TranslateModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _shared_shared_module__WEBPACK_IMPORTED_MODULE_27__["SharedModule"], _shared_shared_module__WEBPACK_IMPORTED_MODULE_27__["SharedModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_common_axes_axes_module__WEBPACK_IMPORTED_MODULE_28__["AxesModule"], _swimlane_ngx_charts_release_common_axes_axes_module__WEBPACK_IMPORTED_MODULE_28__["AxesModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_common_tooltip_tooltip_module__WEBPACK_IMPORTED_MODULE_29__["TooltipModule"], _swimlane_ngx_charts_release_common_tooltip_tooltip_module__WEBPACK_IMPORTED_MODULE_29__["TooltipModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_common_chart_common_module__WEBPACK_IMPORTED_MODULE_30__["ChartCommonModule"], _swimlane_ngx_charts_release_common_chart_common_module__WEBPACK_IMPORTED_MODULE_30__["ChartCommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_area_chart_area_chart_module__WEBPACK_IMPORTED_MODULE_31__["AreaChartModule"], _swimlane_ngx_charts_release_area_chart_area_chart_module__WEBPACK_IMPORTED_MODULE_31__["AreaChartModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_bar_chart_bar_chart_module__WEBPACK_IMPORTED_MODULE_32__["BarChartModule"], _swimlane_ngx_charts_release_bar_chart_bar_chart_module__WEBPACK_IMPORTED_MODULE_32__["BarChartModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_bubble_chart_bubble_chart_module__WEBPACK_IMPORTED_MODULE_33__["BubbleChartModule"], _swimlane_ngx_charts_release_bubble_chart_bubble_chart_module__WEBPACK_IMPORTED_MODULE_33__["BubbleChartModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_force_directed_graph_force_directed_graph_module__WEBPACK_IMPORTED_MODULE_34__["ForceDirectedGraphModule"], _swimlane_ngx_charts_release_force_directed_graph_force_directed_graph_module__WEBPACK_IMPORTED_MODULE_34__["ForceDirectedGraphModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_heat_map_heat_map_module__WEBPACK_IMPORTED_MODULE_35__["HeatMapModule"], _swimlane_ngx_charts_release_heat_map_heat_map_module__WEBPACK_IMPORTED_MODULE_35__["HeatMapModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_line_chart_line_chart_module__WEBPACK_IMPORTED_MODULE_36__["LineChartModule"], _swimlane_ngx_charts_release_line_chart_line_chart_module__WEBPACK_IMPORTED_MODULE_36__["LineChartModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_pie_chart_pie_chart_module__WEBPACK_IMPORTED_MODULE_37__["PieChartModule"], _swimlane_ngx_charts_release_pie_chart_pie_chart_module__WEBPACK_IMPORTED_MODULE_37__["PieChartModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_polar_chart_polar_chart_module__WEBPACK_IMPORTED_MODULE_38__["PolarChartModule"], _swimlane_ngx_charts_release_polar_chart_polar_chart_module__WEBPACK_IMPORTED_MODULE_38__["PolarChartModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_number_card_number_card_module__WEBPACK_IMPORTED_MODULE_39__["NumberCardModule"], _swimlane_ngx_charts_release_number_card_number_card_module__WEBPACK_IMPORTED_MODULE_39__["NumberCardModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_tree_map_tree_map_module__WEBPACK_IMPORTED_MODULE_40__["TreeMapModule"], _swimlane_ngx_charts_release_tree_map_tree_map_module__WEBPACK_IMPORTED_MODULE_40__["TreeMapModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_gauge_gauge_module__WEBPACK_IMPORTED_MODULE_41__["GaugeModule"], _swimlane_ngx_charts_release_gauge_gauge_module__WEBPACK_IMPORTED_MODULE_41__["GaugeModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _swimlane_ngx_charts_release_ngx_charts_module__WEBPACK_IMPORTED_MODULE_42__["NgxChartsModule"], _swimlane_ngx_charts_release_ngx_charts_module__WEBPACK_IMPORTED_MODULE_42__["NgxChartsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _dashboard_module__WEBPACK_IMPORTED_MODULE_1__["DashboardModule"], _dashboard_module__WEBPACK_IMPORTED_MODULE_1__["DashboardModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_18__["ROUTES"], function () {
+        return [[{
+          path: "",
+          component: _dashboard_component__WEBPACK_IMPORTED_MODULE_43__["DashboardComponent"],
+          data: _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_19__["ɵ0"]
+        }]];
+      }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _agm_core__WEBPACK_IMPORTED_MODULE_13__["LAZY_MAPS_API_CONFIG"], {
+        apiKey: "AIzaSyCE0nvTeHBsiQIrbpMVTe489_O5mwyqofk"
+      }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_24__["PERFECT_SCROLLBAR_CONFIG"], _shared_shared_module__WEBPACK_IMPORTED_MODULE_27__["ɵ0"], [])]);
+    });
+    /***/
+
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard.module.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/dashboard/dashboard.module.ts ***!
+    \***********************************************/
+
+  /*! exports provided: DashboardModule */
+
+  /***/
+  function srcAppDashboardDashboardModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardModule", function () {
+      return DashboardModule;
+    });
+
+    var DashboardModule = function DashboardModule() {
+      _classCallCheck(this, DashboardModule);
+    };
+    /***/
+
+  }
+}]);
+//# sourceMappingURL=dashboard-dashboard-module-ngfactory-es5.js.map
