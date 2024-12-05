@@ -200,6 +200,11 @@ export class UserdetailsComponent implements OnInit {
     doc.setFontSize(16);
     doc.text('Reporte de Detalles del Usuario', doc.internal.pageSize.width / 2, margin, { align: 'center' });
 
+    // Agregar la fecha actual alineada a la izquierda
+    doc.setFontSize(12);
+    const currentDate = new Date().toLocaleDateString() // Formato predeterminado
+    doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+
     // Cargar la imagen y agregarla en cada página
     this.http.get('assets/images/dashboard/yochivoy_logo.png', { responseType: 'blob' }).subscribe((blob) => {
       const reader = new FileReader();
@@ -232,6 +237,9 @@ export class UserdetailsComponent implements OnInit {
         autoTable(doc, {
           body: userDetails,
           theme: 'grid',
+          headStyles: {
+            textColor: [0, 0, 0],
+          },
           startY: userDetailsTitleY + 5, // Deja espacio después del título
           margin: { left: margin, right: margin }
         });
@@ -253,6 +261,9 @@ export class UserdetailsComponent implements OnInit {
               this.getOrderStatus(order.status) || 'N/A',
             ]),
             theme: 'grid',
+            headStyles: {
+              textColor: [0, 0, 0],
+            },
             margin: { left: margin, right: margin }
           });
         }
@@ -294,6 +305,9 @@ export class UserdetailsComponent implements OnInit {
               review.descriptions || 'N/A'
             ]),
             theme: 'grid',
+            headStyles: {
+              textColor: [0, 0, 0],
+            },
             margin: { left: margin, right: margin }
           });
         }

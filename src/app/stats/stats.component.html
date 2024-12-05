@@ -3,7 +3,7 @@
 </ngx-spinner>
 <div class="row">
   <div class="col-md-12">
-    <div class="card">
+    <div class="card" id="card">
       <div class="card-body">
         <h5>{{'Get Stats' | translate}} </h5>
       </div>
@@ -29,7 +29,8 @@
 
         <div class="form-group row">
           <div class="col-sm-12">
-            <button class="btn btn-danger btn-round" (click)="getStats()">{{'Get Stats' | translate}}</button>
+            <button class="btn btn-danger rounded font-weight-bold" (click)="getStats()">{{'Get Stats' |
+              translate}}</button>
             <button style="margin-left: 20px;" [useExistingCss]="true" [printTitle]="getName()"
               printSectionId="print-section" ngxPrint *ngIf="restId && from && to && restOrder?.length"
               class="btn btn-primary"><i class="icofont icofont-printer"></i>{{'Print' | translate}}</button>
@@ -41,24 +42,25 @@
     </div>
   </div>
 </div>
-<h2  style="text-align: center; display: none;" *ngIf="restId && from && to && !restOrder?.length">{{'No Orders Found' | translate}}
+<h2 style="text-align: center; display: none;" *ngIf="restId && from && to && !restOrder?.length">{{'No Orders Found' |
+  translate}}
 </h2>
 <div class="row" id="print-section" *ngIf="restId && from && to && restOrder?.length">
   <div class="col-md-12">
     <div class="card" style="padding: 20px;">
       <h3 style="text-align: center;color: #7ec6aa;">Goby Aplicación </h3>
       <p style="text-align: center;color: #ED7669;">{{getDate(from)}} {{'to' | translate}} {{getDate(to)}}</p>
-      
+
       <p style="text-align: left; font-weight: bold;margin: 0px;color: #7EC6AA;">{{restOrder[0].vid.name}}</p>
       <p style="text-align: left; font-weight: bold;color: #7EC6AA;">{{today()}}</p>
       <div class="table-responsive">
-        
+
         <table class="table" id="table_report">
-          <tr  class="data-hidden" style="display: none;">
+          <tr class="data-hidden" style="display: none;">
             <th>Restaurante:</th>
             <td>{{restOrder[0].vid.name}}</td>
           </tr>
-          <tr  class="data-hidden" style="display: none;">
+          <tr class="data-hidden" style="display: none;">
             <th>Fecha:</th>
             <td>{{today()}}</td>
           </tr>
@@ -146,13 +148,15 @@
       </div>
 
       <p style="display: none;" style="font-size: .8rem;color: gray;">
-        {{'The invoice amount of' | translate}} {{getCurrency()}} {{toPay}} {{'will automatically be transferred to your account around five working days. We collect via the our customers. On behalf
-                of Foodies Your payments are processed by Stichting Soon. You can find our company name and contact informations in the
-                description on the statement' | translate}}.</p>
-                <br>
-                <button (click)="ExportToExcel()" class="btn btn-primary">{{'Import to excel'| translate}}</button>
+        {{'The invoice amount of' | translate}} {{getCurrency()}} {{toPay}} {{'will automatically be transferred to your
+        account around five working days. We collect via the our customers. On behalf
+        of Foodies Your payments are processed by Stichting Soon. You can find our company name and contact informations
+        in the
+        description on the statement' | translate}}.</p>
+      <br>
+      <button (click)="ExportToExcel()" class="btn btn-primary">{{'Import to excel'| translate}}</button>
     </div>
-    
+
   </div>
 </div>
 

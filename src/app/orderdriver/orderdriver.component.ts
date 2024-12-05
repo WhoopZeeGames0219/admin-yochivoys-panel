@@ -41,7 +41,7 @@ export class OrderdriverComponent implements OnInit {
   drivers: any = [];
   driver: any;
   dummyDrivers: any = [];
-  driversByCity: any =  [];
+  driversByCity: any = [];
   driverToken: any;
   constructor(
     private api: ApisService,
@@ -57,14 +57,14 @@ export class OrderdriverComponent implements OnInit {
         this.id = data.id;
         this.getOrder();
         this.getUsers();
-            this.getCity();
-          
+        this.getCity();
+
       }
     });
   }
   getOrder() {
     this.spinner.show();
-    console.log("idd",this.id)
+    console.log("idd", this.id)
     this.api.getOrderById(this.id).then(data => {
       this.spinner.hide();
       console.log(data);
@@ -76,6 +76,9 @@ export class OrderdriverComponent implements OnInit {
         this.time = data.time;
         if (data && data.dId && data.dId.fullname) {
           this.dname = data.dId.fullname || '';
+        }
+        if (data.dId && data.dId.id) {
+          this.driver = data.dId.id; // Establece el driver seleccionado por defecto
         }
         this.username = data.uid.fullname || '';
         this.userpic = data.uid && data.uid.cover ? data.uid.cover : 'assets/icon.png';
@@ -246,7 +249,7 @@ export class OrderdriverComponent implements OnInit {
     this.dummyDrivers = [];
     this.driversByCity = [];
     this.api.getUsers().then((data) => {
-      
+
       console.log('users data', data);
       data.forEach(element => {
         if (element.type === 'delivery') {
@@ -266,89 +269,89 @@ export class OrderdriverComponent implements OnInit {
     return this.api.getCurrecySymbol();
   }
 
-  changeDrivers(city){
-      console.log("Drivers",this.drivers)
-      console.log("city",this.city)
+  changeDrivers(city) {
+    console.log("Drivers", this.drivers)
+    console.log("city", this.city)
     this.driversByCity = []
     this.drivers.forEach(element => {
-        if (element.city === city && element.isActive) {
-          this.driversByCity.push(element);
-          
-        }
-        
-        
-      });
-      setTimeout(()=>{
-          if(this.driversByCity.length>0){
-            console.log(this.driversByCity)
-            this.driver = this.driversByCity[0].id 
-            this.driverToken = this.driversByCity[0].fcm_token
-          }
-      },500)
+      if (element.city === city && element.isActive) {
+        this.driversByCity.push(element);
+
+      }
+
+
+    });
+    setTimeout(() => {
+      if (this.driversByCity.length > 0) {
+        console.log(this.driversByCity)
+        this.driver = this.driversByCity[0].id
+        this.driverToken = this.driversByCity[0].fcm_token
+      }
+    }, 500)
   }
 
 
   setDriver() {
-      
+
     const param = {
-        driverId: this.driver,
-        status: "accepted"
-      };
-      const value = "accepted";
-      
-      console.log(param)
-      this.api
-        .updateOrder(this.id, param)
-        .then(data => {
-          
-          const parm = {
-            current: "busy"
-          };
-          this.api
-            .updateProfile(this.driver, parm)
-            .then(data => {
-              console.log(data);
-            })
-            .catch(error => {
-              console.log(error);
-            });
-          if (this.drivers[0] && this.drivers[0].fcm_token !== "") {
-            this.api
-              .sendNotification2(
-                "New Order Received ",
-                "New Order",
-                this.driverToken
-              )
-              .subscribe(
-                data => {
-                  console.log("send notifications", data);
-                },
-                error => {
-                  console.log(error);
-                }
-              );
-          }
-  
-  
-          console.log("data", data);
-          const msg =
-            "Your Order is " +
-            value +
-            " By " +
-            this.restName;
-          
-          Swal.fire({
-            title:"success",
-            text: "Order status changed to " + value,
-            icon: "success",
-            timer: 2000,
-            backdrop: false,
-            background: "white"
+      driverId: this.driver,
+      status: "accepted"
+    };
+    const value = "accepted";
+
+    console.log(param)
+    this.api
+      .updateOrder(this.id, param)
+      .then(data => {
+
+        const parm = {
+          current: "busy"
+        };
+        this.api
+          .updateProfile(this.driver, parm)
+          .then(data => {
+            console.log(data);
+          })
+          .catch(error => {
+            console.log(error);
           });
-          this.navCtrl.back();
-        })
-        .catch(error => {
-          console.log(error);
+        if (this.drivers[0] && this.drivers[0].fcm_token !== "") {
+          this.api
+            .sendNotification2(
+              "New Order Received ",
+              "New Order",
+              this.driverToken
+            )
+            .subscribe(
+              data => {
+                console.log("send notifications", data);
+              },
+              error => {
+                console.log(error);
+              }
+            );
+        }
+
+
+        console.log("data", data);
+        const msg =
+          "Your Order is " +
+          value +
+          " By " +
+          this.restName;
+
+        Swal.fire({
+          title: "success",
+          text: "Order status changed to " + value,
+          icon: "success",
+          timer: 2000,
+          backdrop: false,
+          background: "white"
         });
+        this.navCtrl.back();
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }
 }

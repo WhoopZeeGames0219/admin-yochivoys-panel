@@ -3,6 +3,10 @@ import { ApisService } from '../services/apis.service';
 import { Router, NavigationExtras } from '@angular/router';
 import Swal from 'sweetalert2';
 import { NgxSpinnerService } from 'ngx-spinner';
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
@@ -12,10 +16,12 @@ export class RestaurantsComponent implements OnInit {
   rest: any = [];
   dummyRest: any = [];
   dummy = Array(10);
+  searchQuery: string = ''; // Valor del input de búsqueda
   constructor(
     private api: ApisService,
     private router: Router,
     private spinner: NgxSpinnerService,
+    private http: HttpClient
   ) {
     this.getRest();
   }
@@ -36,6 +42,7 @@ export class RestaurantsComponent implements OnInit {
   }
 
   search(string) {
+    this.searchQuery = string;
     this.resetChanges();
     console.log('string', string);
     this.rest = this.filterItems(string);
@@ -63,13 +70,13 @@ export class RestaurantsComponent implements OnInit {
   }
   getClass(item) {
     if (item === 'created' || item === 'accepted' || item === 'picked') {
-      return 'btn btn-primary btn-round';
+      return 'btn btn-primary rounded font-weight-bold';
     } else if (item === 'delivered') {
-      return 'btn btn-success btn-round';
+      return 'btn btn-success rounded font-weight-bold';
     } else if (item === 'rejected' || item === 'cancel') {
-      return 'btn btn-danger btn-round';
+      return 'btn btn-danger rounded font-weight-bold';
     }
-    return 'btn btn-warning btn-round';
+    return 'btn btn-warning rounded font-weight-bold text-dark';
   }
 
   openRest(item) {
@@ -97,7 +104,7 @@ export class RestaurantsComponent implements OnInit {
       if (result.value) {
         const param = {
           uid: item.uid,
-          isClose: item.isClose? false: true,
+          isClose: item.isClose ? false : true,
           status: text,
         };
         console.log(param)
@@ -138,5 +145,57 @@ export class RestaurantsComponent implements OnInit {
 
   getCurrency() {
     return this.api.getCurrecySymbol();
+  }
+
+  generateReport() {
+    const doc = new jsPDF();
+
+    // Agregar título al reporte
+    doc.setFontSize(16);
+    doc.text('Reporte de Sucursales / Restaurantes', 105, 10, { align: 'center' });
+    doc.setFontSize(12);
+    doc.text(`Filtro aplicado: "${this.searchQuery || 'Todas las sucursales'}"`, 105, 20, { align: 'center' });
+
+    // Agregar la fecha actual alineada a la izquierda
+    doc.setFontSize(12);
+    const currentDate = new Date().toLocaleDateString() // Formato predeterminado
+    doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+
+    // Preparar datos para la tabla
+    const tableData = this.rest.map(res => [
+      res.name,
+      res.address,
+      res.city,
+      res.email,
+      res.openTime,
+      res.phone,
+      res.ratting
+    ]);
+
+    // Agregar la tabla al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: 30,
+      head: [['Nombre', 'Domicilio', 'Cuidad', 'Correo Electronico', 'Hora de apertura', 'Telefono', 'Rating']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableData,
+    });
+
+    // Guardar el archivo
+    this.http.get('assets/images/dashboard/yochivoy_logo.png', { responseType: 'blob' }).subscribe((blob) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64Image = reader.result as string;
+
+        // Agregar imagen al reporte
+        doc.addImage(base64Image, 'PNG', 175, 5, 30, 15); // Ajustar coordenadas y tamaño si es necesario
+
+        // Guardar el reporte
+        doc.save('reporte_sucursales.pdf');
+      };
+      reader.readAsDataURL(blob);
+    });
   }
 }

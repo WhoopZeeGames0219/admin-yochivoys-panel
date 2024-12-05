@@ -3,7 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { ApisService } from '../services/apis.service';
 import * as moment from 'moment';
 import { NavigationExtras, Router } from '@angular/router';
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient } from '@angular/common/http';
 
 // import { Chart, ChartType } from 'chart.js/auto';
 
@@ -21,9 +24,11 @@ export class DashboardComponent implements OnInit {
   new: boolean;
   id: any;
   users: any = [];
+  usersTotal: number;
   usersPercent = 0;
   messagesCount = 0;
   drivers: any = [];
+  driversTotal: number;
   driversPercent = 0;
   orders: any = [];
   displayOrders: any = [];
@@ -31,6 +36,7 @@ export class DashboardComponent implements OnInit {
   ordersCanceled: any = [];
   ordersDelivered: any = [];
   ordersRejected: any = [];
+  monthlyOrdersArray: any = [];
   public groupedReviews: any[] = [];
 
   // Arreglos para data de graficas
@@ -78,7 +84,8 @@ export class DashboardComponent implements OnInit {
   constructor(
     private api: ApisService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private http: HttpClient
   ) {
     this.getRest();
     this.getUsers();
@@ -188,8 +195,14 @@ export class DashboardComponent implements OnInit {
           this.messagesCount = this.messagesCount + element.count;
         }
       });
+      this.usersTotal = this.users.length;
+      this.driversTotal = this.drivers.length;
+
       this.getPercentByUsers();
+      console.log('justodesapues', this.driversPercent + " y " + this.usersPercent);
+
       console.log('messagesCount', this.messagesCount);
+      console.log('getUseres metodo', "users.length: " + this.users.length);
     }, error => {
       console.log(error);
     }).catch(error => {
@@ -364,6 +377,21 @@ export class DashboardComponent implements OnInit {
         }))
       }
     ];
+
+    // Generar el arreglo de arreglos para usar en reporte
+    const monthlyOrdersArray = Object.keys(totalOrders).map(monthYear => {
+      return [
+        monthYear,
+        totalOrders[monthYear] || 0, // Recibidos
+        deliveredData[monthYear] || 0, // Entregados
+        canceledData[monthYear] || 0  // Cancelados
+      ];
+    });
+
+    console.log('monthlyArrayOrders', monthlyOrdersArray); // Verificar el formato generado
+
+    // asignamos la data al arreglo para reporte
+    this.monthlyOrdersArray = monthlyOrdersArray;
   }
 
   getTopRest(restaurants: any[]) {
@@ -375,6 +403,11 @@ export class DashboardComponent implements OnInit {
       name: restaurant.name,
       value: restaurant.ratting || 0
     }));
+
+    // this.topRestArray = restaurants.map(restaurant => [
+    //   restaurant.name,
+    //   restaurant.ratting || 0
+    // ])
 
     console.log('dataChartTopRests:', this.dataChartTopRest);
   }
@@ -391,7 +424,7 @@ export class DashboardComponent implements OnInit {
     console.log('porcentaje repartidores', this.driversPercent);
 
     this.usersPercent = (this.users.length / allUsers) * 100;
-    console.log('porcentaje clientes', this.usersPercent);
+    console.log('porcentaje aqui clientes', this.usersPercent);
 
     this.dataPercentUsers = [
       { name: 'Clientes', value: this.users.length },
@@ -401,6 +434,207 @@ export class DashboardComponent implements OnInit {
     this.colorSchemePercentUsers = {
       domain: ["#248abd", "#c53b3b"]
     }
+  }
+
+  generateReport() {
+    const doc = new jsPDF();
+    const margin = 10;
+    this.getUsers();
+    this.getOrdersByStatus();
+    this.getPercentByUsers();
+    this.getMonthlyOrdersData();
+    this.getRest();
+    this.getReviews();
+
+    console.log('generateReportDashboard', this.orders.length + " " + this.usersTotal + "drivers: " + this.driversTotal);
+    console.log('generateReportDashboard porcentajes', "clientes" + this.usersPercent + " repartidores" + this.driversPercent);
+
+    // Agregar la fecha actual alineada a la izquierda
+    doc.setFontSize(12);
+    const currentDate = new Date().toLocaleDateString() // Formato predeterminado
+    doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+
+    // Agregar título al reporte
+    doc.setFontSize(16);
+    doc.text('Reporte Dashboard', 105, 10, { align: 'center' });
+    doc.setFontSize(12);
+
+
+    // Titulo de tabla
+    const generalTitleY = margin + 20; // Posición Y para el título
+    doc.setFontSize(14);
+    doc.text('Datos Generales', margin, generalTitleY);
+
+    // Preparar datos para la tabla
+    const tableGeneralData = [
+      [
+        this.orders.length,
+        this.ordersCanceled.length,
+        this.ordersDelivered.length,
+        this.usersTotal,
+        this.rest.length
+      ]
+    ]
+
+    // Agregar la tabla general al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: generalTitleY + 5, // Deja espacio después del título
+      head: [['Pedidos', 'Ordenes Canceladas', 'Ordenes Entregadas', 'Usuarios', 'Sucursales']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableGeneralData,
+    });
+
+    //Preparar datos de graficas
+    const chartsTitleY = doc.previousAutoTable.finalY + 10;
+    doc.setFontSize(14);
+    doc.text('Pedidos Totales', margin, chartsTitleY);
+
+    const tableChartsData = [
+      [
+        this.ordersDelivered.length,
+        this.ordersCanceled.length,
+        this.ordersRejected.length
+      ]
+    ]
+
+    // Agregar la tabla de graficas al PDF
+    autoTable(doc, {
+      startY: chartsTitleY + 5,
+      theme: 'grid',
+      head: [['Entregados', 'Cancelados', 'Rechazados']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableChartsData,
+    });
+
+    // Titulo de tabla porcentaje de usuarios
+    const percentUsersTitleY = doc.previousAutoTable.finalY + 10; // Posición Y para el título
+    doc.setFontSize(14);
+    doc.text('Porcentaje De Usuarios', margin, percentUsersTitleY);
+
+    // Preparar datos para la tabla porcentaje de usuarios
+    const tablePercentUsersData = [
+      ['Clientes', this.usersTotal, this.usersTotal / (this.usersTotal + this.driversTotal) * 100 + '%'],
+      ['Repartidores', this.driversTotal, this.driversTotal / (this.usersTotal + this.driversTotal) * 100 + '%']
+    ]
+
+    // Agregar la tabla porcentaje de usuarios al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: percentUsersTitleY + 5, // Deja espacio después del título
+      head: [['Tipo de Usuario', 'Total', 'Porcentaje']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tablePercentUsersData,
+    });
+
+    // Titulo de tabla pedidos por mes
+    const ordByMontTitle = doc.previousAutoTable.finalY + 10; // Posición Y para el título
+    doc.setFontSize(14);
+    doc.text('Pedidos Por Mes', margin, ordByMontTitle);
+
+    // Preparar datos para la tabla pedidos por mes
+    const tableOrdersByMonth = this.monthlyOrdersArray;
+
+    // Agregar la tabla general al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: ordByMontTitle + 5, // Deja espacio después del título
+      head: [['Mes', 'Recibidos', 'Entregados', 'Cancelados']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableOrdersByMonth,
+    });
+
+    // Titulo de tabla
+    const rankingRestTitle = doc.previousAutoTable.finalY + 10; // Posición Y para el título
+    doc.setFontSize(14);
+    doc.text('Top De Restaurantes', margin, rankingRestTitle);
+
+    // Preparar datos para la tabla top restaurantes
+    const tableRankingRest = this.rest.map((restaurant, index) => [
+      index + 1,
+      restaurant.name,
+      restaurant.ratting || 0
+    ])
+
+    // Agregar la tabla general al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: rankingRestTitle + 5, // Deja espacio después del título
+      head: [['Posicion', 'Nombre del Restaurante', 'Raiting']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableRankingRest,
+    });
+
+    // Titulo de tabla reviews
+    const reviewsTitleY = doc.previousAutoTable.finalY + 10; // Posición Y para el título
+    doc.setFontSize(14);
+    doc.text('Reseñas', margin, reviewsTitleY);
+
+    // Preparar datos para la tabla top restaurantes
+    // Ordenar reviews por fecha
+    this.reviews.sort((a, b) =>
+      new Date(b.createdAt.split('/').reverse().join('-')).getTime() -
+      new Date(a.createdAt.split('/').reverse().join('-')).getTime()
+    );
+
+    const tableReviews = this.reviews.map(review => [
+      review.vid.name || 'N/A',
+      review.uid.fullname || 'N/A',
+      review.createdAt || 'N/A',
+      this.convertTo12Hour(review.createdTime) || 'N/A',
+      review.descriptions || 'N/A'
+    ])
+
+    // Agregar la tabla general al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: reviewsTitleY + 5, // Deja espacio después del título
+      head: [['Restaurante', 'Usuario', 'Fecha', 'Hora', 'Reseña']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableReviews,
+      columnStyles: {
+        3: { cellWidth: 20 }, // Ajusta el ancho de la columna de "Hora" (4ª columna)
+        4: { cellWidth: 80, overflow: 'linebreak' } // Ajusta el ancho de "Reseña" (5ª columna) y permite colapsar texto
+      },
+    });
+
+    // Guardar el archivo
+    this.http.get('assets/images/dashboard/yochivoy_logo.png', { responseType: 'blob' }).subscribe((blob) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64Image = reader.result as string;
+
+        // Función para agregar la imagen en la parte superior de cada página
+        const addImageToPage = () => {
+          doc.addImage(base64Image, 'PNG', 175, 5, 30, 15);  // Ajustar coordenadas y tamaño según sea necesario
+        };
+
+        addImageToPage();
+
+        // Si hay más páginas, agregarlas y añadir la imagen a cada una
+        const pageCount = doc.internal.pages.length;
+        for (let i = 1; i < pageCount; i++) {
+          doc.setPage(i);
+          addImageToPage();
+        }
+
+        // Guardar el reporte
+        doc.save('reporte_dashboard.pdf');
+      };
+      reader.readAsDataURL(blob);
+    });
   }
 
 }

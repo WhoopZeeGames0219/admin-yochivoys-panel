@@ -3,6 +3,9 @@ import { Router } from '@angular/router';
 import { ApisService } from '../services/apis.service';
 import Swal from 'sweetalert2';
 import { NgxSpinnerService } from 'ngx-spinner';
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cities',
@@ -16,7 +19,8 @@ export class CitiesComponent implements OnInit {
   constructor(
     private router: Router,
     private api: ApisService,
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
+    private http: HttpClient
   ) {
     this.getCity();
   }
@@ -39,11 +43,11 @@ export class CitiesComponent implements OnInit {
 
   getClass(item) {
     if (item === 'active') {
-      return 'btn btn-primary btn-round';
+      return 'btn btn-success rounded font-weight-bold';
     } else if (item === 'deactive') {
-      return 'btn btn-danger btn-round';
+      return 'btn btn-danger rounded font-weight-bold';
     }
-    return 'btn btn-warning btn-round';
+    return 'btn btn-warning rounded font-weight-bold';
   }
 
   changeStatus(item) {
@@ -103,6 +107,55 @@ export class CitiesComponent implements OnInit {
           console.log(error);
         });
       }
+    });
+  }
+
+  generateReport() {
+    const doc = new jsPDF();
+
+    // Agregar título al reporte
+    doc.setFontSize(16);
+    doc.text('Reporte de Cuidades', 105, 10, { align: 'center' });
+    doc.setFontSize(12);
+
+    // Agregar la fecha actual alineada a la izquierda
+    doc.setFontSize(12);
+    const currentDate = new Date().toLocaleDateString() // Formato predeterminado
+    doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+
+    // Preparar datos para la tabla
+    const tableData = this.cities.map(city => [
+      city.id,
+      city.lat,
+      city.lng,
+      city.name,
+      city.status,
+    ]);
+
+    // Agregar la tabla al PDF
+    autoTable(doc, {
+      theme: 'grid',
+      startY: 30,
+      head: [['ID', 'Latitud', 'Longitud', 'Nombre', 'Estado']],
+      headStyles: {
+        textColor: [0, 0, 0],
+      },
+      body: tableData,
+    });
+
+    // Guardar el archivo
+    this.http.get('assets/images/dashboard/yochivoy_logo.png', { responseType: 'blob' }).subscribe((blob) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64Image = reader.result as string;
+
+        // Agregar imagen al reporte
+        doc.addImage(base64Image, 'PNG', 175, 5, 30, 15); // Ajustar coordenadas y tamaño si es necesario
+
+        // Guardar el reporte
+        doc.save('reporte_cuidades.pdf');
+      };
+      reader.readAsDataURL(blob);
     });
   }
 }

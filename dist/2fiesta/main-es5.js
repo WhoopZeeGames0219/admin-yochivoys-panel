@@ -298,7 +298,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var ɵ0 = function ɵ0() {
       return Promise.all(
       /*! import() | dashboard-dashboard-module-ngfactory */
-      [__webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("dashboard-dashboard-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("dashboard-dashboard-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./dashboard/dashboard.module.ngfactory */
       "./src/app/dashboard/dashboard.module.ngfactory.js")).then(function (m) {
         return m.DashboardModuleNgFactory;
@@ -361,7 +361,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ7 = function ɵ7() {
       return Promise.all(
       /*! import() | restaurants-restaurants-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("common"), __webpack_require__.e("restaurants-restaurants-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("restaurants-restaurants-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./restaurants/restaurants.module.ngfactory */
       "./src/app/restaurants/restaurants.module.ngfactory.js")).then(function (m) {
         return m.RestaurantsModuleNgFactory;
@@ -370,7 +370,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ8 = function ɵ8() {
       return Promise.all(
       /*! import() | drivers-drivers-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("common"), __webpack_require__.e("drivers-drivers-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("drivers-drivers-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./drivers/drivers.module.ngfactory */
       "./src/app/drivers/drivers.module.ngfactory.js")).then(function (m) {
         return m.DriversModuleNgFactory;
@@ -379,7 +379,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ9 = function ɵ9() {
       return Promise.all(
       /*! import() | users-users-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~userdetails-userdetails-module-ngfactory~users-users-module-ngfactory"), __webpack_require__.e("common"), __webpack_require__.e("users-users-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("users-users-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./users/users.module.ngfactory */
       "./src/app/users/users.module.ngfactory.js")).then(function (m) {
         return m.UsersModuleNgFactory;
@@ -388,7 +388,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ10 = function ɵ10() {
       return Promise.all(
       /*! import() | orders-orders-module-ngfactory */
-      [__webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("common"), __webpack_require__.e("orders-orders-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("orders-orders-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./orders/orders.module.ngfactory */
       "./src/app/orders/orders.module.ngfactory.js")).then(function (m) {
         return m.OrdersModuleNgFactory;
@@ -397,7 +397,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ11 = function ɵ11() {
       return Promise.all(
       /*! import() | banners-banners-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("common"), __webpack_require__.e("banners-banners-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("banners-banners-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./banners/banners.module.ngfactory */
       "./src/app/banners/banners.module.ngfactory.js")).then(function (m) {
         return m.BannersModuleNgFactory;
@@ -415,7 +415,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ13 = function ɵ13() {
       return Promise.all(
       /*! import() | coupons-coupons-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("common"), __webpack_require__.e("coupons-coupons-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("coupons-coupons-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./coupons/coupons.module.ngfactory */
       "./src/app/coupons/coupons.module.ngfactory.js")).then(function (m) {
         return m.CouponsModuleNgFactory;
@@ -424,7 +424,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ14 = function ɵ14() {
       return Promise.all(
       /*! import() | restdetails-restdetails-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~newcoupons-newcoupons-module-ngfactory~restdetails-restdetails-module-ngfactory"), __webpack_require__.e("common"), __webpack_require__.e("restdetails-restdetails-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("default~newcoupons-newcoupons-module-ngfactory~restdetails-restdetails-module-ngfactory"), __webpack_require__.e("common"), __webpack_require__.e("restdetails-restdetails-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./restdetails/restdetails.module.ngfactory */
       "./src/app/restdetails/restdetails.module.ngfactory.js")).then(function (m) {
         return m.RestdetailsModuleNgFactory;
@@ -478,7 +478,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ20 = function ɵ20() {
       return Promise.all(
       /*! import() | userdetails-userdetails-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~userdetails-userdetails-module-ngfactory~users-users-module-ngfactory"), __webpack_require__.e("userdetails-userdetails-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~coupons-coupons-module-ngfactory~dashboard-dashboard-module-ngfactory~newcoupons-newcoupons-~af9e82fc"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("userdetails-userdetails-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./userdetails/userdetails.module.ngfactory */
       "./src/app/userdetails/userdetails.module.ngfactory.js")).then(function (m) {
         return m.UserdetailsModuleNgFactory;
@@ -505,7 +505,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         ɵ23 = function ɵ23() {
       return Promise.all(
       /*! import() | cities-cities-module-ngfactory */
-      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("common"), __webpack_require__.e("cities-cities-module-ngfactory")]).then(__webpack_require__.bind(null,
+      [__webpack_require__.e("default~add-new-foods-add-new-foods-module-ngfactory~banners-banners-module-ngfactory~cities-cities-~f861d850"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~110308c0"), __webpack_require__.e("default~banners-banners-module-ngfactory~cities-cities-module-ngfactory~coupons-coupons-module-ngfac~ce7373d0"), __webpack_require__.e("common"), __webpack_require__.e("cities-cities-module-ngfactory")]).then(__webpack_require__.bind(null,
       /*! ./cities/cities.module.ngfactory */
       "./src/app/cities/cities.module.ngfactory.js")).then(function (m) {
         return m.CitiesModuleNgFactory;
@@ -2053,7 +2053,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         return ad;
-      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 0, "img", [["alt", ""], ["height", "50"], ["onError", "this.src='assets/images/user.png'"], ["style", "border-radius: 50%; margin-right: 10px;"], ["width", "50"]], [[8, "src", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 1, "span", [["style", "font-size: 16px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](3, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 2, "span", [["style", "font-size: 14px; color:gray; padding: 15px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](5, null, ["", "", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]])], null, function (_ck, _v) {
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 0, "img", [["alt", ""], ["height", "50"], ["onError", "this.src='assets/images/user.png'"], ["style", "border-radius: 50%; margin-right: 10px; object-fit:cover;"], ["width", "50"]], [[8, "src", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 1, "span", [["style", "font-size: 16px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](3, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 2, "span", [["style", "font-size: 14px; color:gray; padding: 15px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](5, null, ["", "", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](131072, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__["TranslatePipe"], [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__["TranslateService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]])], null, function (_ck, _v) {
         var currVal_0 = _v.context.$implicit.cover;
 
         _ck(_v, 1, 0, currVal_0);

@@ -8,6 +8,9 @@ import * as firebase from 'firebase';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { Location } from '@angular/common';
 import * as moment from 'moment';
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
+import { HttpClient } from '@angular/common/http';
 
 declare var google: any;
 @Component({
@@ -55,13 +58,21 @@ export class RestdetailsComponent implements OnInit {
   totalOrders: any = 0;
   reviews: any = [];
   cities: any = [];
+
+  myaddress: any = [];
+  startDate: string;
+  endDate: string;
+  selectedStatus: any;
+  myOrders: any = [];
+
   constructor(
     private route: ActivatedRoute,
     private api: ApisService,
     private toastyService: ToastyService,
     private spinner: NgxSpinnerService,
     private navCtrl: Location,
-    private chMod: ChangeDetectorRef
+    private chMod: ChangeDetectorRef,
+    private http: HttpClient
   ) {
     this.getCity();
   }
@@ -142,6 +153,7 @@ export class RestdetailsComponent implements OnInit {
         this.lname = data.lname;
       }
     });
+
     this.api.getVenueDetails(this.id).then((data) => {
       console.log('data', data);
       if (data) {
@@ -220,6 +232,7 @@ export class RestdetailsComponent implements OnInit {
 
         console.log('sales total (all orders) -->', this.totalSales);
         console.log('sales total (completed/delivered orders) -->', this.totalCompletedSales);
+        console.log('my order==>', this.totalOrders);
       }
     }).catch(error => {
       console.log(error);
@@ -230,9 +243,18 @@ export class RestdetailsComponent implements OnInit {
       if (data && data.length) {
         this.reviews = data;
       }
+      console.log('Resenas: ', this.reviews);
     }).catch(error => {
       console.log(error);
     });
+  }
+
+  convertTo12Hour(time: string): string {
+    if (!time) return '';
+    const [hours, minutes] = time.split(':').map(Number);
+    const suffix = hours >= 12 ? 'PM' : 'AM';
+    const hour12 = hours % 12 || 12; // Convierte 0 (medianoche) o 12 (mediodía) al formato adecuado.
+    return `${hour12}:${minutes.toString().padStart(2, '0')} ${suffix}`;
   }
 
   getImage(cover) {
@@ -582,5 +604,199 @@ export class RestdetailsComponent implements OnInit {
 
   getCurrency() {
     return this.api.getCurrecySymbol();
+  }
+
+  getOrderStatus(status: string): string {
+    switch (status) {
+      case 'rejected':
+        return 'Rechazada';
+      case 'canceled':
+        return 'Cancelada';
+      case 'delivered':
+        return 'Entregada';
+      case 'created':
+        return 'Creado';
+      default:
+        return 'Desconocido';  // Por si el estado no está en los valores conocidos
+    }
+  }
+
+  generateReport() {
+    const doc = new jsPDF();
+    const margin = 10;
+
+    // Rango de fechas
+    let filteredOrders = this.totalOrders;
+    let filteredReviews = this.reviews;
+
+    if (this.startDate && this.endDate) {
+      const start = moment(this.startDate).startOf('day');
+      const end = moment(this.endDate).endOf('day');
+
+      // Filtrar órdenes
+      filteredOrders = this.totalOrders.filter(order =>
+        moment(order.time, "ddd, MMM D, YYYY h:mm A").isBetween(start, end, undefined, '[]')
+      );
+
+      // Filtrar reseñas (formato "DD/MM/YYYY")
+      filteredReviews = this.reviews.filter(review =>
+        moment(review.createdAt, "DD/MM/YYYY").isBetween(start, end, undefined, '[]')
+      );
+    }
+
+    if (this.selectedStatus) {
+      filteredOrders = filteredOrders.filter(order =>
+        order.status === this.selectedStatus
+      );
+    }
+
+    // Título del reporte
+    doc.setFontSize(16);
+    doc.text('Reporte de Detalles del Restaurante', doc.internal.pageSize.width / 2, margin, { align: 'center' });
+
+    // Agregar la fecha actual alineada a la izquierda
+    doc.setFontSize(12);
+    const currentDate = new Date().toLocaleDateString() // Formato predeterminado
+    doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+
+    // Cargar la imagen y agregarla en cada página
+    this.http.get('assets/images/dashboard/yochivoy_logo.png', { responseType: 'blob' }).subscribe((blob) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64Image = reader.result as string;
+
+        // Función para agregar la imagen en la parte superior de cada página
+        const addImageToPage = () => {
+          doc.addImage(base64Image, 'PNG', 175, 5, 30, 15);  // Ajustar coordenadas y tamaño según sea necesario
+        };
+
+        // Agregar la imagen en la primera página
+        addImageToPage();
+
+        // Detalles del usuario
+        const userDetailsTitleY = margin + 10; // Posición Y para el título
+        doc.setFontSize(14);
+        doc.text('Detalles del Restaurante', margin, userDetailsTitleY);
+
+        const userDetails = [
+          ['Nombre:', this.name || 'N/A'],
+          ['Correo Electrónico:', this.email || 'N/A'],
+          ['Teléfono:', this.phone || 'N/A'],
+          ['Órdenes:', filteredOrders.length],
+          ['Direcciones:', this.myaddress.length],
+          ['Reseñas:', filteredReviews.length]
+        ];
+
+        doc.setFontSize(12);
+        autoTable(doc, {
+          body: userDetails,
+          theme: 'grid',
+          headStyles: {
+            textColor: [0, 0, 0],
+          },
+          startY: userDetailsTitleY + 5, // Deja espacio después del título
+          margin: { left: margin, right: margin }
+        });
+
+        // Tabla de órdenes
+        if (filteredOrders.length) {
+          const ordersTitleY = doc.previousAutoTable.finalY + 10;
+          doc.setFontSize(14);
+          doc.text('Órdenes del Usuario', margin, ordersTitleY);
+
+          autoTable(doc, {
+            startY: ordersTitleY + 5,
+            head: [['Orden', 'Usuario', 'Fecha', 'Total', 'Estado']],
+            body: filteredOrders.map(order => [
+              order.orderId || 'N/A',
+              order.uid.fullname || 'N/A',
+              this.getDate(order.time) || 'N/A',
+              `${this.getCurrency()}${order.grandTotal || '0'}`,
+              this.getOrderStatus(order.status) || 'N/A',
+            ]),
+            theme: 'grid',
+            headStyles: {
+              textColor: [0, 0, 0],
+            },
+            margin: { left: margin, right: margin }
+          });
+        }
+
+        // Tabla de direcciones
+        if (this.myaddress.length) {
+          const addressesTitleY = doc.previousAutoTable.finalY + 10; // Posición Y para el título de la tabla
+          doc.setFontSize(14);
+          doc.text('Direcciones Registradas', margin, addressesTitleY);
+
+          autoTable(doc, {
+            startY: addressesTitleY + 5, // Deja espacio después del título
+            head: [['Título', 'Dirección']],
+            body: this.myaddress.map(addr => [
+              addr.title || 'N/A',
+              `${addr.house || ''}, ${addr.landmark || ''}, ${addr.address || ''}`.trim() || 'N/A'
+            ]),
+            theme: 'grid',
+            headStyles: {
+              textColor: [0, 0, 0],
+            },
+            margin: { left: margin, right: margin }
+          });
+        }
+
+        /// Tabla de reseñas
+        if (filteredReviews.length) {
+          const reviewsTitleY = doc.previousAutoTable.finalY + 10;
+          doc.setFontSize(14);
+          doc.text('Reseñas del Usuario', margin, reviewsTitleY);
+
+          autoTable(doc, {
+            startY: reviewsTitleY + 5,
+            head: [['Restaurante', 'Usuario', 'Fecha', 'Hora', 'Reseña']],
+            body: filteredReviews.map(review => [
+              this.name || 'N/A',
+              review.uid.fullname || 'NA',
+              review.createdAt || 'N/A',
+              this.convertTo12Hour(review.createdTime) || 'N/A',
+              review.descriptions || 'N/A'
+            ]),
+            theme: 'grid',
+            headStyles: {
+              textColor: [0, 0, 0],
+            },
+            margin: { left: margin, right: margin }
+          });
+        }
+
+        // Tabla de ingresos totales
+        if (this.totalCompletedSales >= 0) {
+          const salesTitleY = doc.previousAutoTable.finalY + 10;
+          doc.setFontSize(14);
+          doc.text('Ingresos Totales', margin, salesTitleY);
+          autoTable(doc, {
+            startY: salesTitleY + 5,
+            head: [['Ingresos totales de la sucursal']],
+            body: [
+              [`$${this.totalCompletedSales || 'NA'}`]
+            ],
+            theme: 'grid',
+            headStyles: {
+              textColor: [0, 0, 0],
+            },
+            margin: { left: margin, right: margin }
+          });
+        }
+
+        // Si hay más páginas, agregarlas y añadir la imagen a cada una
+        const pageCount = doc.internal.pages.length;
+        for (let i = 1; i < pageCount; i++) {
+          doc.setPage(i);
+          addImageToPage();
+        }
+
+        // Descargar el reporte
+        doc.save(`Reporte_Detalles_Restaurante_${this.name || 'N/A'}.pdf`);
+      };
+      reader.readAsDataURL(blob);  // Convertir la imagen a base64
+    });
   }
 }

@@ -14,7 +14,8 @@
                         <input (change)="preview_banner($event.target.files)" type="file" class="form-control">
                     </div>
                     <div class="col-sm-4">
-                        <img [src]="coverImage" alt="" style="height: 100px;width: 100px;float: right;"
+                        <img [src]="coverImage" alt=""
+                            style="height: 100px;width: 100px;float: right;border-radius: 50%; object-fit: cover;"
                             onError="this.src='assets/icon.png'">
                     </div>
                     <div class="col-sm-12">
@@ -27,8 +28,8 @@
 
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        <button class="btn btn-danger btn-round"
-                            (click)="create()">{{'Add Banner' | translate}}</button>
+                        <button class="btn btn-danger rounded font-weight-bold" (click)="create()">{{'Add Banner' |
+                            translate}}</button>
                     </div>
                 </div>
 

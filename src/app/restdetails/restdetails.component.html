@@ -4,7 +4,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <div class="card">
+    <div class="card" id="card">
       <div class="card-body">
         <p style="color: red;font-size: 1.5rem;">
           {{'Restaurants will be shown to users once restaurants add foods to his restaurant' | translate}}
@@ -94,16 +94,18 @@
             <input (change)="preview_banner($event.target.files)" type="file" class="form-control">
           </div>
           <div class="col-sm-4">
-            <img [src]="coverImage" alt="" style="height: 100px;width: 100px;float: right; border-radius: 50%;"
+            <img [src]="coverImage" alt=""
+              style="height: 100px;width: 100px;float: right; border-radius: 50%;object-fit:cover;"
               onError="this.src='assets/icon.png'">
           </div>
         </div>
         <div class="form-group row">
           <div class="col-sm-12">
-            <button class="btn btn-danger btn-round" (click)="create()" *ngIf="new">{{'Create New Restaurant'|
+            <button class="btn btn-danger rounded font-weight-bold" (click)="create()" *ngIf="new">{{'Create New
+              Restaurant'|
               translate}}
             </button>
-            <button class="btn btn-danger btn-round" (click)="updateVenue()" *ngIf="!new">
+            <button class="btn btn-danger rounded font-weight-bold" (click)="updateVenue()" *ngIf="!new">
               {{'Update Restaurant'| translate}} </button>
           </div>
         </div>
@@ -122,16 +124,41 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <p class="f-16 m-0" style="font-weight: bold; color: green;">{{'Totale Income'| translate}} : {{getCurrency()}}
+            <p class="f-16 m-0" style="font-weight: bold; color: green;">{{'Totale Income'| translate}} :
+              {{getCurrency()}}
               {{totalCompletedSales}}
             </p>
-          </div>
-          <div class="col-6">
-
           </div>
         </div>
       </div>
     </div>
+
+    <form (ngSubmit)="generateReport()" class="d-flex justify-content-between align-items-center flex-wrap"
+      style="gap: 3px;">
+      <div class="form-group">
+        <label for="startDate" class="form-label">Fecha de inicio:</label>
+        <input id="startDate" type="date" [(ngModel)]="startDate" name="startDate" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="endDate" class="form-label">Fecha de fin:</label>
+        <input id="endDate" type="date" [(ngModel)]="endDate" name="endDate" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="status" class="form-label">Estado:</label>
+        <select id="status" [(ngModel)]="selectedStatus" name="status" class="form-control">
+          <option value="rejected">Rechazada</option>
+          <option value="canceled">Cancelada</option>
+          <option value="delivered">Entregada</option>
+          <option value="created">Creado</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-warning rounded text-dark font-weight-bold">Generar
+        Reporte</button>
+    </form>
+
   </div>
   <div class="col-md-8">
     <div class="card">
@@ -220,12 +247,17 @@
               <div class="review">
                 <div class="row" *ngFor="let item of reviews" style="border-bottom: 1px solid lightgray;padding: 5px;">
                   <div class="col-md-2">
-                    <img height="100" width="100" src="{{item.cover}}" alt=""
-                      onError="this.src='assets/images/user.png'" style="border-radius: 50%;">
+                    <img height="100" width="100" [src]="item?.cover ? item.cover : item?.vid?.cover" alt=""
+                      onError="this.src='assets/images/user.png'" style="border-radius: 50%;object-fit:cover;">
                   </div>
-                  <div class="col-md-10">
-                    <p style="font-weight: bold; font-size: 18px;"> {{item.uid.fullname}}</p> <span> ➡️ </span>
+                  <div class="col-md-10 d-flex flex-column">
+                    <p style="font-weight: bold; font-size: 18px;"> {{item.uid.fullname}}</p>
                     <span style="font-size: 16px;"> {{item.descriptions}} </span>
+                    <div class="contenedor-fecha-hora">
+                      <span><strong style="color: #490608">Fecha publicada: </strong>{{item?.createdAt}} / <strong
+                          style="color: #490608">Hora:
+                        </strong>{{convertTo12Hour(item?.createdTime)}}</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 .orders{
-    height: 60vh;
+    height: 34vh;
     overflow: scroll;
     .card_div{
         width: 100%;
@@ -84,6 +84,22 @@
             justify-content: space-between;
             color: lightgray;
             font-size: 14px;
+            .status_canceled_rejected{
+                color: red;
+            }
+            .status_created_ongoing_accepted{
+                color: rgb(170, 170, 10);
+            }
+            .status_completed_delivered{
+                color: green;
+            }
         }
+        
     }
+}
+
+#card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

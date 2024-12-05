@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "deliveryapp-f95b7",
+    "site": "deliveryapp-1d1d5",
     "public": "dist/2fiesta",
     "ignore": [
       "firebase.json",

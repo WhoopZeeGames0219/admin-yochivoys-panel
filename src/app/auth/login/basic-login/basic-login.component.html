@@ -5,39 +5,49 @@
   <div class="auth-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <div class="login-card card-body auth-body">
+        <div class="login-card card-body auth-body rounded">
           <form class="md-float-material">
-            <div class="text-center">
-              <img src="assets/images/auth/app2fiesta.png" alt="logo.png" ngClass='login-logo'>
+            <div class="text-center" style="padding-bottom: 10px;">
+              <img src="assets/images/dashboard/yochivoy_logo.png" alt="logo.png" ngClass='login-logo'>
             </div>
             <div class="auth-box">
               <div class="row m-b-20">
                 <div class="col-md-12">
-                  <h3 class="text-left txt-primary">{{'Sign In' | translate}}</h3>
+                  <h3 class="text-left txt-primary">{{'Panel de Administracion de Yochivoy Deliveries' | translate}}
+                  </h3>
                 </div>
               </div>
               <hr />
-              <div class="input-group">
-                <input type="email" class="form-control" [placeholder]="('Your Email Address' | translate) || '&nbsp;'"
-                  [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+              <div class="input-group d-flex flex-column w-100 justify-content-start">
+                <label class="w-100 d-flex justify-content-start">Correo
+                  Electronico</label>
+                <input type="email" class="form-control w-100"
+                  [placeholder]="('Your Email Address' | translate) || '&nbsp;'" [(ngModel)]="email"
+                  [ngModelOptions]="{standalone: true}">
                 <span class="md-line"></span>
               </div>
-              <div class="input-group">
-                <input type="password" class="form-control" [placeholder]="('Password' | translate) || '&nbsp;'"
+              <div class="input-group d-flex flex-column w-100 justify-content-start">
+                <label class="w-100 d-flex justify-content-start">Contraseña</label>
+                <input type="password" class="form-control w-100" [placeholder]="('Password' | translate) || '&nbsp;'"
                   [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
                 <span class="md-line"></span>
               </div>
               <div class="row m-t-30">
                 <div class="col-md-12">
                   <button type="button" (click)="login()"
-                    class="btn btn-danger btn-md btn-block waves-effect text-center m-b-20">{{'Sign In' | translate}}</button>
+                    class="btn btn-danger btn-md rounded font-weight-bold btn-block waves-effect text-center m-b-20">{{'Acceder
+                    al panel' |
+                    translate}}</button>
                 </div>
+                <!--
                 <div class="btns">
                   <img src="assets/en.png" (click)="changeLng('en')" style="display: none;"
                     [ngClass]="getClassName() == 'en' ? 'flagActive':'flagDeactive'" alt="">
                   <img src="assets/spanish.png" (click)="changeLng('spanish')"
                     [ngClass]="getClassName() == 'spanish' ? 'flagActive':'flagDeactive'" alt="">
-                </div>
+                    
+              </div>
+              -->
               </div>
             </div>
           </form>

@@ -17,9 +17,12 @@
                     </div>
                     <div class="col-sm-4">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 d-flex justify-content-end" style="gap: 10px;">
                         <button style="float: right;" type="button" (click)="createNew()"
-                            class="btn btn-danger btn-round">{{'CREATE NEW' | translate}}</button>
+                            class="btn btn-info rounded font-weight-bold">{{'Nueva Cuidad' | translate}}</button>
+                        <button class="btn btn-warning rounded text-dark font-weight-bold" (click)="generateReport()">
+                            {{ 'Generar Reporte' | translate }}
+                        </button>
                     </div>
                 </div>
                 <div class="table-responsive">
@@ -61,7 +64,9 @@
                                         (click)="changeStatus(item)">{{item.status}}</button>
                                 </td>
                                 <td><button type="button" (click)="delete(item)"
-                                        class="btn btn-success btn-round btn-outline-success">{{'Delete' | translate}}</button>
+                                        class="btn btn-danger rounded font-weight-bold">{{'Delete'
+                                        |
+                                        translate}}</button>
                                 </td>
                             </tr>
                         </tbody>

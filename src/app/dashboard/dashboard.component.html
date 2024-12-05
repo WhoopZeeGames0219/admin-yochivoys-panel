@@ -1,4 +1,11 @@
-<div class="dashboard-container">
+<div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+  <h1 style="font-size: 20px; font-weight: bold;">Estadisticas Generales</h1>
+  <button class="btn btn-warning rounded text-dark font-weight-bold" (click)="generateReport()">
+    {{ 'Generar Reporte' | translate }}
+  </button>
+</div>
+
+<div class="dashboard-container" style="margin-top: 10px;">
   <div class="card-dashboard clickable" (click)="redirectToOrders()">
     <div class="card-content">
       <div class="icon-container">
@@ -224,7 +231,7 @@
 
 <!-- Carrusel de ng-bootstrap -->
 <ngb-carousel *ngIf="groupedReviews?.length > 0" [interval]="5000" [keyboard]="true" [pauseOnHover]="true" [wrap]="true"
-  class="custom-carousel">
+  class="custom-carousel" style="padding-bottom: 20px;">
   <ng-template ngbSlide *ngFor="let group of groupedReviews">
     <div class="d-flex justify-content-around">
       <!-- Cada card de review dentro del slide -->

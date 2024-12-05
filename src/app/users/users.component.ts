@@ -136,6 +136,11 @@ export class UsersComponent implements OnInit {
     doc.setFontSize(12);
     doc.text(`Filtro aplicado: "${this.searchQuery || 'Todos los clientes'}"`, 105, 20, { align: 'center' });
 
+    // Agregar la fecha actual alineada a la izquierda
+    doc.setFontSize(12);
+    const currentDate = new Date().toLocaleDateString() // Formato predeterminado
+    doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+
     // Preparar datos para la tabla
     const tableData = this.filteredUsers.map(user => [
       user.fullname,

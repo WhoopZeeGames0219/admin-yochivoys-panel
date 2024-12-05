@@ -129,7 +129,7 @@ p {
   background-color: #f0f0f0;
   position: absolute;
   /* Posición absoluta para que no afecte el flujo del diseño */
-  right: -50px;
+  right: -30px;
   /* Ajusta la posición a la derecha */
   top: 50%;
   /* Centra verticalmente respecto al contenedor */

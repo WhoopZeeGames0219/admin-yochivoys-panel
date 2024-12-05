@@ -633,7 +633,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           doc.setFontSize(12);
           doc.text("Filtro aplicado: \"".concat(this.searchQuery || 'Todos los clientes', "\""), 105, 20, {
             align: 'center'
-          }); // Preparar datos para la tabla
+          }); // Agregar la fecha actual alineada a la izquierda
+
+          doc.setFontSize(12);
+          var currentDate = new Date().toLocaleDateString(); // Formato predeterminado
+
+          doc.text('Fecha: ' + currentDate, 10, 10); // Alineado a la izquierda
+          // Preparar datos para la tabla
 
           var tableData = this.filteredUsers.map(function (user) {
             return [user.fullname, user.email, user.phone, user.status];
